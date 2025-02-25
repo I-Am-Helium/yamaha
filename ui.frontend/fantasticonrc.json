@@ -1,0 +1,15 @@
+{
+   "inputDir": "src/assets/font-icons",
+   "outputDir": "../ui.apps/src/main/content/jcr_root/apps/vite/clientlibs/clientlib-site-icons/resources",
+   "fontTypes": ["woff", "woff2", "eot"],
+   "assetTypes": ["scss", "json", "ts", "css"],
+   "fontsUrl": "",
+   "normalize": true,
+   "formatOptions": {
+      "svg": {
+         "centerHorizontally": true,
+         "centerVertically": true,
+         "preserveAspectRatio": true
+      }
+   }
+}

@@ -1,0 +1,7 @@
+<sly data-sly-test="${properties.title == null}">
+  <p data-emptytext="${component.title}" class="cq-placeholder"></p>
+</sly>
+<sly data-sly-test="${properties.title != null}">
+  <h2>Dummy Component with Vite</h2>
+  <aem-dummy-comp title="${properties.title}"></aem-dummy-comp>
+</sly>

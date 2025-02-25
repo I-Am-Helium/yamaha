@@ -1,0 +1,31 @@
+$icons-font: "icons";
+
+@font-face {
+    font-family: $icons-font;
+    src: url("./icons.woff?760d0cfb984be8a70b4a5a9b73548d6a") format("woff"),
+url("./icons.woff2?760d0cfb984be8a70b4a5a9b73548d6a") format("woff2"),
+url("./icons.eot?760d0cfb984be8a70b4a5a9b73548d6a#iefix") format("embedded-opentype");
+}
+
+i[class^="icon-"]:before, i[class*=" icon-"]:before {
+    font-family: icons !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$icons-map: (
+    "Award-1": "\f101",
+    "Award": "\f102",
+);
+
+.icon-Award-1:before {
+    content: map-get($icons-map, "Award-1");
+}
+.icon-Award:before {
+    content: map-get($icons-map, "Award");
+}
