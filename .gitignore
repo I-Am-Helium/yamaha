@@ -111,3 +111,4 @@ ui.tests.wdio/test-module/assets/form/themes/**/*current.png
 
 target/
 
+/ui.frontend/src/assets/generated-icons

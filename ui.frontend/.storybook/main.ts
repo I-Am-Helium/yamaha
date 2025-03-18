@@ -14,9 +14,7 @@ const config: StorybookConfig = {
     "@storybook/addon-storysource",
     "@storybook/addon-designs",
     "@storybook/addon-a11y",
-    'storybook-addon-sass-postcss',
     "@storybook/theming",
-    "storybook-addon-pseudo-states",
     "@storybook/addon-coverage"
   ],
   "framework": {
