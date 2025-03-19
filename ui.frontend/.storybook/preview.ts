@@ -1,16 +1,22 @@
 import type { Preview } from '@storybook/react'
 import { INITIAL_VIEWPORTS } from "@storybook/addon-viewport";
 import { themes } from "@storybook/theming";
+import yamahaTheme from './yamahaTheme';
+
 
 const preview: Preview = {
   parameters: {
-    docs: {
-      theme: themes.dark,
+    theme: {
+      ...yamahaTheme,
+      brandImage: './images/yamaha.png',
     },
+    // docs: {
+    //   theme: themes.dark,
+    // },
     controls: {
       matchers: {
-       color: /(background|color)$/i,
-       date: /Date$/i,
+        color: /(background|color)$/i,
+        date: /Date$/i,
       },
     },
     a11y: {
@@ -50,7 +56,7 @@ const preview: Preview = {
       },
     },
   },
- 
+
 };
 
 export default preview;

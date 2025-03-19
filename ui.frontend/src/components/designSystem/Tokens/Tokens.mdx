@@ -1,0 +1,337 @@
+import { Meta, Story, Canvas } from '@storybook/addon-docs'
+
+<Meta title="Design System/Design Tokens" />
+
+# Design Tokens
+
+Design tokens are the fundamental visual design attributes of a design system, abstracted into hierarchical, reusable variables. Tokens
+are applied in place of hard-coded values in order to maintain a scalable and consistent visual system for designing and developing UI.
+
+export const TokenTable = ({ tokens }) => (
+   <table style={{ width: '100%', borderCollapse: 'collapse' }}>
+      <thead>
+         <tr>
+            <th
+               style={{
+                  textAlign: 'left',
+                  padding: '12px',
+                  borderBottom: '1px solid #e0e0e0',
+               }}
+            >
+               Token Name
+            </th>
+            <th
+               style={{
+                  textAlign: 'left',
+                  padding: '12px',
+                  borderBottom: '1px solid #e0e0e0',
+               }}
+            >
+               Value
+            </th>
+            <th
+               style={{
+                  textAlign: 'left',
+                  padding: '12px',
+                  borderBottom: '1px solid #e0e0e0',
+               }}
+            >
+               HEX
+            </th>
+            <th
+               style={{
+                  textAlign: 'left',
+                  padding: '12px',
+                  borderBottom: '1px solid #e0e0e0',
+               }}
+            >
+               Example
+            </th>
+         </tr>
+      </thead>
+      <tbody>
+         {tokens.map(({ name, value, semantic }) => (
+            <tr key={name}>
+               <td
+                  style={{ padding: '12px', borderBottom: '1px solid #e0e0e0' }}
+               >
+                  <code>{name}</code>
+               </td>
+               <td
+                  style={{ padding: '12px', borderBottom: '1px solid #e0e0e0' }}
+               >
+                  <code>{semantic}</code>
+               </td>
+              <td>
+               <code>{value}</code>
+              </td> 
+               <td
+                  style={{ padding: '12px', borderBottom: '1px solid #e0e0e0' }}
+               >
+                  <div
+                     style={{
+                        width: '200px',
+                        height: '24px',
+                        backgroundColor: value,
+                        borderRadius: '4px',
+                        border: '1px solid #e0e0e0',
+                     }}
+                  />
+               </td>
+            </tr>
+         ))}
+      </tbody>
+
+   </table>
+)
+
+### Surface Button Primary
+
+<TokenTable
+   tokens={[
+      {
+         name: '$surface-button-primary-default',
+         value: '#d52b1e',
+         semantic: 'red-500',
+      },
+      {
+         name: '$surface-button-primary-hover',
+         value: '#d35445',
+         semantic: 'red-400',
+      },
+      {
+         name: '$surface-button-primary-active',
+         value: '#b62115',
+         semantic: 'red-700',
+      },
+      {
+         name: '$surface-button-primary-disabled',
+         value: '#e4e5e6',
+         semantic: 'cool-grey-10-50',
+      },
+   ]}
+/>
+
+### Surface Button Secondary
+
+<TokenTable
+   tokens={[
+      {
+         name: '$surface-button-secondary-default',
+         value: '#d52b1e',
+         semantic: 'red-500',
+      },
+      {
+         name: '$surface-button-secondary-hover',
+         value: '#d35445',
+         semantic: 'red-400',
+      },
+      {
+         name: '$surface-button-secondary-active',
+         value: '#b62115',
+         semantic: 'red-700',
+      },
+      {
+         name: '$surface-button-secondary-disabled',
+         value: '#1a1a1a',
+         semantic: 'cool-grey-4-800',
+      },
+   ]}
+/>
+
+### Outlined Button Borders
+
+<TokenTable
+   tokens={[
+      {
+         name: '$border-button-outlined-default',
+         value: '#d52b1e',
+         semantic: 'red-500',
+      },
+      {
+         name: '$border-button-outlined-hover',
+         value: '#d35445',
+         semantic: 'red-400',
+      },
+      {
+         name: '$border-button-outlined-active',
+         value: '#b62115',
+         semantic: 'red-700',
+      },
+      {
+         name: '$border-button-outlined-disabled',
+         value: '#e0e0e0',
+         semantic: 'cool-grey-10-300',
+      },
+   ]}
+/>
+
+### Form Elements
+
+<TokenTable
+   tokens={[
+      {
+         name: '$border-form-input',
+         value: '#e0e0e0',
+         semantic: 'cool-grey-10-300',
+      },
+      {
+         name: '$border-form-error',
+         value: '#d32f2f',
+         semantic: 'status-red',
+      },
+   ]}
+/>
+
+### Status Indicators
+
+<TokenTable
+   tokens={[
+      {
+         name: '$border-status-success',
+         value: '#2e7d32',
+         semantic: 'status-green',
+      },
+      {
+         name: '$border-status-warning',
+         value: '#ed6c02',
+         semantic: 'status-orange',
+      },
+      {
+         name: '$border-status-info',
+         value: '#0288d1',
+         semantic: 'status-blue',
+      },
+      {
+         name: '$border-status-error',
+         value: '#d32f2f',
+         semantic: 'status-red',
+      },
+      {
+         name: '$border-status-offer',
+         value: '#d52b1e',
+         semantic: 'red-500',
+      },
+   ]}
+/>
+
+## Typography
+
+### Heading Text
+
+<TokenTable
+   tokens={[
+      {
+         name: '$text-heading-primary',
+         value: '#000000',
+         semantic: 'neutral-black',
+      },
+      {
+         name: '$text-heading-secondary',
+         value: '#000000',
+         semantic: 'neutral-black',
+      },
+   ]}
+/>
+
+### Body Text
+
+<TokenTable
+   tokens={[
+      {
+         name: '$text-body-primary',
+         value: '#000000',
+         semantic: 'neutral-black',
+      },
+      {
+         name: '$text-body-secondary',
+         value: '#000000',
+         semantic: 'neutral-black',
+      },
+   ]}
+/>
+
+### Button Text
+
+<TokenTable
+   tokens={[
+      {
+         name: '$text-button-primary-default',
+         value: '#ffffff',
+         semantic: 'neutral-white',
+      },
+      {
+         name: '$text-button-primary-hover-active',
+         value: '#ffffff',
+         semantic: 'neutral-white',
+      },
+      {
+         name: '$text-button-primary-disabled',
+         value: '#e0e0e0',
+         semantic: 'cool-grey-10-300',
+      },
+   ]}
+/>
+
+### Link Button Text
+
+<TokenTable
+   tokens={[
+      {
+         name: '$text-button-link-default',
+         value: '#d52b1e',
+         semantic: 'red-500',
+      },
+      {
+         name: '$text-button-link-hover',
+         value: '#d35445',
+         semantic: 'red-400',
+      },
+      {
+         name: '$text-button-link-clicked',
+         value: '#b62115',
+         semantic: 'red-700',
+      },
+      {
+         name: '$text-button-link-disabled',
+         value: '#e0e0e0',
+         semantic: 'cool-grey-10-300',
+      },
+   ]}
+/>
+
+<style>
+   {`
+  .sbdocs-content {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  code {
+    font-family: monospace;
+    font-size: 14px;
+  }
+
+  table {
+    margin-bottom: 32px;
+  }
+
+  th {
+    font-weight: 600;
+    color: #333;
+  }
+
+   th:nth-child(1) {
+    min-width: 300px;
+  }
+
+
+  th:nth-child(2) {
+    width: 300px;
+  }
+
+  th:nth-child(3) {
+    width: 300px;
+  }
+`}
+</style>
