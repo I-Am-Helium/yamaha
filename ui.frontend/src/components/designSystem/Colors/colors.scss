@@ -1,0 +1,5 @@
+@use '../../../styles/foundations/colors';
+
+.color-red-500 {
+   color: colors.get-color('red', 500);
+}
