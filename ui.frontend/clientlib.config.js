@@ -108,7 +108,7 @@ module.exports = {
             // Copy all other files into the `resources` ClientLib directory
             resources: {
                cwd: '.',
-               files: ['assets/fonts/*', 'assets/images/*'],
+               files: ['assets/**/*'],
                flatten: false,
                ignore: entrypoints,
             },
