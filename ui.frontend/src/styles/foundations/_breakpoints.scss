@@ -47,7 +47,7 @@ $mq: (
  * 
  * @param {string} $breakpoint - Breakpoint.
  * @param {string} $minOrMax - "min" or "max" range values.
- * @example breakpoint("xs", "min") // 375
+ * @example breakpoint("xs", "min") // 320
  */
 @function breakpoint($breakpoint, $minOrMax) {
   @return map.get($breakpoints, $breakpoint, $minOrMax);
