@@ -2,7 +2,7 @@
    "inputDir": "src/assets/icons",
    "outputDir": "src/assets/generated-icons",
    "fontTypes": ["woff", "woff2", "eot"],
-   "assetTypes": ["scss", "css", "html"],
+   "assetTypes": ["scss", "css", "html", "json"],
    "fontsUrl": "",
    "normalize": true,
    "formatOptions": {
