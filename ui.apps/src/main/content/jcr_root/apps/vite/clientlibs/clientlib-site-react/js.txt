@@ -1,3 +1,0 @@
-#base=js
-
-index-CM7-pn1P.js
