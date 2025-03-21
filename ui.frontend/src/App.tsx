@@ -24,7 +24,7 @@ function App() {
          <p className="read-the-docs">
             Click on the Vite and React logos to learn more
          </p>
-         <div className="typo-test">This is some test case</div>
+         <h2>Dummy Component with Vite</h2>
       </>
    )
 }

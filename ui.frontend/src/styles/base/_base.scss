@@ -1,1 +1,25 @@
-// 
+@use 'variables.scss';
+
+html,
+body {
+   margin: 0;
+   font-size: variables.$base-font-size;
+   font-family: variables.$base-font-family;
+   line-height: variables.$base-font-height;
+   color: variables.$color-foreground;
+   background: variables.$color-background;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+   scroll-behavior: smooth;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+   font: inherit;
+}
+#root {
+   display: none !important;
+}

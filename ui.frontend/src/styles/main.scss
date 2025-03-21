@@ -1,4 +1,8 @@
-// foundations 
+//base
+@use './base/base';
+@use './base/variables';
+
+// foundations
 @use './foundations/typography';
 @use './foundations/breakpoints';
 @use './foundations/colors';
@@ -12,4 +16,3 @@
 @use '../components/importStyles.scss';
 
 // icons
-
