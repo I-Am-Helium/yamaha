@@ -1,0 +1,30 @@
+@use 'sass:map';
+
+$spacing: (
+  "p-4": 0.25rem,
+  "p-8": 0.5px,
+  "p-16": 1rem,
+  "p-24": 1.5rem,
+  "p-32": 2rem,
+  "p-40": 2.5rem,
+  "p-48": 3rem,
+  "p-56": 3.5rem,
+  "p-64": 4rem,
+  "p-72": 4.5rem,
+  "p-80": 5rem,
+  "p-96": 6rem,
+  "p-112": 7rem,
+  "p-128": 8rem,
+  "p-144": 9rem,
+  "p-160": 10rem,
+  "p-192": 12rem,
+);
+
+
+/**
+ * Returns spacer by index.
+ */
+ @function spacing($size) {
+    @return map.get($spacing, $size);
+  }
+  

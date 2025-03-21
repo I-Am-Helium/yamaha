@@ -5,7 +5,7 @@ import {parameters} from '../../../../.storybook/stories.config'
 import { FIGMALINKS } from '../../../../.storybook/constants'
 
 const meta = {
-   title: 'Button',
+   title: 'Components/Button',
    component: Button,
    parameters: {
       layout: 'centered',
