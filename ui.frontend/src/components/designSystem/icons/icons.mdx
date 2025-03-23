@@ -1,0 +1,17 @@
+import { Meta, Description, IconGallery, IconItem } from '@storybook/blocks'
+import iconData from '../../../assets/generated-icons/icons.json';
+
+<Meta title="Design System/Icons" />
+
+# Icon
+
+<Description of="Icons" />
+
+<IconGallery>
+    {
+        Object.entries(iconData).map(([iconName, iconCode]) => (
+            <IconItem  key={iconName} name={`icon-${iconName}`}>
+            <i className={`icon-${iconName}`}  />
+           </IconItem>
+    ))}
+</IconGallery>
