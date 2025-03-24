@@ -4,7 +4,8 @@
    src:
       url('../resources/assets/fonts/ubuntu/Ubuntu-Light.ttf')
          format('truetype'),
-      url('./assets/fonts/ubuntu/Ubuntu-Light.ttf') format('truetype');
+      url('./assets/fonts/ubuntu/Ubuntu-Light.ttf') format('truetype'),
+      url('./src/assets/fonts/ubuntu/Ubuntu-Light.ttf') format('truetype');
    font-weight: 300;
    font-style: normal;
 }
@@ -14,7 +15,8 @@
    src:
       url('../resources/assets/fonts/ubuntu/Ubuntu-Regular.ttf')
          format('truetype'),
-      url('./assets/fonts/ubuntu/Ubuntu-Regular.ttf') format('truetype');
+      url('./assets/fonts/ubuntu/Ubuntu-Regular.ttf') format('truetype'),
+      url('./src/assets/fonts/ubuntu/Ubuntu-Regular.ttf') format('truetype');
    font-weight: 400;
    font-style: normal;
 }
@@ -24,7 +26,8 @@
    src:
       url('../resources/assets/fonts/ubuntu/Ubuntu-Medium.ttf')
          format('truetype'),
-      url('./assets/fonts/ubuntu/Ubuntu-Medium.ttf') format('truetype');
+      url('./assets/fonts/ubuntu/Ubuntu-Medium.ttf') format('truetype'),
+      url('./src/assets/fonts/ubuntu/Ubuntu-Medium.ttf') format('truetype');
    font-weight: 500;
    font-style: normal;
 }
@@ -33,7 +36,8 @@
    font-family: 'Ubuntu';
    src:
       url('../resources/assets/fonts/ubuntu/Ubuntu-Bold.ttf') format('truetype'),
-      url('./assets/fonts/ubuntu/Ubuntu-Bold.ttf') format('truetype');
+      url('./assets/fonts/ubuntu/Ubuntu-Bold.ttf') format('truetype'),
+      url('./src/assets/fonts/ubuntu/Ubuntu-Bold.ttf') format('truetype');
    font-weight: 700;
    font-style: normal;
 }
@@ -43,7 +47,8 @@
    src:
       url('../resources/assets/fonts/ubuntu/Ubuntu-LightItalic.ttf')
          format('truetype'),
-      url('./assets/fonts/ubuntu/Ubuntu-LightItalic.ttf') format('truetype');
+      url('./assets/fonts/ubuntu/Ubuntu-LightItalic.ttf') format('truetype'),
+      url('./src/assets/fonts/ubuntu/Ubuntu-LightItalic.ttf') format('truetype');
    font-weight: 300;
    font-style: italic;
 }
@@ -53,7 +58,8 @@
    src:
       url('../resources/assets/fonts/ubuntu/Ubuntu-Regular.ttf')
          format('truetype'),
-      url('./assets/fonts/ubuntu/Ubuntu-Regular.ttf') format('truetype');
+      url('./assets/fonts/ubuntu/Ubuntu-Regular.ttf') format('truetype'),
+      url('./src/assets/fonts/ubuntu/Ubuntu-Regular.ttf') format('truetype');
    font-weight: 400;
    font-style: italic;
 }
@@ -63,7 +69,9 @@
    src:
       url('../resources/assets/fonts/ubuntu/Ubuntu-MediumItalic.ttf')
          format('truetype'),
-      url('./assets/fonts/ubuntu/Ubuntu-MediumItalic.ttf') format('truetype');
+      url('./assets/fonts/ubuntu/Ubuntu-MediumItalic.ttf') format('truetype'),
+      url('./src/assets/fonts/ubuntu/Ubuntu-MediumItalic.ttf')
+         format('truetype');
    font-weight: 500;
    font-style: italic;
 }
@@ -73,7 +81,8 @@
    src:
       url('../resources/assets/fonts/ubuntu/Ubuntu-BoldItalic.ttf')
          format('truetype'),
-      url('./assets/fonts/ubuntu/Ubuntu-BoldItalic.ttf') format('truetype');
+      url('./assets/fonts/ubuntu/Ubuntu-BoldItalic.ttf') format('truetype'),
+      url('./src/assets/fonts/ubuntu/Ubuntu-BoldItalic.ttf') format('truetype');
    font-weight: 700;
    font-style: italic;
 }
@@ -83,7 +92,8 @@
    font-family: 'Play';
    src:
       url('../resources/assets/fonts/play/Play-Regular.ttf') format('truetype'),
-      url('./assets/fonts/play/Play-Regular.ttf') format('truetype');
+      url('./assets/fonts/play/Play-Regular.ttf') format('truetype'),
+      url('./src/assets/fonts/play/Play-Regular.ttf') format('truetype');
    font-weight: 400;
    font-style: normal;
 }
@@ -92,7 +102,8 @@
    font-family: 'Play';
    src:
       url('../resources/assets/fonts/play/Play-Bold.ttf') format('truetype'),
-      url('./assets/fonts/play/Play-Bold.ttf') format('truetype');
+      url('./assets/fonts/play/Play-Bold.ttf') format('truetype'),
+      url('./src/assets/fonts/play/Play-Bold.ttf') format('truetype');
    font-weight: 700;
    font-style: normal;
 }

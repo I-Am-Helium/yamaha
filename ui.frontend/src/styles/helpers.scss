@@ -6,7 +6,7 @@
    @return calc($px / $base) * 1em;
 }
 
-@function Rem($size) {
+@function rem($size) {
    $remSize: calc($size / 16px);
    @return $remSize * 1rem;
 }

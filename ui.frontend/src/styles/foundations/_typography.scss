@@ -90,7 +90,7 @@ $font: (
    ),
 );
 
-@mixin Font($type, $weight: 'font-normal') {
+@mixin font($type, $weight: 'font-normal') {
    $font-properties: map.get($font, 'type', $type);
    $weight-property: map.get($font, 'weight', $weight);
 
@@ -118,32 +118,32 @@ $font: (
 
 h1,
 .font-heading-1 {
-   @include Font('font-heading-1');
+   @include font('font-heading-1');
 }
 
 h2,
 .font-heading-2 {
-   @include Font('font-heading-2');
+   @include font('font-heading-2');
 }
 
 h3,
 .font-heading-3 {
-   @include Font('font-heading-3');
+   @include font('font-heading-3');
 }
 
 h4,
 .font-heading-4 {
-   @include Font('font-heading-4');
+   @include font('font-heading-4');
 }
 
 h5,
 .font-heading-5 {
-   @include Font('font-heading-5');
+   @include font('font-heading-5');
 }
 
 h6,
 .font-heading-6 {
-   @include Font('font-heading-6');
+   @include font('font-heading-6');
 }
 
 //Further classes will be added after disucssion with design team
