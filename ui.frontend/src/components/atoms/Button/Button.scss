@@ -1,4 +1,4 @@
-@use '../../../styles/foundations/colors';
+@use '../../../styles/base/tokens';
 
 .button {
    padding: 10px 20px;
@@ -6,7 +6,6 @@
    border: none;
    border-radius: 4px;
    cursor: pointer;
-   color: colors.$color-text-info;
    transition: background-color 0.3s ease;
 
    &.primary {

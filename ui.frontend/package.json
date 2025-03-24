@@ -5,11 +5,11 @@
    "type": "commonjs",
    "scripts": {
       "dev": "vite",
-      "build": "tsc -b && vite build && node copy-assets.js && fantasticon && clientlib --verbose",
+      "build": "tsc -b && vite build && clientlib --verbose && node copy-assets.js && fantasticon",
       "lint": "eslint .",
       "fantasticon": "fantasticon",
       "preview": "vite preview",
-      "storybook": "storybook dev -p 6006",
+      "storybook": "fantasticon && storybook dev -p 6006",
       "build-storybook": "storybook build",
       "test-storybook": "test-storybook --watch",
       "test-storybook-coverage": "test-storybook --coverage"

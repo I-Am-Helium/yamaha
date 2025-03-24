@@ -2,7 +2,8 @@ import type { Preview } from '@storybook/react'
 import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport'
 import { themes } from '@storybook/theming'
 import yamahaTheme from './yamahaTheme'
-import '../src/styles/foundations/_fonts.scss'
+import '../src/assets/generated-icons/icons.scss'
+import '../src/styles/main.scss'
 
 const preview: Preview = {
    parameters: {

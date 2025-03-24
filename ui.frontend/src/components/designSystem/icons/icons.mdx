@@ -1,0 +1,57 @@
+import { Meta, Description, IconGallery, IconItem } from '@storybook/blocks'
+import iconData from '../../../assets/generated-icons/icons.json'
+
+<Meta title="Design System/Icons" />
+
+# Icons
+
+<Description of="Icons" />
+
+<div style={{display:'flex', gap:'28px', alignItems: 'flex-start'}}>
+    <table>
+    <thead>
+        <tr>
+        <th>No.</th>
+        <th>Preview</th>
+        <th>Icon Name</th>
+        <th>Class Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        {Object.entries(iconData).filter(([iconName]) => iconName.startsWith("solid-")).map(([iconName, iconCode], index) => (
+        <tr key={iconName}>
+            <td>{index + 1}</td>
+            <td>
+            <i className={`icon-${iconName}`} style={{ fontSize: '48px' }} />
+            </td>
+            <td>{iconName}</td>
+            <td>{`icon-${iconName}`}</td>
+        </tr>
+        ))}
+    </tbody>
+    </table>
+
+
+    <table>
+    <thead>
+        <tr>
+        <th>No.</th>
+        <th>Preview</th>
+        <th>Icon Name</th>
+        <th>Class Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        {Object.entries(iconData).filter(([iconName]) => iconName.startsWith("outline-")).map(([iconName, iconCode], index) => (
+        <tr key={iconName}>
+            <td>{index + 1}</td>
+            <td>
+            <i className={`icon-${iconName}`} style={{ fontSize: '48px' }} />
+            </td>
+            <td>{iconName}</td>
+            <td>{`icon-${iconName}`}</td>
+        </tr>
+        ))}
+    </tbody>
+    </table>
+</div>

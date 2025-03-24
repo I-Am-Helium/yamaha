@@ -1,0 +1,56 @@
+
+import { Meta, Description } from '@storybook/blocks';
+
+<Meta title="Design System/Spacing" />
+
+# Spacing
+
+<Description of="Spacing" />
+
+This documentation provides an overview of the spacing system used in the project. The spacing values are defined in SCSS and can be accessed using the `spacing` function.
+
+## Spacing Tokens
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Token</th>
+      <th>Px</th>
+      <th>Rem</th>
+      <th>Example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>`p-4`</td><td>`4px`</td><td>`0.25rem`</td><td><div style={{ backgroundColor: '#da1307', width: '4px', height: '10px' }} /></td></tr>
+    <tr><td>`p-8`</td><td>`8px`</td><td>`0.5rem`</td><td><div style={{ backgroundColor: '#da1307', width: '8px', height: '10px' }} /></td></tr>
+    <tr><td>`p-16`</td><td>`16px`</td><td>`1rem`</td><td><div style={{ backgroundColor: '#da1307', width: '16px', height: '10px' }} /></td></tr>
+    <tr><td>`p-24`</td><td>`24px`</td><td>`1.5rem`</td><td><div style={{ backgroundColor: '#da1307', width: '24px', height: '10px' }} /></td></tr>
+    <tr><td>`p-32`</td><td>`32px`</td><td>`2rem`</td><td><div style={{ backgroundColor: '#da1307', width: '32px', height: '10px' }} /></td></tr>
+    <tr><td>`p-40`</td><td>`40px`</td><td>`2.5rem`</td><td><div style={{ backgroundColor: '#da1307', width: '40px', height: '10px' }} /></td></tr>
+    <tr><td>`p-48`</td><td>`48px`</td><td>`3rem`</td><td><div style={{ backgroundColor: '#da1307', width: '48px', height: '10px' }} /></td></tr>
+    <tr><td>`p-56`</td><td>`56px`</td><td>`3.5rem`</td><td><div style={{ backgroundColor: '#da1307', width: '56px', height: '10px' }} /></td></tr>
+    <tr><td>`p-64`</td><td>`64px`</td><td>`4rem`</td><td><div style={{ backgroundColor: '#da1307', width: '64px', height: '10px' }} /></td></tr>
+    <tr><td>`p-72`</td><td>`72px`</td><td>`4.5rem`</td><td><div style={{ backgroundColor: '#da1307', width: '72px', height: '10px' }} /></td></tr>
+    <tr><td>`p-80`</td><td>`80px`</td><td>`5rem`</td><td><div style={{ backgroundColor: '#da1307', width: '80px', height: '10px' }} /></td></tr>
+    <tr><td>`p-96`</td><td>`96px`</td><td>`6rem`</td><td><div style={{ backgroundColor: '#da1307', width: '96px', height: '10px' }} /></td></tr>
+    <tr><td>`p-112`</td><td>`112px`</td><td>`7rem`</td><td><div style={{ backgroundColor: '#da1307', width: '112px', height: '10px' }} /></td></tr>
+    <tr><td>`p-128`</td><td>`128px`</td><td>`8rem`</td><td><div style={{ backgroundColor: '#da1307', width: '128px', height: '10px' }} /></td></tr>
+    <tr><td>`p-144`</td><td>`144px`</td><td>`9rem`</td><td><div style={{ backgroundColor: '#da1307', width: '144px', height: '10px' }} /></td></tr>
+    <tr><td>`p-160`</td><td>`160px`</td><td>`10rem`</td><td><div style={{ backgroundColor: '#da1307', width: '160px', height: '10px' }} /></td></tr>
+    <tr><td>`p-192`</td><td>`192px`</td><td>`12rem`</td><td><div style={{ backgroundColor: '#da1307', width: '192px', height: '10px' }} /></td></tr>
+  </tbody>
+</table>
+
+## Usage in SCSS
+
+You can retrieve the spacing value using the `spacing` function:
+
+```scss
+@use 'sass:map';
+@use 'spacing';
+
+.element {
+  padding: spacing.get-spacing("p-32"); // 2rem
+}
+```

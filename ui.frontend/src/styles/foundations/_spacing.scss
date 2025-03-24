@@ -2,7 +2,7 @@
 
 $spacing: (
   "p-4": 0.25rem,
-  "p-8": 0.5px,
+  "p-8": 0.5rem,
   "p-16": 1rem,
   "p-24": 1.5rem,
   "p-32": 2rem,
@@ -24,7 +24,7 @@ $spacing: (
 /**
  * Returns spacer by index.
  */
- @function spacing($size) {
+ @function get-spacing($size) {
     @return map.get($spacing, $size);
   }
   
