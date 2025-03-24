@@ -85,7 +85,10 @@
       "watch": [
          "src"
       ],
-      "ext": "ts,tsx,js,jsx,scss",
-      "exec": "npm run build"
+      "ext": "ts,tsx,scss",
+      "exec": "npm run build",
+      "ignore": [
+         "src/assets/**/*"
+      ]
    }
 }
