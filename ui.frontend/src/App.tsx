@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import viteLogo from '/vite.svg'
-import './App.css'
+import './App.scss'
 
 function App() {
    const [count, setCount] = useState(0)
@@ -24,6 +24,7 @@ function App() {
          <p className="read-the-docs">
             Click on the Vite and React logos to learn more
          </p>
+         <h2>Dummy Component with Vite</h2>
       </>
    )
 }

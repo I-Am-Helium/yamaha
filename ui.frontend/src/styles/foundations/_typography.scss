@@ -1,0 +1,149 @@
+@use 'sass:map';
+
+//Font variable definition
+$font: (
+   'type': (
+      'font-heading-1': (
+         'font-size': 4rem,
+         'line-height': 4.625rem,
+      ),
+      'font-heading-2': (
+         'font-size': 3.5rem,
+         'line-height': 4.125rem,
+      ),
+      'font-heading-3': (
+         'font-size': 3rem,
+         'line-height': 3.625rem,
+      ),
+      'font-heading-4': (
+         'font-size': 2.5rem,
+         'line-height': 3.125rem,
+      ),
+      'font-heading-5': (
+         'font-size': 2rem,
+         'line-height': 2.625rem,
+      ),
+      'font-heading-6': (
+         'font-size': 1.25rem,
+         'line-height': 2.125rem,
+      ),
+      'text-lg': (
+         'font-size': 18px,
+         // Will be converted to REM after discussion
+         'line-height': 28px,
+      ),
+      'text-base': (
+         'font-size': 16px,
+         'line-height': 26px,
+      ),
+      'text-sm': (
+         'font-size': 14px,
+         'line-height': 24px,
+      ),
+      'text-xs': (
+         'font-size': 12px,
+         'line-height': 22px,
+      ),
+      'text-xxs': (
+         'font-size': 10px,
+         'line-height': 20px,
+      ),
+      'textlink-lg': (
+         'font-size': 18px,
+         'line-height': 28px,
+         'text-decoration': underline,
+      ),
+      'textlink-base': (
+         'font-size': 16px,
+         'line-height': 26px,
+         'text-decoration': underline,
+      ),
+      'textlink-sm': (
+         'font-size': 14px,
+         'line-height': 24px,
+         'text-decoration': underline,
+      ),
+      'textlink-xs': (
+         'font-size': 12px,
+         'line-height': 22px,
+         'text-decoration': underline,
+      ),
+      'textlink-xxs': (
+         'font-size': 10px,
+         'line-height': 20px,
+         'text-decoration': underline,
+      ),
+   ),
+   'weight': (
+      'font-light': (
+         'font-weight': 300,
+      ),
+      'font-normal': (
+         'font-weight': 400,
+      ),
+      'font-medium': (
+         'font-weight': 500,
+      ),
+      'font-bold': (
+         'font-weight': 700,
+      ),
+   ),
+);
+
+@mixin font($type, $weight: 'font-normal') {
+   $font-properties: map.get($font, 'type', $type);
+   $weight-property: map.get($font, 'weight', $weight);
+
+   @if $font-properties {
+      font-size: map.get($font-properties, 'font-size');
+      line-height: map.get($font-properties, 'line-height');
+
+      $decoration: map.get($font-properties, 'text-decoration');
+
+      @if $decoration {
+         text-decoration: $decoration;
+      }
+   } @else {
+      @error "Type `#{$type}` not found in $font map.";
+   }
+
+   @if $weight-property {
+      font-weight: map.get($weight-property, 'font-weight');
+   } @else {
+      @error "Weight `#{$weight}` not found in $font map.";
+   }
+}
+
+// ============= Font Classes ==================== //
+
+h1,
+.font-heading-1 {
+   @include font('font-heading-1');
+}
+
+h2,
+.font-heading-2 {
+   @include font('font-heading-2');
+}
+
+h3,
+.font-heading-3 {
+   @include font('font-heading-3');
+}
+
+h4,
+.font-heading-4 {
+   @include font('font-heading-4');
+}
+
+h5,
+.font-heading-5 {
+   @include font('font-heading-5');
+}
+
+h6,
+.font-heading-6 {
+   @include font('font-heading-6');
+}
+
+//Further classes will be added after disucssion with design team

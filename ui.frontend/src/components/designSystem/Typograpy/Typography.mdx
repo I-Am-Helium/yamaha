@@ -1,0 +1,89 @@
+import { Meta, Typeset, Markdown } from '@storybook/blocks'
+import ReadMe from './README.md?raw'
+
+<Meta title="Design System/Typography" />
+
+export const typography = {
+   type: {
+      primary: '"Ubuntu"',
+      secondary: '"Play"',
+   },
+   weight: {
+      light: '300',
+      normal: '400',
+      medium: '500',
+      bold: '700',
+   },
+   size: {
+      heading1: 64,
+      heading2: 56,
+      heading3: 48,
+      heading4: 40,
+      heading5: 32,
+      heading6: 20,
+      textlg: 18,
+      textbase: 16,
+      textsm: 14,
+      textxs: 12,
+      textxxs: 10,
+   },
+}
+
+export const SampleText = 'Sample Text'
+
+# Typography
+
+Yamaha provides a clear hierarchy and a simple set of systematic and accessible typographic styles to apply structure to your interface.
+
+## Global Styles
+
+We have applied some global styles to typography and link texts. This includes the following:
+
+- The body font family is `Ubuntu`
+- The base font size is `16px`
+
+## Fonts
+
+### Ubuntu
+
+<Typeset
+   fontSizes={[
+      Number(typography.size.heading1),
+      Number(typography.size.heading2),
+      Number(typography.size.heading3),
+      Number(typography.size.heading4),
+      Number(typography.size.heading5),
+      Number(typography.size.heading6),
+      Number(typography.size.textlg),
+      Number(typography.size.textbase),
+      Number(typography.size.textsm),
+      Number(typography.size.textxs),
+      Number(typography.size.textxxs),
+   ]}
+   fontWeight={typography.weight.normal}
+   sampleText={SampleText}
+   fontFamily={typography.type.primary}
+/>
+
+### Play
+
+<Typeset
+   fontSizes={[
+      Number(typography.size.heading1),
+      Number(typography.size.heading2),
+      Number(typography.size.heading3),
+      Number(typography.size.heading4),
+      Number(typography.size.heading5),
+      Number(typography.size.heading6),
+      Number(typography.size.textlg),
+      Number(typography.size.textbase),
+      Number(typography.size.textsm),
+      Number(typography.size.textxs),
+      Number(typography.size.textxxs),
+   ]}
+   fontWeight={typography.weight.normal}
+   sampleText={SampleText}
+   fontFamily={typography.type.secondary}
+/>
+
+<Markdown>{ReadMe}</Markdown>

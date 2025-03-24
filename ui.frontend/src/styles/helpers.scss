@@ -1,0 +1,12 @@
+/********************************************
+        BASE EM CALC
+********************************************/
+
+@function em($px, $base: 16) {
+   @return calc($px / $base) * 1em;
+}
+
+@function rem($size) {
+   $remSize: calc($size / 16px);
+   @return $remSize * 1rem;
+}
