@@ -12,7 +12,10 @@
       "storybook": "fantasticon && storybook dev -p 6006",
       "build-storybook": "storybook build",
       "test-storybook": "test-storybook --watch",
-      "test-storybook-coverage": "test-storybook --coverage"
+      "test-storybook-coverage": "test-storybook --coverage",
+      "nodemon": "nodemon",
+      "aemsyncro": "aemsync -d 300 -w ../ui.apps/src/main/content",
+      "ui-sync": "concurrently \"npm run nodemon\" \"npm run aemsyncro\" --kill-others"
    },
    "dependencies": {
       "fantasticon": "^1.2.3",
@@ -29,25 +32,25 @@
       "@eslint/js": "^9.19.0",
       "@storybook/addon-a11y": "^8.5.3",
       "@storybook/addon-controls": "^8.5.3",
+      "@storybook/addon-coverage": "^1.0.5",
       "@storybook/addon-designs": "^8.1.0",
       "@storybook/addon-essentials": "^8.6.7",
       "@storybook/addon-highlight": "^8.5.3",
+      "@storybook/addon-interactions": "^8.5.6",
       "@storybook/addon-jest": "^8.5.3",
       "@storybook/addon-measure": "^8.5.3",
       "@storybook/addon-onboarding": "^8.6.7",
       "@storybook/addon-outline": "^8.5.3",
       "@storybook/addon-storysource": "^8.5.3",
       "@storybook/addon-viewport": "^8.5.3",
+      "@storybook/addon-webpack5-compiler-swc": "^2.1.0",
       "@storybook/blocks": "^8.6.7",
       "@storybook/experimental-addon-test": "^8.6.7",
+      "@storybook/preset-scss": "^1.0.3",
       "@storybook/react": "^8.6.7",
       "@storybook/react-vite": "^8.6.7",
-      "@storybook/test": "^8.6.7",
-      "@storybook/addon-coverage": "^1.0.5",
-      "@storybook/addon-interactions": "^8.5.6",
-      "@storybook/addon-webpack5-compiler-swc": "^2.1.0",
-      "@storybook/preset-scss": "^1.0.3",
       "@storybook/react-webpack5": "^8.5.6",
+      "@storybook/test": "^8.6.7",
       "@storybook/test-runner": "^0.21.3",
       "@types/react": "^18.3.4",
       "@types/react-dom": "^18.3.0",
@@ -58,11 +61,13 @@
       "aem-clientlib-generator": "^1.8.0",
       "aemsync": "^4.0.1",
       "classnames": "^2.5.1",
+      "concurrently": "^9.1.2",
       "eslint": "^9.19.0",
       "eslint-plugin-react-hooks": "^5.0.0",
       "eslint-plugin-react-refresh": "^0.4.18",
       "eslint-plugin-storybook": "^0.11.6",
       "globals": "^15.14.0",
+      "nodemon": "^3.1.9",
       "playwright": "^1.51.1",
       "sass": "^1.45.0",
       "storybook": "^8.6.7",
@@ -75,5 +80,12 @@
       "extends": [
          "plugin:storybook/recommended"
       ]
+   },
+   "nodemonConfig": {
+      "watch": [
+         "src"
+      ],
+      "ext": "ts,tsx,js,jsx,scss",
+      "exec": "npm run build"
    }
 }
