@@ -1,6 +1,13 @@
 @use 'sass:map';
+@use '../helpers.scss';
 
 //Font variable definition
+$base-font-family:
+   'Ubuntu', 'Play', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$base-font-size: helpers.rem(16px);
+$base-font-height: 1.5;
+$base-font-style: normal;
+
 $font: (
    'type': (
       'font-heading-1': (
