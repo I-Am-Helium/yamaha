@@ -26,25 +26,22 @@ export const sm_fill: Story = {
 
 export const md_fill: Story = {
    args: {
-      label: 'Recommended',
+      ...sm_fill.args,
       size: 'md',
-      variant: 'fill',
    },
 }
 
 export const lg_fill: Story = {
    args: {
-      label: 'Recommended',
+      ...sm_fill.args,
       size: 'lg',
-      variant: 'fill',
    },
 }
 
 export const xl_fill: Story = {
    args: {
-      label: 'Recommended',
+      ...sm_fill.args,
       size: 'xl',
-      variant: 'fill',
    },
 }
 
@@ -58,23 +55,35 @@ export const sm_outline: Story = {
 
 export const md_outline: Story = {
    args: {
-      label: 'Recommended',
+      ...sm_outline.args,
       size: 'md',
-      variant: 'outline',
    },
 }
 
 export const lg_outline: Story = {
    args: {
-      label: 'Recommended',
+      ...sm_outline.args,
       size: 'lg',
-      variant: 'outline',
    },
 }
 export const xl_outline: Story = {
    args: {
-      label: 'Recommended',
+      ...sm_outline.args,
       size: 'xl',
-      variant: 'outline',
+   },
+}
+
+export const xl_outline_icon: Story = {
+   args: {
+      ...sm_outline.args,
+      size: 'xl',
+      icon: 'icon-solid-academic-cap'
+   },
+}
+
+export const xl_outline_icon_right: Story = {
+   args: {
+      ...xl_outline_icon.args,
+      iconPosition:'right'
    },
 }

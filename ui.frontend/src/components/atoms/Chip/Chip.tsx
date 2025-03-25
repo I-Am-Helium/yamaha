@@ -17,10 +17,11 @@ const Chip: FC<ChipModel> = ({
    variant = 'fill',
 }) => {
    return (
-      <div className={`chip chip--${size} chip--${variant}`}>
-         {icon && iconPosition === 'left' && <i className={icon} />}
+      <div
+         className={`chip chip--${size} chip--${variant} ${icon ? `chip--${iconPosition}` : ''}`}
+      >
+         {icon && <i className={icon} />}
          <span>{label}</span>
-         {icon && iconPosition === 'right' && <i className={icon} />}
       </div>
    )
 }

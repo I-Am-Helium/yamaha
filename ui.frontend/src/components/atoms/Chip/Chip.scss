@@ -5,6 +5,8 @@
 .chip {
    border-radius: spacing.get-spacing('default', 'p-24');
    cursor: default;
+   display: flex;
+   
    &--sm {
       padding: spacing.get-spacing('compact', 'p-compact-2')
          spacing.get-spacing('compact', 'p-compact-8');
@@ -38,5 +40,13 @@
       border: colors.get-color('cool-grey-10', 500) solid 1px;
       color: colors.get-color('neutral', 'black');
       background-color: colors.get-color('neutral', 'white');
+   }
+
+   &--left{
+      flex-direction: row;
+   }
+
+   &--right{
+      flex-direction: row-reverse;
    }
 }
