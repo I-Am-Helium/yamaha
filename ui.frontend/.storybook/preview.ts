@@ -27,7 +27,7 @@ const preview: Preview = {
       },
       options: {
          storySort: {
-            order: ['Introduction', 'Components', 'Layouts'],
+            order: ['Design System', 'Components', 'Layouts'],
          },
       },
       viewport: {
