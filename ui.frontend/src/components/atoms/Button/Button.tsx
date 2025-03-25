@@ -3,8 +3,9 @@ import React from 'react'
 type ButtonProps = {
    label: string
    onClick?: () => void
-   variant?: 'primary' | 'secondary' | 'danger'
+   variant?: 'primary' | 'secondary' | 'link'
    disabled?: boolean
+   icon?: string
 }
 
 const Button: React.FC<ButtonProps> = ({
@@ -12,15 +13,19 @@ const Button: React.FC<ButtonProps> = ({
    onClick,
    variant = 'primary',
    disabled = false,
+   icon,
 }) => {
    return (
-      <button
-         className={`yamaha-btn ${variant}`}
-         onClick={onClick}
-         disabled={disabled}
-      >
-         {label}
-      </button>
+      <div className="yamaha-btn">
+         <button
+            className={`cmp-button ${variant}`}
+            onClick={onClick}
+            disabled={disabled}
+         >
+            <span className="cmp-button__text">{label}</span>
+            {icon && <i className={`${icon} cmp-button__icon`} />}
+         </button>
+      </div>
    )
 }
 
