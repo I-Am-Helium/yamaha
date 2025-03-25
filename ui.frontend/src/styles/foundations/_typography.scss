@@ -121,6 +121,10 @@ $font: (
    }
 }
 
+@mixin icon-size($size) {
+   font-size: helpers.rem($size);
+}
+
 // ============= Font Classes ==================== //
 
 h1,

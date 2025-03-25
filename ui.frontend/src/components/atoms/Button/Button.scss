@@ -1,37 +1,51 @@
 @use '../../../styles/base/tokens';
 @use '../../../styles/foundations/typography';
+@use '../../../styles/foundations/spacing';
+@use '../../../styles/foundations/colors';
+@use '../../../styles/helpers.scss';
 
 .button,
 .yamaha-btn {
    .cmp-button {
-      padding: 10px 32px;
-      font-size: 16px;
-      border: none;
+      padding: 10px spacing.get-spacing('p-32');
       cursor: pointer;
       transition: background-color 0.4s ease;
-      border-radius: 80px;
+      border-radius: helpers.rem(80px);
+      border: none;
+      outline: none;
 
       //Should replace with flex function
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: helpers.rem(10px);
 
       &__text {
          @include typography.font('text-lg', 'font-bold');
       }
 
       &__icon {
-         font-size: 20px;
+         @include typography.icon-size(24px);
       }
    }
 
    &.primary {
       .cmp-button {
-         background-color: #007bff;
-         color: white;
+         background-color: token.$surface-button-primary-default;
+
+         &__text {
+            color: colors.get-color('neutral', 'white');
+         }
 
          &:hover {
-            background-color: #0056b3;
+            background-color: token.$surface-button-primary-hover;
+         }
+
+         &:active {
+            background-color: token.$surface-button-primary-active;
+         }
+
+         &:disabled {
+            background-color: token.$surface-button-primary-disabled;
          }
       }
    }

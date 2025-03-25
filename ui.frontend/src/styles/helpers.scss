@@ -10,3 +10,27 @@
    $remSize: calc($size / 16px);
    @return $remSize * 1rem;
 }
+
+@mixin border($size, $color, $radius: 0, $postion: 'all') {
+   border-radius: $radius;
+
+   @if $postion == 'all' {
+      border: $size solid $color;
+   }
+
+   @if $postion == 'left' {
+      border-left: $size solid $color;
+   }
+
+   @if $postion == 'right' {
+      border-right: $size solid $color;
+   }
+
+   @if $postion == 'top' {
+      border-top: $size solid $color;
+   }
+
+   @if $postion == 'bottom' {
+      border-bottom: $size solid $color;
+   }
+}

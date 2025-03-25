@@ -1,9 +1,22 @@
 import React from 'react'
 
+enum ButtonVariant {
+   Primary = 'primary',
+   Secondary = 'secondary',
+   Link = 'link',
+}
+
+enum ButtonSize {
+   Large = 'large',
+   Medium = 'medium',
+   Small = 'small',
+}
+
 type ButtonProps = {
    label: string
    onClick?: () => void
-   variant?: 'primary' | 'secondary' | 'link'
+   variant?: ButtonVariant
+   size?: ButtonSize
    disabled?: boolean
    icon?: string
 }
@@ -11,14 +24,15 @@ type ButtonProps = {
 const Button: React.FC<ButtonProps> = ({
    label,
    onClick,
-   variant = 'primary',
+   variant = ButtonVariant.Primary,
+   size,
    disabled = false,
    icon,
 }) => {
    return (
       <div className="yamaha-btn">
          <button
-            className={`cmp-button ${variant}`}
+            className={`cmp-button ${variant} ${size}`}
             onClick={onClick}
             disabled={disabled}
          >
