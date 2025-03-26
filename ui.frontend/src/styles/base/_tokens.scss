@@ -12,6 +12,12 @@ $surface-button-secondary-hover: colors.get-color('red', 400);
 $surface-button-secondary-active: colors.get-color('red', 700);
 $surface-button-secondary-disabled: colors.get-color('cool-grey-4', 800);
 
+// Surface/Button/Link
+$surface-button-link-default: colors.get-color('red', 500);
+$surface-button-link-hover: colors.get-color('red', 400);
+$surface-button-link-active: colors.get-color('red', 700);
+$surface-button-link-disabled: colors.get-color('cool-grey-4', 800);
+
 // Border/Button/Outlined
 $border-button-outlined-default: colors.get-color('red', 500);
 $border-button-outlined-hover: colors.get-color('red', 400);

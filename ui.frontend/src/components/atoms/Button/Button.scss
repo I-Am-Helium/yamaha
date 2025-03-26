@@ -7,7 +7,8 @@
 .button,
 .yamaha-btn {
    .cmp-button {
-      padding: 10px spacing.get-spacing('p-32');
+      padding: spacing.get-spacing('compact', 'p-compact-10')
+         spacing.get-spacing('default', 'p-32');
       cursor: pointer;
       transition: background-color 0.4s ease;
       border-radius: helpers.rem(80px);
@@ -30,46 +31,114 @@
 
    &.primary {
       .cmp-button {
-         background-color: token.$surface-button-primary-default;
+         background-color: tokens.$surface-button-primary-default;
 
          &__text {
             color: colors.get-color('neutral', 'white');
          }
 
          &:hover {
-            background-color: token.$surface-button-primary-hover;
+            background-color: tokens.$surface-button-primary-hover;
          }
 
          &:active {
-            background-color: token.$surface-button-primary-active;
+            background-color: tokens.$surface-button-primary-active;
          }
 
          &:disabled {
-            background-color: token.$surface-button-primary-disabled;
+            background-color: tokens.$surface-button-primary-disabled;
+            cursor: not-allowed;
          }
       }
    }
 
    &.secondary {
-      background-color: #6c757d;
-      color: white;
+      .cmp-button {
+         color: tokens.$surface-button-secondary-default;
+         background-color: transparent;
+         @include helpers.border(
+            2px,
+            tokens.$surface-button-secondary-default,
+            80px
+         );
 
-      &:hover {
-         background-color: #5a6268;
+         &__text {
+            color: tokens.$surface-button-secondary-default;
+         }
+
+         &:hover {
+            border-color: tokens.$surface-button-secondary-hover;
+         }
+
+         &:active {
+            border-color: tokens.$surface-button-secondary-active;
+         }
+
+         &:disabled {
+            border-color: tokens.$surface-button-secondary-disabled;
+            cursor: not-allowed;
+         }
       }
    }
 
    &.link {
-      background-color: #dc3545;
-      color: white;
+      .cmp-button {
+         color: tokens.$surface-button-link-default;
+         background-color: transparent;
+         border: none;
 
-      &:hover {
-         background-color: #c82333;
+         &__text {
+            color: tokens.$surface-button-link-default;
+            text-decoration: underline;
+         }
+
+         &:hover {
+            .cmp-button__text {
+               color: tokens.$surface-button-link-hover;
+            }
+         }
+
+         &:active {
+            .cmp-button__text {
+               color: tokens.$surface-button-link-active;
+            }
+         }
+
+         &:disabled {
+            .cmp-button__text {
+               color: tokens.$surface-button-link-disabled;
+            }
+            cursor: not-allowed;
+         }
       }
    }
 
    &:disabled {
       background-color: #d6d6d6;
       cursor: not-allowed;
+   }
+
+   &.btn-small {
+      .cmp-button {
+         &__text {
+            @include typography.font('text-sm', 'font-bold');
+         }
+      }
+   }
+
+   &.btn-medium {
+      .cmp-button {
+         &__text {
+            @include typography.font('text-base', 'font-bold');
+         }
+      }
+   }
+
+   &.btn-large {
+      .cmp-button {
+         &__text {
+            @include typography.font('text-lg', 'font-bold');
+         }
+      }
    }
 }

@@ -1,15 +1,15 @@
 import React from 'react'
 
-enum ButtonVariant {
+export enum ButtonVariant {
    Primary = 'primary',
    Secondary = 'secondary',
    Link = 'link',
 }
 
-enum ButtonSize {
-   Large = 'large',
-   Medium = 'medium',
-   Small = 'small',
+export enum ButtonSize {
+   Large = 'btn-large',
+   Medium = 'btn-medium',
+   Small = 'btn-small',
 }
 
 type ButtonProps = {
@@ -25,17 +25,13 @@ const Button: React.FC<ButtonProps> = ({
    label,
    onClick,
    variant = ButtonVariant.Primary,
-   size,
+   size = ButtonSize.Large,
    disabled = false,
    icon,
 }) => {
    return (
-      <div className="yamaha-btn">
-         <button
-            className={`cmp-button ${variant} ${size}`}
-            onClick={onClick}
-            disabled={disabled}
-         >
+      <div className={`yamaha-btn ${variant} ${size}`}>
+         <button className="cmp-button" onClick={onClick} disabled={disabled}>
             <span className="cmp-button__text">{label}</span>
             {icon && <i className={`${icon} cmp-button__icon`} />}
          </button>
