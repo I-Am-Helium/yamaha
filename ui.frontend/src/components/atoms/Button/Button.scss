@@ -113,11 +113,6 @@
       }
    }
 
-   &:disabled {
-      background-color: #d6d6d6;
-      cursor: not-allowed;
-   }
-
    &.btn-small {
       .cmp-button {
          &__text {
