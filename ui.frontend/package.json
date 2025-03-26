@@ -15,7 +15,8 @@
       "test-storybook-coverage": "test-storybook --coverage",
       "nodemon": "nodemon",
       "aemsyncro": "aemsync -d 300 -w ../ui.apps/src/main/content",
-      "ui-sync": "concurrently \"npm run nodemon\" \"npm run aemsyncro\" --kill-others"
+      "ui-sync": "concurrently \"npm run nodemon\" \"npm run aemsyncro\" --kill-others",
+      "build-tokens": "style-dictionary build --config src/config/style-dictionary.json"
    },
    "dependencies": {
       "fantasticon": "^1.2.3",
@@ -71,6 +72,7 @@
       "playwright": "^1.51.1",
       "sass": "^1.45.0",
       "storybook": "^8.6.7",
+      "style-dictionary": "^4.3.3",
       "typescript": "~5.7.2",
       "typescript-eslint": "^8.22.0",
       "vite": "^6.1.0",
