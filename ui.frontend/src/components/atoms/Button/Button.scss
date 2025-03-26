@@ -1,4 +1,4 @@
-@use '../../../styles/base/tokens';
+@use '../../../styles/tokens/colors' as colorTokens;
 @use '../../../styles/foundations/typography';
 @use '../../../styles/foundations/spacing';
 @use '../../../styles/foundations/colors';
@@ -31,22 +31,22 @@
 
    &.primary {
       .cmp-button {
-         background-color: tokens.$surface-button-primary-default;
+         background-color: colorTokens.$surface-button-primary-default;
 
          &__text {
             color: colors.get-color('neutral', 'white');
          }
 
          &:hover {
-            background-color: tokens.$surface-button-primary-hover;
+            background-color: colorTokens.$surface-button-primary-hover;
          }
 
          &:active {
-            background-color: tokens.$surface-button-primary-active;
+            background-color: colorTokens.$surface-button-primary-active;
          }
 
          &:disabled {
-            background-color: tokens.$surface-button-primary-disabled;
+            background-color: colorTokens.$surface-button-primary-disabled;
             cursor: not-allowed;
          }
       }
@@ -54,28 +54,28 @@
 
    &.secondary {
       .cmp-button {
-         color: tokens.$surface-button-secondary-default;
+         color: colorTokens.$surface-button-secondary-default;
          background-color: transparent;
          @include helpers.border(
             2px,
-            tokens.$surface-button-secondary-default,
+            colorTokens.$surface-button-secondary-default,
             80px
          );
 
          &__text {
-            color: tokens.$surface-button-secondary-default;
+            color: colorTokens.$surface-button-secondary-default;
          }
 
          &:hover {
-            border-color: tokens.$surface-button-secondary-hover;
+            border-color: colorTokens.$surface-button-secondary-hover;
          }
 
          &:active {
-            border-color: tokens.$surface-button-secondary-active;
+            border-color: colorTokens.$surface-button-secondary-active;
          }
 
          &:disabled {
-            border-color: tokens.$surface-button-secondary-disabled;
+            border-color: colorTokens.$surface-button-secondary-disabled;
             cursor: not-allowed;
          }
       }
@@ -83,30 +83,30 @@
 
    &.link {
       .cmp-button {
-         color: tokens.$surface-button-link-default;
+         color: colorTokens.$border-button-outlined-default;
          background-color: transparent;
          border: none;
 
          &__text {
-            color: tokens.$surface-button-link-default;
+            color: colorTokens.$border-button-outlined-default;
             text-decoration: underline;
          }
 
          &:hover {
             .cmp-button__text {
-               color: tokens.$surface-button-link-hover;
+               color: colorTokens.$border-button-outlined-hover;
             }
          }
 
          &:active {
             .cmp-button__text {
-               color: tokens.$surface-button-link-active;
+               color: colorTokens.$border-button-outlined-active;
             }
          }
 
          &:disabled {
             .cmp-button__text {
-               color: tokens.$surface-button-link-disabled;
+               color: colorTokens.$border-button-outlined-disabled;
             }
             cursor: not-allowed;
          }
