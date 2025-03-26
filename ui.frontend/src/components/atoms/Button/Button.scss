@@ -77,6 +77,12 @@
          &:disabled {
             border-color: colorTokens.$surface-button-secondary-disabled;
             cursor: not-allowed;
+
+            .cmp-button {
+               &__text {
+                  color: colorTokens.$surface-button-secondary-disabled;
+               }
+            }
          }
       }
    }
