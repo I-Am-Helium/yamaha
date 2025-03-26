@@ -1,0 +1,26 @@
+@use '../foundations/typography';
+@use '../foundations/colors';
+
+html,
+body {
+   margin: 0;
+   font-size: typography.$base-font-size;
+   font-family: typography.$base-font-family;
+   line-height: typography.$base-font-height;
+   color: colors.get-color('neutral','black');
+   background: colors.get-color('neutral','white');
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+   scroll-behavior: smooth;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+   font: inherit;
+}
+#root {
+   display: none !important;
+}

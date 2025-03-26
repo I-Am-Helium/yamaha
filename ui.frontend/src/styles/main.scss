@@ -1,0 +1,18 @@
+//base
+@use './base/base';
+
+// foundations
+@use './foundations/typography';
+@use './foundations/breakpoints';
+@use './foundations/colors';
+@use './foundations/fonts';
+@use './foundations/spacing';
+
+// vendor
+@use './vendor/swiper.scss';
+
+// components
+@use '../components/importStyles.scss';
+
+// icons
+// @use '../assets//generated-icons/icons.scss';

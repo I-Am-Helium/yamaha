@@ -1,8 +1,8 @@
 {
-   "inputDir": "src/assets/font-icons",
-   "outputDir": "../ui.apps/src/main/content/jcr_root/apps/vite/clientlibs/clientlib-site-icons/resources",
+   "inputDir": "src/assets/icons",
+   "outputDir": "src/assets/generated-icons",
    "fontTypes": ["woff", "woff2", "eot"],
-   "assetTypes": ["scss", "json", "ts", "css"],
+   "assetTypes": ["scss", "css", "html", "json"],
    "fontsUrl": "",
    "normalize": true,
    "formatOptions": {
