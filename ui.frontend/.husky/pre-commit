@@ -1,0 +1,2 @@
+cd ui.frontend
+npm run lint
