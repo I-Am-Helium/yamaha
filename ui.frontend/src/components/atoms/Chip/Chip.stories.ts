@@ -16,7 +16,7 @@ const meta = {
 export default meta
 type Story = StoryObj<typeof meta>
 
-export const sm_fill: Story = {
+export const smFill: Story = {
    args: {
       label: 'Recommended',
       size: 'sm',
@@ -24,28 +24,28 @@ export const sm_fill: Story = {
    },
 }
 
-export const md_fill: Story = {
+export const mdFill: Story = {
    args: {
-      ...sm_fill.args,
+      ...smFill.args,
       size: 'md',
    },
 }
 
-export const lg_fill: Story = {
+export const lgFill: Story = {
    args: {
-      ...sm_fill.args,
+      ...smFill.args,
       size: 'lg',
    },
 }
 
-export const xl_fill: Story = {
+export const xlFill: Story = {
    args: {
-      ...sm_fill.args,
+      ...smFill.args,
       size: 'xl',
    },
 }
 
-export const sm_outline: Story = {
+export const smOutline: Story = {
    args: {
       label: 'Recommended',
       size: 'sm',
@@ -53,37 +53,37 @@ export const sm_outline: Story = {
    },
 }
 
-export const md_outline: Story = {
+export const mdOutline: Story = {
    args: {
-      ...sm_outline.args,
+      ...smOutline.args,
       size: 'md',
    },
 }
 
-export const lg_outline: Story = {
+export const lgOutline: Story = {
    args: {
-      ...sm_outline.args,
+      ...smOutline.args,
       size: 'lg',
    },
 }
-export const xl_outline: Story = {
+export const xlOutline: Story = {
    args: {
-      ...sm_outline.args,
+      ...smOutline.args,
       size: 'xl',
    },
 }
 
-export const xl_outline_icon: Story = {
+export const xlOutlineIcon: Story = {
    args: {
-      ...sm_outline.args,
+      ...smOutline.args,
       size: 'xl',
-      icon: 'icon-solid-academic-cap'
+      icon: 'icon-solid-academic-cap',
    },
 }
 
-export const xl_outline_icon_right: Story = {
+export const xlOutlineIconRight: Story = {
    args: {
-      ...xl_outline_icon.args,
-      iconPosition:'right'
+      ...xlOutlineIcon.args,
+      iconPosition: 'right',
    },
 }
