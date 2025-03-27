@@ -40,11 +40,11 @@ jobs:
         uses: peter-evans/create-pull-request@v7
         with:
           base: feat/tokens
-          branch: development
+          branch: feat/style-dictionary
           token: ${{ secrets.GITHUB_TOKEN }}
           committer: ${{ env.GIT_COMMIT_AUTHOR_NAME }} <${{ env.GIT_COMMIT_AUTHOR_EMAIL }}>
           commit-message: "chore: update design tokens"
-          title: "chore: update design tokens"
+          title: "update design tokens"
           body: "Automated PR to update design tokens"
           delete-branch: false
           draft: true
