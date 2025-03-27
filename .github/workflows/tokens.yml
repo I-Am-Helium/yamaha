@@ -30,6 +30,6 @@ jobs:
           title: "chore: update design tokens"
           body: "Automated PR to update design tokens"
           branch: feat/tokens
-          base: development
+          base: feat/style-dictionary
           delete-branch: false
           draft: false
