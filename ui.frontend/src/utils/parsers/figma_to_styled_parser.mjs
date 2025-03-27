@@ -3,6 +3,7 @@ import fs from 'fs'
 // at this point this file is not that flexible as more studies over the figma json structure is needed
 // also how to create all the tokens in figma using https://docs.tokens.studio/
 // It just removes the Primary level and creates a new json file with the rest of the tokens
+// change the branch to development to see the changes
 
 function removePrimaryLevel() {
    const filePath = './src/styles/tokens/source/tokens.json'
