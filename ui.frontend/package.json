@@ -53,6 +53,7 @@
       "@storybook/react-webpack5": "^8.5.6",
       "@storybook/test": "^8.6.7",
       "@storybook/test-runner": "^0.21.3",
+      "@tokens-studio/sd-transforms": "^1.2.12",
       "@types/react": "^18.3.4",
       "@types/react-dom": "^18.3.0",
       "@vitejs/plugin-react": "^4.3.4",

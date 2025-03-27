@@ -1,13 +1,17 @@
 {
-   "source": ["src/styles/tokens/source/*.json"],
+   "source": ["src/styles/tokens/source/tokens_parsed.json"],
    "platforms": {
       "scss": {
          "transformGroup": "scss",
          "prefix": "yh",
-         "buildPath": "src/styles/base/",
+         "buildPath": "src/styles/tokens/output/",
          "files": [
             {
-               "destination": "_colors.scss",
+               "destination": "tokens.scss",
+               "format": "scss/variables"
+            },
+            {
+               "destination": "tokens_map.scss",
                "format": "scss/map-deep"
             }
          ],

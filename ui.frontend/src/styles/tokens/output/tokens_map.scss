@@ -1,0 +1,432 @@
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+$yh-core-color-red-50: #f5dbd9 !default;
+$yh-core-color-red-100: #ebb9b3 !default;
+$yh-core-color-red-200: #e2958d !default;
+$yh-core-color-red-300: #da7368 !default;
+$yh-core-color-red-400: #d35445 !default;
+$yh-core-color-red-500: #d52b1e !default;
+$yh-core-color-red-600: #d52b1e !default;
+$yh-core-color-red-700: #621d15 !default;
+$yh-core-color-red-800: #41120d !default;
+$yh-core-color-red-900: #210906 !default;
+$yh-core-color-neutral-white: #ffffff !default;
+$yh-core-color-neutral-black: #1e1e1e !default;
+$yh-core-color-cool-grey-4-50: #f4f4f4 !default;
+$yh-core-color-cool-grey-4-100: #e9e9e9 !default;
+$yh-core-color-cool-grey-4-200: #dedede !default;
+$yh-core-color-cool-grey-4-300: #d2d3d2 !default;
+$yh-core-color-cool-grey-4-400: #c7c8c7 !default;
+$yh-core-color-cool-grey-4-500: #bcbdbc !default;
+$yh-core-color-cool-grey-4-600: #8d8e8d !default;
+$yh-core-color-cool-grey-4-700: #767775 !default;
+$yh-core-color-cool-grey-4-800: #5e5f5e !default;
+$yh-core-color-cool-grey-4-900: #464746 !default;
+$yh-core-color-cool-grey-10-50: #e4e5e6 !default;
+$yh-core-color-cool-grey-10-100: #cacbcc !default;
+$yh-core-color-cool-grey-10-200: #b0b1b3 !default;
+$yh-core-color-cool-grey-10-300: #969799 !default;
+$yh-core-color-cool-grey-10-400: #7b7d80 !default;
+$yh-core-color-cool-grey-10-500: #616365 !default;
+$yh-core-color-cool-grey-10-600: #494a4c !default;
+$yh-core-color-cool-grey-10-700: #3d3e3f !default;
+$yh-core-color-cool-grey-10-800: #313132 !default;
+$yh-core-color-cool-grey-10-900: #242526 !default;
+$yh-core-color-status-green: #006b4d !default;
+$yh-core-color-status-red: #da1307 !default;
+$yh-core-color-status-orange: #e15d00 !default;
+$yh-core-color-status-blue: #18488f !default;
+$yh-borders-stroke-default-border-0: 0 !default;
+$yh-borders-stroke-default-border-2: 0.0078125rem !default;
+$yh-borders-stroke-default-border-4: 0.015625rem !default;
+$yh-borders-stroke-default-border-8: 0.03125rem !default;
+$yh-borders-stroke-default-border-16: 0.0625rem !default;
+$yh-borders-stroke-default-border-24: 0.09375rem !default;
+$yh-borders-stroke-default-border-32: 0.125rem !default;
+$yh-borders-stroke-default-border-40: 0.15625rem !default;
+$yh-borders-stroke-default-border-48: 0.1875rem !default;
+$yh-borders-stroke-default-border-56: 0.21875rem !default;
+$yh-borders-stroke-default-border-64: 0.25rem !default;
+$yh-borders-stroke-default-border-72: 0.28125rem !default;
+$yh-borders-stroke-default-border-80: 0.3125rem !default;
+$yh-borders-stroke-compact-border-compact-0: 0 !default;
+$yh-borders-stroke-compact-border-compact-2: 0.0078125rem !default;
+$yh-borders-stroke-compact-border-compact-4: 0.015625rem !default;
+$yh-borders-stroke-compact-border-compact-8: 0.03125rem !default;
+$yh-borders-stroke-compact-border-compact-12: 0.046875rem !default;
+$yh-borders-stroke-compact-border-compact-16: 0.0625rem !default;
+$yh-borders-stroke-compact-border-compact-20: 0.078125rem !default;
+$yh-borders-stroke-compact-border-compact-24: 0.09375rem !default;
+$yh-borders-stroke-compact-border-compact-28: 0.109375rem !default;
+$yh-borders-stroke-compact-border-compact-32: 0.125rem !default;
+$yh-borders-stroke-compact-border-compact-36: 0.140625rem !default;
+$yh-borders-stroke-compact-border-compact-40: 0.15625rem !default;
+$yh-borders-stroke-compact-border-compact-48: 0.1875rem !default;
+$yh-borders-radius-default-radius-0: 0 !default;
+$yh-borders-radius-default-border-2: 0.0078125rem !default;
+$yh-borders-radius-default-border-4: 0.015625rem !default;
+$yh-borders-radius-default-border-8: 0.03125rem !default;
+$yh-borders-radius-default-border-16: 0.0625rem !default;
+$yh-borders-radius-default-border-24: 0.09375rem !default;
+$yh-borders-radius-default-border-32: 0.125rem !default;
+$yh-borders-radius-default-border-40: 0.15625rem !default;
+$yh-borders-radius-default-border-48: 0.1875rem !default;
+$yh-borders-radius-default-border-56: 0.21875rem !default;
+$yh-borders-radius-default-border-64: 0.25rem !default;
+$yh-borders-radius-default-border-72: 0.28125rem !default;
+$yh-borders-radius-default-border-80: 0.3125rem !default;
+$yh-borders-radius-compact-border-compact-0: 0 !default;
+$yh-borders-radius-compact-border-compact-2: 0.0078125rem !default;
+$yh-borders-radius-compact-border-compact-4: 0.015625rem !default;
+$yh-borders-radius-compact-border-compact-8: 0.03125rem !default;
+$yh-borders-radius-compact-border-compact-12: 0.046875rem !default;
+$yh-borders-radius-compact-border-compact-16: 0.0625rem !default;
+$yh-borders-radius-compact-border-compact-20: 0.078125rem !default;
+$yh-borders-radius-compact-border-compact-24: 0.09375rem !default;
+$yh-borders-radius-compact-border-compact-28: 0.109375rem !default;
+$yh-borders-radius-compact-border-compact-32: 0.125rem !default;
+$yh-borders-radius-compact-border-compact-36: 0.140625rem !default;
+$yh-borders-radius-compact-border-compact-40: 0.15625rem !default;
+$yh-borders-radius-compact-border-compact-48: 0.1875rem !default;
+$yh-spacing-default-p-0: 0 !default;
+$yh-spacing-default-p-80: 0.3125rem !default;
+$yh-spacing-default-p-32: 0.125rem !default;
+$yh-spacing-default-p-56: 0.21875rem !default;
+$yh-spacing-default-p-48: 0.1875rem !default;
+$yh-spacing-default-p-40: 0.15625rem !default;
+$yh-spacing-default-p-24: 0.09375rem !default;
+$yh-spacing-default-p-8: 0.03125rem !default;
+$yh-spacing-default-p-16: 0.0625rem !default;
+$yh-spacing-default-p-4: 0.015625rem !default;
+$yh-spacing-default-p-72: 0.28125rem !default;
+$yh-spacing-default-p-64: 0.25rem !default;
+$yh-spacing-default-p-2: 0.0078125rem !default;
+$yh-spacing-compact-p-compact-0: 0 !default;
+$yh-spacing-compact-p-compact-2: 0.0078125rem !default;
+$yh-spacing-compact-p-compact-36: 0.140625rem !default;
+$yh-spacing-compact-p-compact-40: 0.15625rem !default;
+$yh-spacing-compact-p-compact-48: 0.1875rem !default;
+$yh-spacing-compact-p-compact-24: 0.09375rem !default;
+$yh-spacing-compact-p-compact-28: 0.109375rem !default;
+$yh-spacing-compact-p-compact-32: 0.125rem !default;
+$yh-spacing-compact-p-compact-4: 0.015625rem !default;
+$yh-spacing-compact-p-compact-8: 0.03125rem !default;
+$yh-spacing-compact-p-compact-12: 0.046875rem !default;
+$yh-spacing-compact-p-compact-16: 0.0625rem !default;
+$yh-spacing-compact-p-compact-20: 0.078125rem !default;
+$yh-fontsize-heading-font-heading-1: 0.25rem !default;
+$yh-fontsize-heading-font-heading-2: 0.21875rem !default;
+$yh-fontsize-heading-font-heading-3: 0.1875rem !default;
+$yh-fontsize-heading-font-heading-4: 0.15625rem !default;
+$yh-fontsize-heading-font-heading-5: 0.125rem !default;
+$yh-fontsize-heading-font-heading-6: 0.09375rem !default;
+$yh-fontsize-body-font-body-lg: 0.0703125rem !default;
+$yh-fontsize-body-font-body-md: 0.0625rem !default;
+$yh-fontsize-body-font-body-sm: 0.0546875rem !default;
+$yh-fontsize-body-font-body-xs: 0.046875rem !default;
+$yh-fontsize-body-font-body-xxs: 0.0390625rem !default;
+$yh-surface-button-primary-default: $yh-core-color-red-500 !default;
+$yh-surface-button-primary-hover: $yh-core-color-red-400 !default;
+$yh-surface-button-primary-active: $yh-core-color-red-700 !default;
+$yh-surface-button-primary-disabled: $yh-core-color-cool-grey-10-50 !default;
+$yh-surface-button-secondary-default: $yh-core-color-red-500 !default;
+$yh-surface-button-secondary-hover: $yh-core-color-red-400 !default;
+$yh-surface-button-secondary-active: $yh-core-color-red-700 !default;
+$yh-surface-button-secondary-disabled: $yh-core-color-cool-grey-4-800 !default;
+$yh-text-button-primary-default: $yh-core-color-neutral-white !default;
+$yh-text-button-primary-disabled: $yh-core-color-cool-grey-10-300 !default;
+$yh-text-button-primary-hover-active: $yh-core-color-neutral-white !default;
+$yh-text-button-secondary-default: $yh-core-color-neutral-black !default;
+$yh-text-button-secondary-disabled: $yh-core-color-cool-grey-10-300 !default;
+$yh-text-button-secondary-hover: $yh-core-color-red-500 !default;
+$yh-text-button-secondary-clicked: $yh-core-color-red-600 !default;
+$yh-text-button-link-default: $yh-core-color-red-500 !default;
+$yh-text-button-link-hover: $yh-core-color-red-400 !default;
+$yh-text-button-link-clicked: $yh-core-color-red-700 !default;
+$yh-text-button-link-disabled: $yh-core-color-cool-grey-10-300 !default;
+$yh-text-heading-primary: $yh-core-color-neutral-black !default;
+$yh-text-heading-secondary: $yh-core-color-neutral-black !default;
+$yh-text-body-primary: $yh-core-color-neutral-black !default;
+$yh-text-body-secondary: $yh-core-color-neutral-black !default;
+$yh-text-legal-primary: $yh-core-color-neutral-black !default;
+$yh-text-status-success: $yh-core-color-status-green !default;
+$yh-text-status-warning: $yh-core-color-status-orange !default;
+$yh-text-status-error: $yh-core-color-status-red !default;
+$yh-text-status-info: $yh-core-color-status-blue !default;
+$yh-border-form-assets-inputs-text-areas: $yh-core-color-cool-grey-10-300 !default;
+$yh-border-form-assets-error: $yh-core-color-status-red !default;
+$yh-border-button-outlined-default: $yh-core-color-red-500 !default;
+$yh-border-button-outlined-hover: $yh-core-color-red-400 !default;
+$yh-border-button-outlined-active: $yh-core-color-red-700 !default;
+$yh-border-button-outlined-disabled: $yh-core-color-cool-grey-10-300 !default;
+$yh-border-status-info: $yh-core-color-status-blue !default;
+$yh-border-status-success: $yh-core-color-status-green !default;
+$yh-border-status-warning: $yh-core-color-status-orange !default;
+$yh-border-status-error: $yh-core-color-status-red !default;
+$yh-border-status-offer: $yh-core-color-red-500 !default;
+$yh-content-button-icon-primary-default-hover-active: $yh-core-color-neutral-white !default;
+$yh-content-button-icon-primary-disabled: $yh-core-color-cool-grey-10-300 !default;
+$yh-content-button-icon-secondary-default-hover-active: $yh-core-color-red-500 !default;
+$yh-content-button-icon-secondary-disabled: $yh-core-color-cool-grey-10-300 !default;
+
+$tokens: (
+   'core': (
+      'color': (
+         'red': (
+            '50': $yh-core-color-red-50,
+            '100': $yh-core-color-red-100,
+            '200': $yh-core-color-red-200,
+            '300': $yh-core-color-red-300,
+            '400': $yh-core-color-red-400,
+            '500': $yh-core-color-red-500,
+            '600': $yh-core-color-red-600,
+            '700': $yh-core-color-red-700,
+            '800': $yh-core-color-red-800,
+            '900': $yh-core-color-red-900,
+         ),
+         'neutral': (
+            'white': $yh-core-color-neutral-white,
+            'black': $yh-core-color-neutral-black,
+         ),
+         'cool-grey-4': (
+            '50': $yh-core-color-cool-grey-4-50,
+            '100': $yh-core-color-cool-grey-4-100,
+            '200': $yh-core-color-cool-grey-4-200,
+            '300': $yh-core-color-cool-grey-4-300,
+            '400': $yh-core-color-cool-grey-4-400,
+            '500': $yh-core-color-cool-grey-4-500,
+            '600': $yh-core-color-cool-grey-4-600,
+            '700': $yh-core-color-cool-grey-4-700,
+            '800': $yh-core-color-cool-grey-4-800,
+            '900': $yh-core-color-cool-grey-4-900,
+         ),
+         'cool-grey-10': (
+            '50': $yh-core-color-cool-grey-10-50,
+            '100': $yh-core-color-cool-grey-10-100,
+            '200': $yh-core-color-cool-grey-10-200,
+            '300': $yh-core-color-cool-grey-10-300,
+            '400': $yh-core-color-cool-grey-10-400,
+            '500': $yh-core-color-cool-grey-10-500,
+            '600': $yh-core-color-cool-grey-10-600,
+            '700': $yh-core-color-cool-grey-10-700,
+            '800': $yh-core-color-cool-grey-10-800,
+            '900': $yh-core-color-cool-grey-10-900,
+         ),
+         'status': (
+            'green': $yh-core-color-status-green,
+            'red': $yh-core-color-status-red,
+            'orange': $yh-core-color-status-orange,
+            'blue': $yh-core-color-status-blue,
+         ),
+      ),
+   ),
+   'borders': (
+      'stroke': (
+         'default': (
+            'border-0': $yh-borders-stroke-default-border-0,
+            'border-2': $yh-borders-stroke-default-border-2,
+            'border-4': $yh-borders-stroke-default-border-4,
+            'border-8': $yh-borders-stroke-default-border-8,
+            'border-16': $yh-borders-stroke-default-border-16,
+            'border-24': $yh-borders-stroke-default-border-24,
+            'border-32': $yh-borders-stroke-default-border-32,
+            'border-40': $yh-borders-stroke-default-border-40,
+            'border-48': $yh-borders-stroke-default-border-48,
+            'border-56': $yh-borders-stroke-default-border-56,
+            'border-64': $yh-borders-stroke-default-border-64,
+            'border-72': $yh-borders-stroke-default-border-72,
+            'border-80': $yh-borders-stroke-default-border-80,
+         ),
+         'compact': (
+            'border-compact-0': $yh-borders-stroke-compact-border-compact-0,
+            'border-compact-2': $yh-borders-stroke-compact-border-compact-2,
+            'border-compact-4': $yh-borders-stroke-compact-border-compact-4,
+            'border-compact-8': $yh-borders-stroke-compact-border-compact-8,
+            'border-compact-12': $yh-borders-stroke-compact-border-compact-12,
+            'border-compact-16': $yh-borders-stroke-compact-border-compact-16,
+            'border-compact-20': $yh-borders-stroke-compact-border-compact-20,
+            'border-compact-24': $yh-borders-stroke-compact-border-compact-24,
+            'border-compact-28': $yh-borders-stroke-compact-border-compact-28,
+            'border-compact-32': $yh-borders-stroke-compact-border-compact-32,
+            'border-compact-36': $yh-borders-stroke-compact-border-compact-36,
+            'border-compact-40': $yh-borders-stroke-compact-border-compact-40,
+            'border-compact-48': $yh-borders-stroke-compact-border-compact-48,
+         ),
+      ),
+      'radius': (
+         'default': (
+            'radius-0': $yh-borders-radius-default-radius-0,
+            'border-2': $yh-borders-radius-default-border-2,
+            'border-4': $yh-borders-radius-default-border-4,
+            'border-8': $yh-borders-radius-default-border-8,
+            'border-16': $yh-borders-radius-default-border-16,
+            'border-24': $yh-borders-radius-default-border-24,
+            'border-32': $yh-borders-radius-default-border-32,
+            'border-40': $yh-borders-radius-default-border-40,
+            'border-48': $yh-borders-radius-default-border-48,
+            'border-56': $yh-borders-radius-default-border-56,
+            'border-64': $yh-borders-radius-default-border-64,
+            'border-72': $yh-borders-radius-default-border-72,
+            'border-80': $yh-borders-radius-default-border-80,
+         ),
+         'compact': (
+            'border-compact-0': $yh-borders-radius-compact-border-compact-0,
+            'border-compact-2': $yh-borders-radius-compact-border-compact-2,
+            'border-compact-4': $yh-borders-radius-compact-border-compact-4,
+            'border-compact-8': $yh-borders-radius-compact-border-compact-8,
+            'border-compact-12': $yh-borders-radius-compact-border-compact-12,
+            'border-compact-16': $yh-borders-radius-compact-border-compact-16,
+            'border-compact-20': $yh-borders-radius-compact-border-compact-20,
+            'border-compact-24': $yh-borders-radius-compact-border-compact-24,
+            'border-compact-28': $yh-borders-radius-compact-border-compact-28,
+            'border-compact-32': $yh-borders-radius-compact-border-compact-32,
+            'border-compact-36': $yh-borders-radius-compact-border-compact-36,
+            'border-compact-40': $yh-borders-radius-compact-border-compact-40,
+            'border-compact-48': $yh-borders-radius-compact-border-compact-48,
+         ),
+      ),
+   ),
+   'spacing': (
+      'default': (
+         'p-0': $yh-spacing-default-p-0,
+         'p-80': $yh-spacing-default-p-80,
+         'p-32': $yh-spacing-default-p-32,
+         'p-56': $yh-spacing-default-p-56,
+         'p-48': $yh-spacing-default-p-48,
+         'p-40': $yh-spacing-default-p-40,
+         'p-24': $yh-spacing-default-p-24,
+         'p-8': $yh-spacing-default-p-8,
+         'p-16': $yh-spacing-default-p-16,
+         'p-4': $yh-spacing-default-p-4,
+         'p-72': $yh-spacing-default-p-72,
+         'p-64': $yh-spacing-default-p-64,
+         'p-2': $yh-spacing-default-p-2,
+      ),
+      'compact': (
+         'p-compact-0': $yh-spacing-compact-p-compact-0,
+         'p-compact-2': $yh-spacing-compact-p-compact-2,
+         'p-compact-36': $yh-spacing-compact-p-compact-36,
+         'p-compact-40': $yh-spacing-compact-p-compact-40,
+         'p-compact-48': $yh-spacing-compact-p-compact-48,
+         'p-compact-24': $yh-spacing-compact-p-compact-24,
+         'p-compact-28': $yh-spacing-compact-p-compact-28,
+         'p-compact-32': $yh-spacing-compact-p-compact-32,
+         'p-compact-4': $yh-spacing-compact-p-compact-4,
+         'p-compact-8': $yh-spacing-compact-p-compact-8,
+         'p-compact-12': $yh-spacing-compact-p-compact-12,
+         'p-compact-16': $yh-spacing-compact-p-compact-16,
+         'p-compact-20': $yh-spacing-compact-p-compact-20,
+      ),
+   ),
+   'fontsize': (
+      'heading': (
+         'font-heading-1': $yh-fontsize-heading-font-heading-1,
+         'font-heading-2': $yh-fontsize-heading-font-heading-2,
+         'font-heading-3': $yh-fontsize-heading-font-heading-3,
+         'font-heading-4': $yh-fontsize-heading-font-heading-4,
+         'font-heading-5': $yh-fontsize-heading-font-heading-5,
+         'font-heading-6': $yh-fontsize-heading-font-heading-6,
+      ),
+      'body': (
+         'font-body-lg': $yh-fontsize-body-font-body-lg,
+         'font-body-md': $yh-fontsize-body-font-body-md,
+         'font-body-sm': $yh-fontsize-body-font-body-sm,
+         'font-body-xs': $yh-fontsize-body-font-body-xs,
+         'font-body-xxs': $yh-fontsize-body-font-body-xxs,
+      ),
+   ),
+   'surface': (
+      'button': (
+         'primary': (
+            'default': $yh-surface-button-primary-default,
+            'hover': $yh-surface-button-primary-hover,
+            'active': $yh-surface-button-primary-active,
+            'disabled': $yh-surface-button-primary-disabled,
+         ),
+         'secondary': (
+            'default': $yh-surface-button-secondary-default,
+            'hover': $yh-surface-button-secondary-hover,
+            'active': $yh-surface-button-secondary-active,
+            'disabled': $yh-surface-button-secondary-disabled,
+         ),
+      ),
+   ),
+   'text': (
+      'button': (
+         'primary': (
+            'default': $yh-text-button-primary-default,
+            'disabled': $yh-text-button-primary-disabled,
+            'hover-active': $yh-text-button-primary-hover-active,
+         ),
+         'secondary': (
+            'default': $yh-text-button-secondary-default,
+            'disabled': $yh-text-button-secondary-disabled,
+            'hover': $yh-text-button-secondary-hover,
+            'clicked': $yh-text-button-secondary-clicked,
+         ),
+         'link': (
+            'default': $yh-text-button-link-default,
+            'hover': $yh-text-button-link-hover,
+            'clicked': $yh-text-button-link-clicked,
+            'disabled': $yh-text-button-link-disabled,
+         ),
+      ),
+      'heading': (
+         'primary': $yh-text-heading-primary,
+         'secondary': $yh-text-heading-secondary,
+      ),
+      'body': (
+         'primary': $yh-text-body-primary,
+         'secondary': $yh-text-body-secondary,
+      ),
+      'legal': (
+         'primary': $yh-text-legal-primary,
+      ),
+      'status': (
+         'success': $yh-text-status-success,
+         'warning': $yh-text-status-warning,
+         'error': $yh-text-status-error,
+         'info': $yh-text-status-info,
+      ),
+   ),
+   'border': (
+      'form assets': (
+         'inputs + text areas': $yh-border-form-assets-inputs-text-areas,
+         'error': $yh-border-form-assets-error,
+      ),
+      'button': (
+         'outlined': (
+            'default': $yh-border-button-outlined-default,
+            'hover': $yh-border-button-outlined-hover,
+            'active': $yh-border-button-outlined-active,
+            'disabled': $yh-border-button-outlined-disabled,
+         ),
+      ),
+      'status': (
+         'info': $yh-border-status-info,
+         'success': $yh-border-status-success,
+         'warning': $yh-border-status-warning,
+         'error': $yh-border-status-error,
+         'offer': $yh-border-status-offer,
+      ),
+   ),
+   'content': (
+      'button': (
+         'icon': (
+            'primary': (
+               'default-hover-active':
+                  $yh-content-button-icon-primary-default-hover-active,
+               'disabled': $yh-content-button-icon-primary-disabled,
+            ),
+            'secondary': (
+               'default-hover-active':
+                  $yh-content-button-icon-secondary-default-hover-active,
+               'disabled': $yh-content-button-icon-secondary-disabled,
+            ),
+         ),
+      ),
+   ),
+   '$themes': (),
+);
