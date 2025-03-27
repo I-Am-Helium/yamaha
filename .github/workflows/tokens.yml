@@ -26,6 +26,7 @@ jobs:
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v7
         with:
+          token: ${{ secrets.GITHUB_TOKEN }}
           commit-message: "chore: update design tokens"
           title: "chore: update design tokens"
           body: "Automated PR to update design tokens"
