@@ -24,7 +24,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: feat/style-dictionary
+          ref: feat/tokens
           fetch-depth: 0
 
       - uses: actions/setup-node@v4
