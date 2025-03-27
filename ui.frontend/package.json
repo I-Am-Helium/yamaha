@@ -5,8 +5,9 @@
    "type": "commonjs",
    "scripts": {
       "dev": "vite",
-      "build": "tsc -b && vite build && clientlib --verbose && node copy-assets.js && fantasticon",
+      "build": "tsc -b && npm run lint && vite build && clientlib --verbose && node copy-assets.js && fantasticon",
       "lint": "eslint .",
+      "lint:fix": "eslint . --fix",
       "fantasticon": "fantasticon",
       "preview": "vite preview",
       "storybook": "fantasticon && storybook dev -p 6006",
