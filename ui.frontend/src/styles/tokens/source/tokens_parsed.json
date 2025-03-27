@@ -3,11 +3,11 @@
       "color": {
          "red": {
             "50": {
-               "value": "#ebb9b3",
+               "value": "#f5dbd9",
                "type": "color"
             },
             "100": {
-               "value": "#f5dbd9",
+               "value": "#ebb9b3",
                "type": "color"
             },
             "200": {
@@ -40,6 +40,10 @@
             },
             "900": {
                "value": "#210906",
+               "type": "color"
+            },
+            "1100": {
+               "value": "#383838",
                "type": "color"
             }
          },
