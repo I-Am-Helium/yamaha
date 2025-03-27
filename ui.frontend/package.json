@@ -16,7 +16,7 @@
       "nodemon": "nodemon",
       "aemsyncro": "aemsync -d 300 -w ../ui.apps/src/main/content",
       "ui-sync": "concurrently \"npm run nodemon\" \"npm run aemsyncro\" --kill-others",
-      "build-tokens": "style-dictionary build --config src/config/style-dictionary.json"
+      "build-tokens": "node src/utils/parsers/figma_to_styled_parser.mjs &&  style-dictionary build --config src/config/style-dictionary.json"
    },
    "dependencies": {
       "fantasticon": "^1.2.3",
