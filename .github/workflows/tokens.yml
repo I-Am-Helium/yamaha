@@ -23,7 +23,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-        with:       
+        with:
+          ref: feat/tokens
           fetch-depth: 0
 
       - uses: actions/setup-node@v4
