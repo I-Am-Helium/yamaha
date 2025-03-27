@@ -7,6 +7,10 @@ on:
     branches: [development]
   workflow_dispatch:
 
+env:
+  GIT_COMMIT_AUTHOR_NAME: "github-actions[bot]"
+  GIT_COMMIT_AUTHOR_EMAIL: "github-actions[bot]@users.noreply.github.com"
+
 jobs:
   generate-tokens:
     runs-on: ubuntu-latest
@@ -39,7 +43,7 @@ jobs:
           base: feat/tokens
           branch: feat/style-dictionary
           token: ${{ secrets.GITHUB_TOKEN }}
-          committer: ${{ env.GIT_COMMIT_AUTHOR_NAME }}
+          committer: ${{ env.GIT_COMMIT_AUTHOR_NAME }} <${{ env.GIT_COMMIT_AUTHOR_EMAIL }}>
           commit-message: "chore: update design tokens"
           title: "chore: update design tokens"
           body: "Automated PR to update design tokens"
