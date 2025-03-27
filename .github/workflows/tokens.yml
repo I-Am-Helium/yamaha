@@ -46,4 +46,4 @@ jobs:
           commit-message: "chore: update design tokens"
           title: "update design tokens"
           body: "Automated PR to update design tokens"
-          delete-branch: false
+          delete-branch: true
