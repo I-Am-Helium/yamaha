@@ -18,7 +18,7 @@ jobs:
         working-directory: ui.frontend
 
     permissions:
-      contents: read
+      contents: write
       pull-requests: write
 
     steps:
