@@ -7,30 +7,36 @@ on:
     branches: [development]
   workflow_dispatch:
 
-permissions:
-  contents: write
-  pull-requests: write
-
 jobs:
   generate-tokens:
     runs-on: ubuntu-latest
     defaults:
       run:
         working-directory: ui.frontend
+
+    permissions:
+      contents: write
+      pull-requests: write
+
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
+
       - uses: actions/setup-node@v4
         with:
           node-version: lts/*
+
       - name: Install dependencies
         run: npm install
+
       - name: Generate tokens
         run: npm run build-tokens
+
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v7
         with:
+          base: feat/tokens
           token: ${{ secrets.GITHUB_TOKEN }}
           commit-message: "chore: update design tokens"
           title: "chore: update design tokens"
