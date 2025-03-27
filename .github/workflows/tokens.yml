@@ -47,5 +47,4 @@ jobs:
           title: "update design tokens"
           body: "Automated PR to update design tokens"
           delete-branch: false
-          draft: true
           signoff: true
