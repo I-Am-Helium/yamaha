@@ -41,7 +41,7 @@ jobs:
         uses: peter-evans/create-pull-request@v7
         with:
           branch: feat/test
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: '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'
           committer: ${{ env.GIT_COMMIT_AUTHOR_NAME }} <${{ env.GIT_COMMIT_AUTHOR_EMAIL }}>
           commit-message: "chore: update design tokens"
           title: "update design tokens"
