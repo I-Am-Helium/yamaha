@@ -3,7 +3,7 @@
   "typography": {
     "play-text-xl": {
       "400": {
-        "value": "400 {dimension.font-size.heading.font-heading-6}/34px Play",
+        "value": "400 {fontSize.font-size.heading.font-heading-6}/34px Play",
         "type": "typography",
         "description": "This is heading 5 font size"
       },
@@ -52,7 +52,7 @@
     },
     "play-text-3xl": {
       "400": {
-        "value": "400 {dimension.font-size.heading.font-heading-4}/50px Play",
+        "value": "400 {fontSize.font-size.heading.font-heading-4}/50px Play",
         "type": "typography",
         "description": "This is heading 3 font size"
       }
