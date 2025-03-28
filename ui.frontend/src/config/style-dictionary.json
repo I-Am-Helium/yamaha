@@ -1,0 +1,28 @@
+{
+   "source": ["src/styles/tokens/source/tokens_parsed.json"],
+   "platforms": {
+      "scss": {
+         "transformGroup": "scss",
+         "prefix": "yh",
+         "buildPath": "src/styles/tokens/output/",
+         "files": [
+            {
+               "destination": "tokens.scss",
+               "format": "scss/variables"
+            },
+            {
+               "destination": "tokens_map.scss",
+               "format": "scss/map-deep"
+            }
+         ],
+         "options": {
+            "outputReferences": true
+         }
+      }
+   },
+   "hooks": {
+      "transformGroups": {
+         "scss": ["size/pxToRem"]
+      }
+   }
+}
