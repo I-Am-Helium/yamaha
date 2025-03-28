@@ -1,4 +1,5 @@
 @use 'sass:map';
+
 // Define the color map
 $colors: (
    'red': (
@@ -38,7 +39,7 @@ $colors: (
       900: #242526,
    ),
    'neutral': (
-      'white': #ffffff,
+      'white': #fff,
       'black': #1e1e1e,
    ),
    'status': (

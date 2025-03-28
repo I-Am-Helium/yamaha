@@ -1,4 +1,4 @@
-//base
+// base
 @use './base/base';
 
 // foundations
@@ -9,10 +9,10 @@
 @use './foundations/spacing';
 
 // vendor
-@use './vendor/swiper.scss';
+@use './vendor/swiper';
 
 // components
-@use '../components/importStyles.scss';
+@use '../components/importStyles';
 
 // icons
 // @use '../assets//generated-icons/icons.scss';

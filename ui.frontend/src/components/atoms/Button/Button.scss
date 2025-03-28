@@ -2,7 +2,7 @@
 @use '../../../styles/foundations/typography';
 @use '../../../styles/foundations/spacing';
 @use '../../../styles/foundations/colors';
-@use '../../../styles/helpers.scss';
+@use '../../../styles/helpers';
 
 .button,
 .yamaha-btn {
@@ -15,7 +15,7 @@
       border: none;
       outline: none;
 
-      //Should replace with flex function
+      // Should replace with flex function
       display: flex;
       align-items: center;
       gap: helpers.rem(10px);
@@ -56,6 +56,7 @@
       .cmp-button {
          color: colorTokens.$surface-button-secondary-default;
          background-color: transparent;
+
          @include helpers.border(
             2px,
             colorTokens.$surface-button-secondary-default,
@@ -114,6 +115,7 @@
             .cmp-button__text {
                color: colorTokens.$border-button-outlined-disabled;
             }
+
             cursor: not-allowed;
          }
       }
