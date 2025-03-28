@@ -18,7 +18,8 @@
       "aemsyncro": "aemsync -d 300 -w ../ui.apps/src/main/content",
       "ui-sync": "concurrently \"npm run nodemon\" \"npm run aemsyncro\" --kill-others",
       "prepare": "cd .. && husky ui.frontend/.husky",
-      "format": "prettier --write ."
+      "format": "prettier --write .",
+      "lint-staged": "lint-staged"
    },
    "dependencies": {
       "fantasticon": "^1.2.3",
@@ -71,6 +72,7 @@
       "eslint-plugin-storybook": "^0.11.6",
       "globals": "^15.14.0",
       "husky": "^9.1.7",
+      "lint-staged": "^15.5.0",
       "nodemon": "^3.1.9",
       "playwright": "^1.51.1",
       "prettier": "^3.5.3",
@@ -95,5 +97,9 @@
       "ignore": [
          "src/assets/**/*"
       ]
+   },
+   "lint-staged": {
+      "**/*.{js,ts,tsx}": "eslint .",
+      "**/*.{ts,tsx,js,json,md,css,scss}": "prettier --write ."
    }
 }
