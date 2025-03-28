@@ -1,2 +1,3 @@
 cd ui.frontend
+npm run format
 npm run lint
