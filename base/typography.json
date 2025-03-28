@@ -1,0 +1,117 @@
+{
+  "_comment": "This file was generated automatically by Supernova.io and should not be changed manually. To modify the format or content of this file, please contact your design system team.",
+  "typography": {
+    "play-text-xl": {
+      "400": {
+        "value": "400 {dimension.font-size.heading.font-heading-6}/34px Play",
+        "type": "typography",
+        "description": "This is heading 5 font size"
+      },
+      "700": {
+        "value": "700 24px/34px Play",
+        "type": "typography",
+        "description": "This is heading 6 font size"
+      }
+    },
+    "ubuntu-text-lg": {
+      "700": {
+        "value": "700 {dimension.font-size.body.font-body-lg}/28px Ubuntu Sans",
+        "type": "typography",
+        "description": "This is font size for intros"
+      }
+    },
+    "ubuntu-textlink-lg": {
+      "500": {
+        "value": "500 18px/28px Ubuntu Sans",
+        "type": "typography"
+      }
+    },
+    "ubuntu-text-base": {
+      "700": {
+        "value": "700 {dimension.font-size.body.font-body-md}/26px Ubuntu Sans",
+        "type": "typography"
+      }
+    },
+    "ubuntu-textlink-base": {
+      "500": {
+        "value": "500 16px/26px Ubuntu Sans",
+        "type": "typography"
+      }
+    },
+    "ubuntu-text-sm": {
+      "700": {
+        "value": "700 14px/24px Ubuntu Sans",
+        "type": "typography"
+      }
+    },
+    "ubuntu-textlink-sm": {
+      "500": {
+        "value": "500 14px/24px Ubuntu Sans",
+        "type": "typography"
+      }
+    },
+    "play-text-3xl": {
+      "400": {
+        "value": "400 {dimension.font-size.heading.font-heading-4}/50px Play",
+        "type": "typography",
+        "description": "This is heading 3 font size"
+      }
+    },
+    "heading": {
+      "h2": {
+        "archive-title": {
+          "desktop": {
+            "value": "400 32px/28px Whitney SSm",
+            "type": "typography"
+          }
+        }
+      },
+      "h1": {
+        "semibold": {
+          "mobile": {
+            "value": "700 36px/34.2px Whitney SSm",
+            "type": "typography"
+          }
+        }
+      }
+    },
+    "label": {
+      "large": {
+        "medium": {
+          "value": "350 18px/28px Whitney SSm",
+          "type": "typography"
+        },
+        "underline": {
+          "medium": {
+            "value": "350 18px/28px Whitney SSm",
+            "type": "typography"
+          }
+        }
+      },
+      "medium": {
+        "medium": {
+          "value": "350 16px/24px Whitney SSm",
+          "type": "typography"
+        },
+        "underline": {
+          "medium": {
+            "value": "350 16px/24px Whitney SSm",
+            "type": "typography"
+          }
+        }
+      },
+      "small": {
+        "medium": {
+          "value": "350 14px/20px Whitney SSm",
+          "type": "typography"
+        },
+        "underline": {
+          "medium": {
+            "value": "350 14px/20px Whitney SSm",
+            "type": "typography"
+          }
+        }
+      }
+    }
+  }
+}
