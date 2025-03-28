@@ -41,6 +41,10 @@
             "900": {
                "value": "#210906",
                "type": "color"
+            },
+            "2000": {
+               "value": "#d40000",
+               "type": "color"
             }
          },
          "neutral": {
