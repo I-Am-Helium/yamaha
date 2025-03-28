@@ -39,7 +39,6 @@ $yh-core-color-status-green: #006b4d !default;
 $yh-core-color-status-red: #da1307 !default;
 $yh-core-color-status-orange: #e15d00 !default;
 $yh-core-color-status-blue: #18488f !default;
-$yh-core-color-blue-100: #1542c5 !default;
 $yh-borders-stroke-default-border-0: 0 !default;
 $yh-borders-stroke-default-border-2: 0.0078125rem !default;
 $yh-borders-stroke-default-border-4: 0.015625rem !default;
@@ -221,9 +220,6 @@ $tokens: (
         'red': $yh-core-color-status-red,
         'orange': $yh-core-color-status-orange,
         'blue': $yh-core-color-status-blue
-      ),
-      'blue': (
-        '100': $yh-core-color-blue-100
       )
     )
   ),
