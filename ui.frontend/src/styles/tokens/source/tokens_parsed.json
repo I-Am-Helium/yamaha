@@ -154,6 +154,12 @@
                "value": "#18488f",
                "type": "color"
             }
+         },
+         "blue": {
+            "100": {
+               "value": "#1542c5",
+               "type": "color"
+            }
          }
       }
    },
