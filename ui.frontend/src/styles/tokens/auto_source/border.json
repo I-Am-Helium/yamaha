@@ -1,0 +1,276 @@
+{
+  "border": {
+    "button": {
+      "outlined": {
+        "default": {
+          "value": "{color.core.color.red-primary.500}",
+          "type": "color"
+        },
+        "hover": {
+          "value": "{color.core.color.red-primary.400}",
+          "type": "color"
+        },
+        "active": {
+          "value": "{color.core.color.red-primary.700}",
+          "type": "color"
+        },
+        "disabled": {
+          "value": "{color.core.color.cool-grey-10.300}",
+          "type": "color"
+        }
+      }
+    },
+    "form-assets": {
+      "inputs-text-areas": {
+        "value": "{color.core.color.cool-grey-10.300}",
+        "type": "color"
+      },
+      "error": {
+        "value": "{color.core.color.status.red}",
+        "type": "color"
+      }
+    },
+    "status": {
+      "success": {
+        "value": "{color.core.color.status.green}",
+        "type": "color"
+      },
+      "warning": {
+        "value": "{color.core.color.status.orange}",
+        "type": "color"
+      },
+      "info": {
+        "value": "{color.core.color.status.blue}",
+        "type": "color"
+      },
+      "error": {
+        "value": "{color.core.color.status.red}",
+        "type": "color"
+      },
+      "offer": {
+        "value": "{color.core.color.red-primary.500}",
+        "type": "color"
+      }
+    },
+    "stroke": {
+      "default": {
+        "border-0": {
+          "value": "0px",
+          "type": "dimension"
+        },
+        "border-2": {
+          "value": "2px",
+          "type": "dimension"
+        },
+        "border-4": {
+          "value": "4px",
+          "type": "dimension"
+        },
+        "border-8": {
+          "value": "8px",
+          "type": "dimension"
+        },
+        "border-16": {
+          "value": "16px",
+          "type": "dimension"
+        },
+        "border-24": {
+          "value": "24px",
+          "type": "dimension"
+        },
+        "border-32": {
+          "value": "32px",
+          "type": "dimension"
+        },
+        "border-40": {
+          "value": "40px",
+          "type": "dimension"
+        },
+        "border-48": {
+          "value": "48px",
+          "type": "dimension"
+        },
+        "border-56": {
+          "value": "56px",
+          "type": "dimension"
+        },
+        "border-64": {
+          "value": "64px",
+          "type": "dimension"
+        },
+        "border-72": {
+          "value": "72px",
+          "type": "dimension"
+        },
+        "border-80": {
+          "value": "80px",
+          "type": "dimension"
+        }
+      },
+      "compact": {
+        "border-compact-0": {
+          "value": "0px",
+          "type": "dimension"
+        },
+        "border-compact-2": {
+          "value": "2px",
+          "type": "dimension"
+        },
+        "border-compact-4": {
+          "value": "4px",
+          "type": "dimension"
+        },
+        "border-compact-8": {
+          "value": "8px",
+          "type": "dimension"
+        },
+        "border-compact-12": {
+          "value": "12px",
+          "type": "dimension"
+        },
+        "border-compact-16": {
+          "value": "16px",
+          "type": "dimension"
+        },
+        "border-compact-20": {
+          "value": "20px",
+          "type": "dimension"
+        },
+        "border-compact-24": {
+          "value": "24px",
+          "type": "dimension"
+        },
+        "border-compact-28": {
+          "value": "28px",
+          "type": "dimension"
+        },
+        "border-compact-32": {
+          "value": "32px",
+          "type": "dimension"
+        },
+        "border-compact-36": {
+          "value": "36px",
+          "type": "dimension"
+        },
+        "border-compact-40": {
+          "value": "40px",
+          "type": "dimension"
+        },
+        "border-compact-48": {
+          "value": "48px",
+          "type": "dimension"
+        }
+      }
+    },
+    "radius": {
+      "default": {
+        "radius-0": {
+          "value": "0px",
+          "type": "dimension"
+        },
+        "border-2": {
+          "value": "2px",
+          "type": "dimension"
+        },
+        "border-4": {
+          "value": "4px",
+          "type": "dimension"
+        },
+        "border-8": {
+          "value": "8px",
+          "type": "dimension"
+        },
+        "border-16": {
+          "value": "16px",
+          "type": "dimension"
+        },
+        "border-24": {
+          "value": "24px",
+          "type": "dimension"
+        },
+        "border-32": {
+          "value": "32px",
+          "type": "dimension"
+        },
+        "border-40": {
+          "value": "40px",
+          "type": "dimension"
+        },
+        "border-48": {
+          "value": "48px",
+          "type": "dimension"
+        },
+        "border-56": {
+          "value": "56px",
+          "type": "dimension"
+        },
+        "border-64": {
+          "value": "64px",
+          "type": "dimension"
+        },
+        "border-72": {
+          "value": "72px",
+          "type": "dimension"
+        },
+        "border-80": {
+          "value": "80px",
+          "type": "dimension"
+        }
+      },
+      "compact": {
+        "border-compact-0": {
+          "value": "0px",
+          "type": "dimension"
+        },
+        "border-compact-2": {
+          "value": "2px",
+          "type": "dimension"
+        },
+        "border-compact-4": {
+          "value": "4px",
+          "type": "dimension"
+        },
+        "border-compact-8": {
+          "value": "8px",
+          "type": "dimension"
+        },
+        "border-compact-12": {
+          "value": "12px",
+          "type": "dimension"
+        },
+        "border-compact-16": {
+          "value": "16px",
+          "type": "dimension"
+        },
+        "border-compact-20": {
+          "value": "20px",
+          "type": "dimension"
+        },
+        "border-compact-24": {
+          "value": "24px",
+          "type": "dimension"
+        },
+        "border-compact-28": {
+          "value": "28px",
+          "type": "dimension"
+        },
+        "border-compact-32": {
+          "value": "32px",
+          "type": "dimension"
+        },
+        "border-compact-36": {
+          "value": "36px",
+          "type": "dimension"
+        },
+        "border-compact-40": {
+          "value": "40px",
+          "type": "dimension"
+        },
+        "border-compact-48": {
+          "value": "48px",
+          "type": "dimension"
+        }
+      }
+    }
+  }
+}

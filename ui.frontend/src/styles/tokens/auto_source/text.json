@@ -1,0 +1,100 @@
+{
+  "text": {
+    "legal": {
+      "primary": {
+        "value": "{color.core.color.neutral.black}",
+        "type": "color"
+      }
+    },
+    "heading": {
+      "primary": {
+        "value": "{color.core.color.neutral.black}",
+        "type": "color"
+      },
+      "secondary": {
+        "value": "{color.core.color.neutral.black}",
+        "type": "color"
+      }
+    },
+    "body": {
+      "primary": {
+        "value": "{color.core.color.neutral.black}",
+        "type": "color"
+      },
+      "secondary": {
+        "value": "{color.core.color.neutral.black}",
+        "type": "color"
+      }
+    },
+    "status": {
+      "success": {
+        "value": "{color.core.color.status.green}",
+        "type": "color"
+      },
+      "warning": {
+        "value": "{color.core.color.status.orange}",
+        "type": "color"
+      },
+      "error": {
+        "value": "{color.core.color.status.red}",
+        "type": "color"
+      },
+      "info": {
+        "value": "{color.core.color.status.blue}",
+        "type": "color"
+      }
+    },
+    "button": {
+      "primary": {
+        "default": {
+          "value": "{color.core.color.neutral.white}",
+          "type": "color"
+        },
+        "hover-active": {
+          "value": "{color.core.color.neutral.white}",
+          "type": "color"
+        },
+        "disabled": {
+          "value": "{color.core.color.cool-grey-10.300}",
+          "type": "color"
+        }
+      },
+      "secondary": {
+        "default": {
+          "value": "{color.core.color.neutral.black}",
+          "type": "color"
+        },
+        "hover": {
+          "value": "{color.core.color.red-primary.500}",
+          "type": "color"
+        },
+        "clicked": {
+          "value": "{color.core.color.red-primary.600}",
+          "type": "color"
+        },
+        "disabled": {
+          "value": "{color.core.color.cool-grey-10.300}",
+          "type": "color"
+        }
+      },
+      "link": {
+        "default": {
+          "value": "{color.core.color.red-primary.500}",
+          "type": "color"
+        },
+        "hover": {
+          "value": "{color.core.color.red-primary.400}",
+          "type": "color"
+        },
+        "clicked": {
+          "value": "{color.core.color.red-primary.700}",
+          "type": "color"
+        },
+        "disabled": {
+          "value": "{color.core.color.cool-grey-10.300}",
+          "type": "color"
+        }
+      }
+    }
+  }
+}
