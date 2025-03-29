@@ -22,7 +22,7 @@
    },
    "hooks": {
       "transformGroups": {
-         "scss": ["size/pxToRem"]
+         "scss": ["size/pxToRem", "name/kebab"]
       }
    }
 }

@@ -19,7 +19,9 @@
       "ui-sync": "concurrently \"npm run nodemon\" \"npm run aemsyncro\" --kill-others",
       "build-tokens": "node src/utils/parsers/figma_to_styled_parser.mjs &&  style-dictionary build --config src/config/style-dictionary.json",
       "prepare": "cd .. && husky ui.frontend/.husky",
-      "format": "prettier --write ."
+      "format": "prettier --write .",
+      "create-token-files": "node src/utils/parsers/create_single_files.mjs",
+      "generate-tokens": "node src/config/generate_tokens.mjs"
    },
    "dependencies": {
       "fantasticon": "^1.2.3",
@@ -71,6 +73,7 @@
       "eslint-plugin-react-hooks": "^5.0.0",
       "eslint-plugin-react-refresh": "^0.4.18",
       "eslint-plugin-storybook": "^0.11.6",
+      "glob": "^11.0.1",
       "globals": "^15.14.0",
       "husky": "^9.1.7",
       "nodemon": "^3.1.9",
