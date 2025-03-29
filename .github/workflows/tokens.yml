@@ -29,6 +29,10 @@ jobs:
           ref: supernova/style-dictionary
           fetch-depth: 0
 
+      - name: Take latest changes from development
+        run: |
+         git merge test/dev
+
       - uses: actions/setup-node@v4
         with:
           node-version: lts/*
