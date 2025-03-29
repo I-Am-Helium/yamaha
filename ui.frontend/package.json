@@ -19,7 +19,9 @@
       "ui-sync": "concurrently \"npm run nodemon\" \"npm run aemsyncro\" --kill-others",
       "build-tokens": "node src/utils/parsers/figma_to_styled_parser.mjs &&  style-dictionary build --config src/config/style-dictionary.json",
       "prepare": "cd .. && husky ui.frontend/.husky",
-      "format": "prettier --write ."
+      "format": "prettier --write .",
+      "create-token-files": "node src/utils/parsers/create_single_files.mjs",
+      "generate-tokens": "node src/config/generate_tokens.mjs"
    },
    "dependencies": {
       "fantasticon": "^1.2.3",

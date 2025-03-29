@@ -1,22 +1,32 @@
 import { globSync } from 'glob'
 import StyleDictionary from 'style-dictionary'
+import { dirname, resolve } from 'node:path/posix'
+import { fileURLToPath } from 'url'
 
-const tokenFiles = globSync('./../styles/tokens/auto_source/*.json')
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = dirname(__filename)
+
+// Resolve paths relative to script location
+const sourceDir = resolve(__dirname, '../styles/tokens/auto_source')
+const outputDir = resolve(__dirname, '../styles/tokens/auto_output')
+
+// Use resolved path for glob pattern
+const tokenFiles = globSync(`${sourceDir}/*.json`)
 
 const myStyleDictionary = new StyleDictionary({
    source: tokenFiles,
    platforms: {
       scss: {
          transformGroup: 'scss',
-         buildPath: './../styles/tokens/auto_output/',
+         buildPath: `${outputDir}/`,
          files: tokenFiles.map((file) => {
-            const relativeFilePath = file
+            const fileName = file.split('/').pop() // Get just the filename
             return {
-               destination: relativeFilePath.replace('.json', '.scss'),
+               destination: fileName.replace('.json', '.scss'),
                format: 'scss/variables',
-               filter: (token) => token.filePath.endsWith(relativeFilePath),
+               filter: (token) => token.filePath.endsWith(fileName),
                options: {
-                  outputReferences: !file.includes('color'),
+                  outputReferences: !fileName.includes('color'),
                },
             }
          }),
@@ -28,5 +38,8 @@ const myStyleDictionary = new StyleDictionary({
       },
    },
 })
+
+console.log('Generating tokens from:', sourceDir)
+console.log('Output directory:', outputDir)
 
 myStyleDictionary.buildAllPlatforms()

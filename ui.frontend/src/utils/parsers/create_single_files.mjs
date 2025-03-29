@@ -1,12 +1,21 @@
 import { readFile, writeFile, mkdir } from 'fs/promises'
-import { dirname } from 'node:path/posix'
-import path from 'node:path'
+import { dirname, resolve } from 'node:path/posix'
+import { fileURLToPath } from 'url'
 
 async function createSeparateFiles() {
-   const tokens = JSON.parse(
-      await readFile('../../styles/tokens/source/tokens.json', 'utf-8')
-   )
+   console.log('Creating separate files for tokens')
+   const __filename = fileURLToPath(import.meta.url)
+   const __dirname = dirname(__filename)
 
+   const sourceTokensPath = resolve(
+      __dirname,
+      '../../../src/styles/tokens/source/tokens.json'
+   )
+   const outputDir = resolve(
+      __dirname,
+      '../../../src/styles/tokens/auto_source'
+   )
+   const tokens = JSON.parse(await readFile(sourceTokensPath, 'utf-8'))
    const { color, dimension } = tokens
    const colorCategories = {
       color: {
@@ -39,8 +48,7 @@ async function createSeparateFiles() {
 
    const persistColorCategory = async ([categoryName, categoryTokens]) => {
       console.log(`Processing ${categoryName} category`)
-      const fileName =
-         `./../../styles/tokens/auto_source/${categoryName}.json`.toLowerCase()
+      const fileName = resolve(outputDir, `${categoryName}.json`).toLowerCase()
 
       const dirName = dirname(fileName)
       try {
@@ -57,6 +65,8 @@ async function createSeparateFiles() {
 
    // Create separate files for each category
    await Promise.all(Object.entries(colorCategories).map(persistColorCategory))
+
+   console.log('Separate files created successfully')
 }
 
-createSeparateFiles()
+createSeparateFiles().catch(console.error)
