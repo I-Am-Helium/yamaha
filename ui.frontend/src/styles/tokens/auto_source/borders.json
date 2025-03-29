@@ -1,0 +1,222 @@
+{
+  "stroke": {
+    "default": {
+      "border-0": {
+        "value": "0rem",
+        "type": "dimension"
+      },
+      "border-2": {
+        "value": "0.125rem",
+        "type": "dimension"
+      },
+      "border-4": {
+        "value": "0.25rem",
+        "type": "dimension"
+      },
+      "border-8": {
+        "value": "0.5rem",
+        "type": "dimension"
+      },
+      "border-16": {
+        "value": "1rem",
+        "type": "dimension"
+      },
+      "border-24": {
+        "value": "1.5rem",
+        "type": "dimension"
+      },
+      "border-32": {
+        "value": "2rem",
+        "type": "dimension"
+      },
+      "border-40": {
+        "value": "2.5rem",
+        "type": "dimension"
+      },
+      "border-48": {
+        "value": "3rem",
+        "type": "dimension"
+      },
+      "border-56": {
+        "value": "3.5rem",
+        "type": "dimension"
+      },
+      "border-64": {
+        "value": "4rem",
+        "type": "dimension"
+      },
+      "border-72": {
+        "value": "4.5rem",
+        "type": "dimension"
+      },
+      "border-80": {
+        "value": "5rem",
+        "type": "dimension"
+      }
+    },
+    "compact": {
+      "border-compact-0": {
+        "value": "0rem",
+        "type": "dimension"
+      },
+      "border-compact-2": {
+        "value": "0.125rem",
+        "type": "dimension"
+      },
+      "border-compact-4": {
+        "value": "0.25rem",
+        "type": "dimension"
+      },
+      "border-compact-8": {
+        "value": "0.5rem",
+        "type": "dimension"
+      },
+      "border-compact-12": {
+        "value": "0.75rem",
+        "type": "dimension"
+      },
+      "border-compact-16": {
+        "value": "1rem",
+        "type": "dimension"
+      },
+      "border-compact-20": {
+        "value": "1.25rem",
+        "type": "dimension"
+      },
+      "border-compact-24": {
+        "value": "1.5rem",
+        "type": "dimension"
+      },
+      "border-compact-28": {
+        "value": "1.75rem",
+        "type": "dimension"
+      },
+      "border-compact-32": {
+        "value": "2rem",
+        "type": "dimension"
+      },
+      "border-compact-36": {
+        "value": "2.25rem",
+        "type": "dimension"
+      },
+      "border-compact-40": {
+        "value": "2.5rem",
+        "type": "dimension"
+      },
+      "border-compact-48": {
+        "value": "3rem",
+        "type": "dimension"
+      }
+    }
+  },
+  "radius": {
+    "default": {
+      "radius-0": {
+        "value": "0rem",
+        "type": "dimension"
+      },
+      "border-2": {
+        "value": "0.125rem",
+        "type": "dimension"
+      },
+      "border-4": {
+        "value": "0.25rem",
+        "type": "dimension"
+      },
+      "border-8": {
+        "value": "0.5rem",
+        "type": "dimension"
+      },
+      "border-16": {
+        "value": "1rem",
+        "type": "dimension"
+      },
+      "border-24": {
+        "value": "1.5rem",
+        "type": "dimension"
+      },
+      "border-32": {
+        "value": "2rem",
+        "type": "dimension"
+      },
+      "border-40": {
+        "value": "2.5rem",
+        "type": "dimension"
+      },
+      "border-48": {
+        "value": "3rem",
+        "type": "dimension"
+      },
+      "border-56": {
+        "value": "3.5rem",
+        "type": "dimension"
+      },
+      "border-64": {
+        "value": "4rem",
+        "type": "dimension"
+      },
+      "border-72": {
+        "value": "4.5rem",
+        "type": "dimension"
+      },
+      "border-80": {
+        "value": "5rem",
+        "type": "dimension"
+      }
+    },
+    "compact": {
+      "border-compact-0": {
+        "value": "0rem",
+        "type": "dimension"
+      },
+      "border-compact-2": {
+        "value": "0.125rem",
+        "type": "dimension"
+      },
+      "border-compact-4": {
+        "value": "0.25rem",
+        "type": "dimension"
+      },
+      "border-compact-8": {
+        "value": "0.5rem",
+        "type": "dimension"
+      },
+      "border-compact-12": {
+        "value": "0.75rem",
+        "type": "dimension"
+      },
+      "border-compact-16": {
+        "value": "1rem",
+        "type": "dimension"
+      },
+      "border-compact-20": {
+        "value": "1.25rem",
+        "type": "dimension"
+      },
+      "border-compact-24": {
+        "value": "1.5rem",
+        "type": "dimension"
+      },
+      "border-compact-28": {
+        "value": "1.75rem",
+        "type": "dimension"
+      },
+      "border-compact-32": {
+        "value": "2rem",
+        "type": "dimension"
+      },
+      "border-compact-36": {
+        "value": "2.25rem",
+        "type": "dimension"
+      },
+      "border-compact-40": {
+        "value": "2.5rem",
+        "type": "dimension"
+      },
+      "border-compact-48": {
+        "value": "3rem",
+        "type": "dimension"
+      }
+    }
+  }
+}
