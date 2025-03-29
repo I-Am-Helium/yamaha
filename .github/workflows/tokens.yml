@@ -26,11 +26,13 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: supernova/style-dictionary
           fetch-depth: 0
 
       - name: Take latest changes from development
         run: |
+         git checkout test/dev 
+         git pull
+         git checkout supernova/style-dictionary
          git merge test/dev
 
       - uses: actions/setup-node@v4
