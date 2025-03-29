@@ -13,7 +13,6 @@ $yh-core-color-red-600: #d52b1e !default;
 $yh-core-color-red-700: #621d15 !default;
 $yh-core-color-red-800: #41120d !default;
 $yh-core-color-red-900: #210906 !default;
-$yh-core-color-red-2000: #d40000 !default;
 $yh-core-color-neutral-white: #ffffff !default;
 $yh-core-color-neutral-black: #1e1e1e !default;
 $yh-core-color-cool-grey-4-50: #f4f4f4 !default;
@@ -186,8 +185,7 @@ $tokens: (
         '600': $yh-core-color-red-600,
         '700': $yh-core-color-red-700,
         '800': $yh-core-color-red-800,
-        '900': $yh-core-color-red-900,
-        '2000': $yh-core-color-red-2000
+        '900': $yh-core-color-red-900
       ),
       'neutral': (
         'white': $yh-core-color-neutral-white,
