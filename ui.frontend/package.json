@@ -11,7 +11,7 @@
       "fantasticon": "fantasticon",
       "preview": "vite preview",
       "storybook": "fantasticon && storybook dev -p 6006",
-      "build-storybook": "storybook build",
+      "build-storybook": "fantasticon && storybook build",
       "test-storybook": "test-storybook --watch",
       "test-storybook-coverage": "test-storybook --coverage",
       "nodemon": "nodemon",
