@@ -6,11 +6,9 @@ import { fileURLToPath } from 'url'
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = dirname(__filename)
 
-// Resolve paths relative to script location
 const sourceDir = resolve(__dirname, '../styles/tokens/auto_source')
 const outputDir = resolve(__dirname, '../styles/tokens/auto_output')
 
-// Use resolved path for glob pattern
 const tokenFiles = globSync(`${sourceDir}/*.json`)
 
 const myStyleDictionary = new StyleDictionary({
