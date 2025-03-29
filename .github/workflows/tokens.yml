@@ -28,7 +28,7 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Take latest changes from development
+      - name: Take latest changes from test/dev
         run: |
          git checkout test/dev 
          git pull
