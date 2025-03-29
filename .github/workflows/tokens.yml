@@ -2,7 +2,7 @@ name: Token Generation and PR
 
 on:
   pull_request:
-    branches: [development]
+    branches: [test/dev]
 
   workflow_dispatch:
 
@@ -24,7 +24,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: development
+          ref: test/dev
           fetch-depth: 0
 
       - uses: actions/setup-node@v4
