@@ -1,6 +1,17 @@
 
 // Do not edit directly, this file was auto-generated.
 
+$border-button-outlined-default: #d52b1e;
+$border-button-outlined-hover: #d35445;
+$border-button-outlined-active: #621d15;
+$border-button-outlined-disabled: #969799;
+$border-form-assets-inputs-text-areas: #969799;
+$border-form-assets-error: #da1307;
+$border-status-success: #006b4d;
+$border-status-warning: #e15d00;
+$border-status-info: #18488f;
+$border-status-error: #da1307;
+$border-status-offer: #d52b1e;
 $border-stroke-default-border-0: 0;
 $border-stroke-default-border-2: 0.125rem;
 $border-stroke-default-border-4: 0.25rem;
@@ -53,14 +64,3 @@ $border-radius-compact-border-compact-32: 2rem;
 $border-radius-compact-border-compact-36: 2.25rem;
 $border-radius-compact-border-compact-40: 2.5rem;
 $border-radius-compact-border-compact-48: 3rem;
-$border-button-outlined-default: $color-core-color-red-primary-500;
-$border-button-outlined-hover: $color-core-color-red-primary-400;
-$border-button-outlined-active: $color-core-color-red-primary-700;
-$border-button-outlined-disabled: $color-core-color-cool-grey-10-300;
-$border-form-assets-inputs-text-areas: $color-core-color-cool-grey-10-300;
-$border-form-assets-error: $color-core-color-status-red;
-$border-status-success: $color-core-color-status-green;
-$border-status-warning: $color-core-color-status-orange;
-$border-status-info: $color-core-color-status-blue;
-$border-status-error: $color-core-color-status-red;
-$border-status-offer: $color-core-color-red-primary-500;

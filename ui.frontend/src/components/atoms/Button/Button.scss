@@ -1,8 +1,13 @@
-@use '../../../styles/tokens/colors' as colorTokens;
+// @use '../../../styles/tokens/colors' as colorTokens;
 @use '../../../styles/foundations/typography';
 @use '../../../styles/foundations/spacing';
-@use '../../../styles/foundations/colors';
 @use '../../../styles/helpers.scss';
+
+@use '../../../styles/tokens/auto_output/color';
+@use '../../../styles/tokens/auto_output/surface';
+@use '../../../styles/tokens/auto_output/border';
+@use '../../../styles/tokens/auto_output/padding';
+@use '../../../styles/tokens/auto_output/text';
 
 .button,
 .yamaha-btn {
@@ -11,7 +16,7 @@
          spacing.get-spacing('default', 'p-32');
       cursor: pointer;
       transition: background-color 0.4s ease;
-      border-radius: helpers.rem(80px);
+      border-radius: border.$border-radius-default-border-80;
       border: none;
       outline: none;
 
@@ -31,22 +36,22 @@
 
    &.primary {
       .cmp-button {
-         background-color: colorTokens.$surface-button-primary-default;
+         background-color: surface.$surface-button-primary-default;
 
          &__text {
-            color: colors.get-color('neutral', 'white');
+            color: text.$text-button-primary-default;
          }
 
          &:hover {
-            background-color: colorTokens.$surface-button-primary-hover;
+            background-color: surface.$surface-button-primary-hover;
          }
 
          &:active {
-            background-color: colorTokens.$surface-button-primary-active;
+            background-color: surface.$surface-button-primary-active;
          }
 
          &:disabled {
-            background-color: colorTokens.$surface-button-primary-disabled;
+            background-color: surface.$surface-button-primary-disabled;
             cursor: not-allowed;
          }
       }
@@ -54,33 +59,33 @@
 
    &.secondary {
       .cmp-button {
-         color: colorTokens.$surface-button-secondary-default;
+         color: surface.$surface-button-secondary-default;
          background-color: transparent;
          @include helpers.border(
             2px,
-            colorTokens.$surface-button-secondary-default,
+            surface.$surface-button-secondary-default,
             80px
          );
 
          &__text {
-            color: colorTokens.$surface-button-secondary-default;
+            color: text.$text-button-link-default;
          }
 
          &:hover {
-            border-color: colorTokens.$surface-button-secondary-hover;
+            border-color: surface.$surface-button-secondary-hover;
          }
 
          &:active {
-            border-color: colorTokens.$surface-button-secondary-active;
+            border-color: surface.$surface-button-secondary-active;
          }
 
          &:disabled {
-            border-color: colorTokens.$surface-button-secondary-disabled;
+            border-color: surface.$surface-button-secondary-disabled;
             cursor: not-allowed;
 
             .cmp-button {
                &__text {
-                  color: colorTokens.$surface-button-secondary-disabled;
+                  color: text.$text-button-link-disabled;
                }
             }
          }
@@ -89,30 +94,30 @@
 
    &.link {
       .cmp-button {
-         color: colorTokens.$border-button-outlined-default;
+         color: text.$text-button-link-default;
          background-color: transparent;
          border: none;
 
          &__text {
-            color: colorTokens.$border-button-outlined-default;
+            color: text.$text-button-link-default;
             text-decoration: underline;
          }
 
          &:hover {
             .cmp-button__text {
-               color: colorTokens.$border-button-outlined-hover;
+               color: text.$text-button-link-hover;
             }
          }
 
          &:active {
             .cmp-button__text {
-               color: colorTokens.$border-button-outlined-active;
+               color: text.$text-button-link-clicked;
             }
          }
 
          &:disabled {
             .cmp-button__text {
-               color: colorTokens.$border-button-outlined-disabled;
+               color: text.$text-button-link-disabled;
             }
             cursor: not-allowed;
          }

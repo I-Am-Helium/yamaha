@@ -23,9 +23,9 @@ const myStyleDictionary = new StyleDictionary({
                destination: fileName.replace('.json', '.scss'),
                format: 'scss/variables',
                filter: (token) => token.filePath.endsWith(fileName),
-               options: {
-                  outputReferences: !fileName.includes('color'),
-               },
+               // options: {
+               //    outputReferences: !fileName.includes('color'),
+               // },
             }
          }),
       },
