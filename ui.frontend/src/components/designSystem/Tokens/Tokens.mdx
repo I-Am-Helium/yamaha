@@ -8,88 +8,104 @@ import tokensDocs from '../../../styles/tokens/docs/token-documentation.json'
 Design tokens are the fundamental visual design attributes of a design system, abstracted into hierarchical, reusable variables. Tokens
 are applied in place of hard-coded values in order to maintain a scalable and consistent visual system for designing and developing UI.
 
-export const TokenTable = ({ tokens }) => (
-   <table style={{ width: '100%', borderCollapse: 'collapse' }}>
-      <thead>
-         <tr>
-            <th
-               style={{
-                  textAlign: 'left',
-                  padding: '12px',
-                  borderBottom: '1px solid #e0e0e0',
-               }}
-            >
-               Token Name
-            </th>
-            <th
-               style={{
-                  textAlign: 'left',
-                  padding: '12px',
-                  borderBottom: '1px solid #e0e0e0',
-               }}
-            >
-               Value
-            </th>
-            <th
-               style={{
-                  textAlign: 'left',
-                  padding: '12px',
-                  borderBottom: '1px solid #e0e0e0',
-               }}
-            >
-               {tokens[0].type == "color" ? "HEX" : "Rem"}
-            </th>
+export const TokenTable = ({ tokens }) => {
+   const copyToClipboard = (content) => {
+      navigator.clipboard
+         .writeText(content)
+         .then(() => {
+            console.log(`Copied to clipboard: ${content}`)
+         })
+         .catch((err) => {
+            console.error(`Failed to copy: ${err}`)
+         })
+   }
 
-            {tokens[0].type == "color" ? (
-            <th
-               style={{
-                  textAlign: 'left',
-                  padding: '12px',
-                  borderBottom: '1px solid #e0e0e0',
-               }}
-            >
-               Example
-            </th>
-            ) : null}
-         </tr>
-      </thead>
-      <tbody>
-         {tokens.map(({ tokenName, value, hex, type }) => (
-            <tr key={tokenName}>
-               <td
-                  style={{ padding: '12px', borderBottom: '1px solid #e0e0e0' }}
-               >
-                  <code>{tokenName}</code>
-               </td>
-               <td
-                  style={{ padding: '12px', borderBottom: '1px solid #e0e0e0' }}
-               >
-                  <code>{value}</code>
-               </td>
-              <td>
-               <code>{type == "color" ? hex : `${parseInt(value) / 16}rem`}</code>
-              </td>
-              {type == "color" ? (
-               <td
-                  style={{ padding: '12px', borderBottom: '1px solid #e0e0e0' }}
-               >
-                  <div
+return (
+
+      <table
+         style={{ width: '100%', borderCollapse: 'collapse' }}
+      >
+         <thead>
+            <tr>
+               <th
+                  style={{
+                     textAlign: 'left',
+                     padding: '12px',
+                     borderBottom: '1px solid #e0e0e0',
+                  }} >
+                  Token Name
+               </th>
+               <th
+                  style={{
+                     textAlign: 'left',
+                     padding: '12px',
+                     borderBottom: '1px solid #e0e0e0',
+                  }} >
+                  Value
+               </th>
+               <th
+                  style={{
+                     textAlign: 'left',
+                     padding: '12px',
+                     borderBottom: '1px solid #e0e0e0',
+                  }} >
+                  {tokens[0].type == "color" ? "HEX" : "Rem"}
+               </th>
+
+               {tokens[0].type == "color" ? (
+                  <th
                      style={{
-                        width: '200px',
-                        height: '24px',
-                        backgroundColor: hex,
-                        borderRadius: '4px',
-                        border: '1px solid #e0e0e0',
+                        textAlign: 'left',
+                        padding: '12px',
+                        borderBottom: '1px solid #e0e0e0',
                      }}
-                  />
-               </td>
+                  >
+                     Example
+                  </th>
                ) : null}
             </tr>
-         ))}
-      </tbody>
+         </thead>
+         <tbody>
+            {tokens.map(({ tokenName, value, hex, type }) => (
+               <tr key={tokenName}>
+                  <td
+                     style={{ padding: '12px', borderBottom: '1px solid #e0e0e0' }}
+                     onClick={() => copyToClipboard(tokenName)}
+                  >
+                     <code>{tokenName}</code>
+                  </td>
+                  <td
+                     style={{ padding: '12px', borderBottom: '1px solid #e0e0e0' }}
+                     onClick={() => copyToClipboard(value)}
+                  >
+                     <code>{value}</code>
+                  </td>
+                  <td onClick={() => copyToClipboard(type == "color" ? hex : `${parseInt(value) / 16}rem`)}>
+                     <code>{type == "color" ? hex : `${parseInt(value) / 16}rem`}</code>
+                  </td>
+                  {type == "color" ? (
+                     <td
+                        className="not-clickable"
+                        style={{ padding: '12px', borderBottom: '1px solid #e0e0e0' }}
+                     >
+                        <div
+                           style={{
+                              width: '200px',
+                              height: '24px',
+                              backgroundColor: hex,
+                              borderRadius: '4px',
+                              border: '1px solid #e0e0e0',
+                           }}
+                        />
+                     </td>
+                  ) : null}
+               </tr>
+            ))}
+         </tbody>
+      </table>
 
-   </table>
 )
+}
 
 ## Surface
 
@@ -200,6 +216,10 @@ export const TokenTable = ({ tokens }) => (
 
   th:nth-child(3) {
     width: 300px;
+  }
+
+  table td:not(.not-clickable) {
+    cursor: pointer;
   }
 `}
 </style>
