@@ -58,3 +58,12 @@ jobs:
           git add .
           git commit -m "chore: update generated token files"
           git push
+
+      - uses: vinayaja/teams-notification@v1.0.0
+        with:
+          gh-token: ${{ secrets.GITHUB_TOKEN }}
+          notification-summary: "Tokens were edited"
+          msTeams-webhook-uri: ${{ secrets.TEAMS_WEBHOOK }}
+          notification-colour: "good"
+          notification-type: "deployment"
+
