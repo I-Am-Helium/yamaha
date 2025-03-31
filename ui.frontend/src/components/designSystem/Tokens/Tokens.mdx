@@ -1,6 +1,5 @@
 import { Meta, Story, Canvas } from '@storybook/addon-docs'
 import tokensDocs from '../../../styles/tokens/docs/token-documentation.json'
-import tokensDocs from '../../../styles/tokens/docs/token-documentation.json'
 
 <Meta title="Design System/Design Tokens" />
 
@@ -10,16 +9,16 @@ Design tokens are the fundamental visual design attributes of a design system, a
 are applied in place of hard-coded values in order to maintain a scalable and consistent visual system for designing and developing UI.
 
 export const TokenTable = ({ tokens }) => {
- const copyToClipboard = (content) => {
-   navigator.clipboard
-      .writeText(content)
-      .then(() => {
-         console.log(`Copied to clipboard: ${content}`)
-      })
-      .catch((err) => {
-         console.error(`Failed to copy: ${err}`)
-      })
-}
+   const copyToClipboard = (content) => {
+      navigator.clipboard
+         .writeText(content)
+         .then(() => {
+            console.log(`Copied to clipboard: ${content}`)
+         })
+         .catch((err) => {
+            console.error(`Failed to copy: ${err}`)
+         })
+   }
 
 return (
 
