@@ -2,7 +2,7 @@ name: Token Generation and PR
 
 on:
   pull_request:
-    branches: [test/dev]
+    branches: [development]
 
   workflow_dispatch:
 
@@ -27,14 +27,14 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Take latest changes from test/dev
+      - name: Take latest changes from development
         run: |
           git config --local user.email "${{ env.GIT_COMMIT_AUTHOR_EMAIL }}"
           git config --local user.name "${{ env.GIT_COMMIT_AUTHOR_NAME }}"
-          git checkout test/dev 
+          git checkout development 
           git pull
           git checkout supernova/style-dictionary
-          git merge test/dev
+          git merge development
 
       - uses: actions/setup-node@v4
         with:
@@ -44,7 +44,7 @@ jobs:
         run: npm install
 
       - name: Generate tokens
-        run: npm run create-token-files && npm run generate-tokens
+        run: npm run tokens
 
       - name: Check Git commit author info
         run: |
