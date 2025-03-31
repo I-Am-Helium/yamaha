@@ -60,7 +60,7 @@ jobs:
           git push
 
       - uses: neonidian/teams-notify-build-status@v3
-        if: ${{ !success() }}
+        if: ${{ success() }}
         with:
           webhookUrl: ${{ secrets.TEAMS_WEBHOOK }}
           title: >-
