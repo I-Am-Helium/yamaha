@@ -59,11 +59,16 @@ jobs:
           git commit -m "chore: update generated token files"
           git push
 
-      - uses: vinayaja/teams-notification@v1.0.0
+      - uses: neonidian/teams-notify-build-status@v3
+        if: ${{ !success() }}
         with:
-          gh-token: ${{ secrets.GITHUB_TOKEN }}
-          notification-summary: "Tokens were edited"
-          msTeams-webhook-uri: ${{ secrets.TEAMS_WEBHOOK }}
-          notification-colour: "good"
-          notification-type: "deployment"
+          webhookUrl: ${{ secrets.TEAMS_WEBHOOK }}
+          title: >-
+            [FE] Design Tokens Updated: [Repository link](${{ github.server_url }}/${{ github.repository }})
+          titleBackgroundColor: ${{ job.status }}
+          message: New version of tokens will be available shortly.
+        env:
+           SHOULD_DISPLAY_ACTOR_LABEL: true
+           SHOULD_DISPLAY_VIEW_RUN_BUTTON: true
+           SHOULD_DISPLAY_VIEW_COMMIT_BUTTON: true
 
