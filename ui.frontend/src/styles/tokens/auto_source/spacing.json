@@ -1,0 +1,112 @@
+{
+  "spacing": {
+    "default": {
+      "space-default-0": {
+        "value": "0px",
+        "type": "dimension"
+      },
+      "space-default-1": {
+        "value": "2px",
+        "type": "dimension"
+      },
+      "space-default-2": {
+        "value": "4px",
+        "type": "dimension"
+      },
+      "space-default-3": {
+        "value": "8px",
+        "type": "dimension"
+      },
+      "space-default-4": {
+        "value": "16px",
+        "type": "dimension"
+      },
+      "space-default-5": {
+        "value": "24px",
+        "type": "dimension"
+      },
+      "space-default-6": {
+        "value": "32px",
+        "type": "dimension"
+      },
+      "space-default-7": {
+        "value": "40px",
+        "type": "dimension"
+      },
+      "space-default-8": {
+        "value": "48px",
+        "type": "dimension"
+      },
+      "space-default-9": {
+        "value": "56px",
+        "type": "dimension"
+      },
+      "space-default-10": {
+        "value": "64px",
+        "type": "dimension"
+      },
+      "space-default-11": {
+        "value": "72px",
+        "type": "dimension"
+      },
+      "space-default-12": {
+        "value": "80px",
+        "type": "dimension"
+      }
+    },
+    "compact": {
+      "space-compact-0": {
+        "value": "0px",
+        "type": "dimension"
+      },
+      "space-compact-1": {
+        "value": "2px",
+        "type": "dimension"
+      },
+      "space-compact-2": {
+        "value": "4px",
+        "type": "dimension"
+      },
+      "space-compact-3": {
+        "value": "8px",
+        "type": "dimension"
+      },
+      "space-compact-4": {
+        "value": "12px",
+        "type": "dimension"
+      },
+      "space-compact-5": {
+        "value": "16px",
+        "type": "dimension"
+      },
+      "space-compact-6": {
+        "value": "20px",
+        "type": "dimension"
+      },
+      "space-compact-7": {
+        "value": "24px",
+        "type": "dimension"
+      },
+      "space-compact-8": {
+        "value": "28px",
+        "type": "dimension"
+      },
+      "space-compact-9": {
+        "value": "32px",
+        "type": "dimension"
+      },
+      "space-compact-10": {
+        "value": "36px",
+        "type": "dimension"
+      },
+      "space-compact-11": {
+        "value": "40px",
+        "type": "dimension"
+      },
+      "space-compact-12": {
+        "value": "48px",
+        "type": "dimension"
+      }
+    }
+  }
+}

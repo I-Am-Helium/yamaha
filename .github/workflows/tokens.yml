@@ -1,8 +1,8 @@
 name: Token Generation and PR
 
 on:
-  push:
-    branches: [development]
+  pull_request:
+    branches: [test/dev]
 
   workflow_dispatch:
 
@@ -12,6 +12,7 @@ env:
 
 jobs:
   generate-tokens:
+    if: github.head_ref == 'supernova/style-dictionary'
     runs-on: ubuntu-latest
     defaults:
       run:
@@ -24,8 +25,16 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: development
           fetch-depth: 0
+
+      - name: Take latest changes from test/dev
+        run: |
+          git config --local user.email "${{ env.GIT_COMMIT_AUTHOR_EMAIL }}"
+          git config --local user.name "${{ env.GIT_COMMIT_AUTHOR_NAME }}"
+          git checkout test/dev 
+          git pull
+          git checkout supernova/style-dictionary
+          git merge test/dev
 
       - uses: actions/setup-node@v4
         with:
@@ -35,15 +44,17 @@ jobs:
         run: npm install
 
       - name: Generate tokens
-        run: npm run build-tokens
+        run: npm run create-token-files && npm run generate-tokens
 
-      - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v7
-        with:
-          branch: feat/new_tokens
-          token: ${{ secrets.CREATE_PR_DIEGO_TOKEN }}
-          committer: ${{ env.GIT_COMMIT_AUTHOR_NAME }} <${{ env.GIT_COMMIT_AUTHOR_EMAIL }}>
-          commit-message: "chore: update design tokens"
-          title: "update design tokens"
-          body: "Automated PR to update design tokens"
-          delete-branch: true
+      - name: Check Git commit author info
+        run: |
+          echo "GIT_COMMIT_AUTHOR_NAME: ${{ env.GIT_COMMIT_AUTHOR_NAME }}"
+          echo "GIT_COMMIT_AUTHOR_EMAIL: ${{ env.GIT_COMMIT_AUTHOR_EMAIL }}"
+
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "${{ env.GIT_COMMIT_AUTHOR_EMAIL }}"
+          git config --local user.name "${{ env.GIT_COMMIT_AUTHOR_NAME }}"
+          git add .
+          git commit -m "chore: update generated token files"
+          git push
