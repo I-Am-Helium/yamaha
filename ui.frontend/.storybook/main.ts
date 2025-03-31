@@ -5,6 +5,7 @@ const config: StorybookConfig = {
     "../src/**/*.mdx",
     "../src/**/*.stories.@(js|jsx|mjs|ts|tsx)"
   ],
+  staticDirs: ['../public', '../src/assets/generated-icons', { from: '../src/assets/fonts', to: '/resources/assets/fonts' }],
   "addons": [
     "@storybook/addon-essentials",
     "@storybook/addon-onboarding",
