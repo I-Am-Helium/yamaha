@@ -48,6 +48,14 @@ jobs:
           artifact_name: github-pages
           
       - uses: neonidian/teams-notify-build-status@v3
+        if: always()
         with:
-          webhookUrl: ${{ secrets.TEAMS_WEBHOOK }}   
-          message: Workflow run passed !!
+          webhookUrl: ${{ secrets.TEAMS_WEBHOOK }}
+          title: >-
+            [Repository link](${{ github.server_url }}/${{ github.repository }})
+          titleBackgroundColor: ${{ job.status }}
+          message: A new version of the storybook has been deployed. ${{ steps.deployment.outputs.page_url }}
+        env:
+           SHOULD_DISPLAY_ACTOR_LABEL: true
+           SHOULD_DISPLAY_VIEW_RUN_BUTTON: true
+           SHOULD_DISPLAY_VIEW_COMMIT_BUTTON: true
