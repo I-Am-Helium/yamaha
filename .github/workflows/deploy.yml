@@ -54,7 +54,7 @@ jobs:
           title: >-
             [Repository link](${{ github.server_url }}/${{ github.repository }})
           titleBackgroundColor: ${{ job.status }}
-          message: A new version of the storybook has been deployed. >- 
+          message: A new version of the storybook has been deployed.
             [Storybook link](${{ steps.deployment.outputs.page_url }})
         env:
            SHOULD_DISPLAY_ACTOR_LABEL: true
