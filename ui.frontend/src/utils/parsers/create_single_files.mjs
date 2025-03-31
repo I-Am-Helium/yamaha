@@ -2,6 +2,10 @@ import { readFile, writeFile, mkdir } from 'fs/promises'
 import { dirname, resolve } from 'node:path/posix'
 import { fileURLToPath } from 'url'
 
+// at this point we can keep this here
+// but it should become a parser being registered in
+// style-dictionary registerParser
+
 async function createSeparateFiles() {
    console.log('Creating separate files for tokens')
    const __filename = fileURLToPath(import.meta.url)
