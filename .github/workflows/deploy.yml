@@ -46,3 +46,8 @@ jobs:
         uses: actions/deploy-pages@v4
         with:
           artifact_name: github-pages
+          
+      - uses: neonidian/teams-notify-build-status@v3
+        with:
+          webhookUrl: ${{ secrets.TEAMS_WEBHOOK }}   
+          message: Workflow run passed !!
