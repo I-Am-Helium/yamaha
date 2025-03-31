@@ -21,7 +21,8 @@
       "prepare": "cd .. && husky ui.frontend/.husky",
       "format": "prettier --write .",
       "create-token-files": "node src/utils/parsers/create_single_files.mjs",
-      "generate-tokens": "node src/config/generate_tokens.mjs && node src/utils/parsers/generate-token-docs.mjs"
+      "generate-tokens": "node src/config/generate_tokens.mjs && node src/utils/parsers/generate-token-docs.mjs",
+      "tokens": "npm run create-token-files && npm run generate-tokens"
    },
    "dependencies": {
       "fantasticon": "^1.2.3",
