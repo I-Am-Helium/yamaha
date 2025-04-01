@@ -4,7 +4,7 @@
       {
         "tokenName": "$border-button-outlined-default",
         "value": "red-primary-500",
-        "hex": "#3dd51e",
+        "hex": "#d52b1e",
         "type": "color"
       },
       {
@@ -68,7 +68,7 @@
       {
         "tokenName": "$border-status-offer",
         "value": "red-primary-500",
-        "hex": "#3dd51e",
+        "hex": "#d52b1e",
         "type": "color"
       }
     ],
@@ -423,8 +423,8 @@
       },
       {
         "tokenName": "$color-core-color-red-primary-500",
-        "value": "#3dd51e",
-        "hex": "#3dd51e",
+        "value": "#d52b1e",
+        "hex": "#d52b1e",
         "type": "color"
       },
       {
@@ -626,7 +626,7 @@
       {
         "tokenName": "$content-button-icon-secondary-default-hover-active",
         "value": "red-primary-500",
-        "hex": "#3dd51e",
+        "hex": "#d52b1e",
         "type": "color"
       },
       {
@@ -1038,7 +1038,7 @@
       {
         "tokenName": "$surface-button-primary-default",
         "value": "red-primary-500",
-        "hex": "#3dd51e",
+        "hex": "#d52b1e",
         "type": "color"
       },
       {
@@ -1062,7 +1062,7 @@
       {
         "tokenName": "$surface-button-secondary-default",
         "value": "red-primary-500",
-        "hex": "#3dd51e",
+        "hex": "#d52b1e",
         "type": "color"
       },
       {
@@ -1176,7 +1176,7 @@
       {
         "tokenName": "$text-button-secondary-hover",
         "value": "red-primary-500",
-        "hex": "#3dd51e",
+        "hex": "#d52b1e",
         "type": "color"
       },
       {
@@ -1194,7 +1194,7 @@
       {
         "tokenName": "$text-button-link-default",
         "value": "red-primary-500",
-        "hex": "#3dd51e",
+        "hex": "#d52b1e",
         "type": "color"
       },
       {
