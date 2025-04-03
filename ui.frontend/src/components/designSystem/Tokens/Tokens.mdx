@@ -1,4 +1,5 @@
 import { Meta, Story, Canvas } from '@storybook/addon-docs'
+import tokensDocs from '../../../styles/tokens/docs/token-documentation.json'
 
 <Meta title="Design System/Design Tokens" />
 
@@ -7,298 +8,182 @@ import { Meta, Story, Canvas } from '@storybook/addon-docs'
 Design tokens are the fundamental visual design attributes of a design system, abstracted into hierarchical, reusable variables. Tokens
 are applied in place of hard-coded values in order to maintain a scalable and consistent visual system for designing and developing UI.
 
-export const TokenTable = ({ tokens }) => (
-   <table style={{ width: '100%', borderCollapse: 'collapse' }}>
-      <thead>
-         <tr>
-            <th
-               style={{
-                  textAlign: 'left',
-                  padding: '12px',
-                  borderBottom: '1px solid #e0e0e0',
-               }}
-            >
-               Token Name
-            </th>
-            <th
-               style={{
-                  textAlign: 'left',
-                  padding: '12px',
-                  borderBottom: '1px solid #e0e0e0',
-               }}
-            >
-               Value
-            </th>
-            <th
-               style={{
-                  textAlign: 'left',
-                  padding: '12px',
-                  borderBottom: '1px solid #e0e0e0',
-               }}
-            >
-               HEX
-            </th>
-            <th
-               style={{
-                  textAlign: 'left',
-                  padding: '12px',
-                  borderBottom: '1px solid #e0e0e0',
-               }}
-            >
-               Example
-            </th>
-         </tr>
-      </thead>
-      <tbody>
-         {tokens.map(({ name, value, semantic }) => (
-            <tr key={name}>
-               <td
-                  style={{ padding: '12px', borderBottom: '1px solid #e0e0e0' }}
-               >
-                  <code>{name}</code>
-               </td>
-               <td
-                  style={{ padding: '12px', borderBottom: '1px solid #e0e0e0' }}
-               >
-                  <code>{semantic}</code>
-               </td>
-              <td>
-               <code>{value}</code>
-              </td> 
-               <td
-                  style={{ padding: '12px', borderBottom: '1px solid #e0e0e0' }}
-               >
-                  <div
+export const TokenTable = ({ tokens }) => {
+   const copyToClipboard = (content) => {
+      navigator.clipboard
+         .writeText(content)
+         .then(() => {
+            console.log(`Copied to clipboard: ${content}`)
+         })
+         .catch((err) => {
+            console.error(`Failed to copy: ${err}`)
+         })
+   }
+
+return (
+
+      <table
+         style={{ width: '100%', borderCollapse: 'collapse' }}
+      >
+         <thead>
+            <tr>
+               <th
+                  style={{
+                     textAlign: 'left',
+                     padding: '12px',
+                     borderBottom: '1px solid #e0e0e0',
+                  }} >
+                  Token Name
+               </th>
+               <th
+                  style={{
+                     textAlign: 'left',
+                     padding: '12px',
+                     borderBottom: '1px solid #e0e0e0',
+                  }} >
+                  Value
+               </th>
+               <th
+                  style={{
+                     textAlign: 'left',
+                     padding: '12px',
+                     borderBottom: '1px solid #e0e0e0',
+                  }} >
+                  {tokens[0].type == "color" ? "HEX" : "Rem"}
+               </th>
+
+               {tokens[0].type == "color" ? (
+                  <th
                      style={{
-                        width: '200px',
-                        height: '24px',
-                        backgroundColor: value,
-                        borderRadius: '4px',
-                        border: '1px solid #e0e0e0',
+                        textAlign: 'left',
+                        padding: '12px',
+                        borderBottom: '1px solid #e0e0e0',
                      }}
-                  />
-               </td>
+                  >
+                     Example
+                  </th>
+               ) : null}
             </tr>
-         ))}
-      </tbody>
+         </thead>
+         <tbody>
+            {tokens.map(({ tokenName, value, hex, type }) => (
+               <tr key={tokenName}>
+                  <td
+                     style={{ padding: '12px', borderBottom: '1px solid #e0e0e0' }}
+                     onClick={() => copyToClipboard(tokenName)}
+                  >
+                     <code>{tokenName}</code>
+                  </td>
+                  <td
+                     style={{ padding: '12px', borderBottom: '1px solid #e0e0e0' }}
+                     onClick={() => copyToClipboard(value)}
+                  >
+                     <code>{value}</code>
+                  </td>
+                  <td onClick={() => copyToClipboard(type == "color" ? hex : `${parseInt(value) / 16}rem`)}>
+                     <code>{type == "color" ? hex : `${parseInt(value) / 16}rem`}</code>
+                  </td>
+                  {type == "color" ? (
+                     <td
+                        className="not-clickable"
+                        style={{ padding: '12px', borderBottom: '1px solid #e0e0e0' }}
+                     >
+                        <div
+                           style={{
+                              width: '200px',
+                              height: '24px',
+                              backgroundColor: hex,
+                              borderRadius: '4px',
+                              border: '1px solid #e0e0e0',
+                           }}
+                        />
+                     </td>
+                  ) : null}
+               </tr>
+            ))}
+         </tbody>
+      </table>
 
-   </table>
 )
+}
 
-### Surface Button Primary
+## Surface
 
-<TokenTable
-   tokens={[
-      {
-         name: '$surface-button-primary-default',
-         value: '#d52b1e',
-         semantic: 'red-500',
-      },
-      {
-         name: '$surface-button-primary-hover',
-         value: '#d35445',
-         semantic: 'red-400',
-      },
-      {
-         name: '$surface-button-primary-active',
-         value: '#b62115',
-         semantic: 'red-700',
-      },
-      {
-         name: '$surface-button-primary-disabled',
-         value: '#e4e5e6',
-         semantic: 'cool-grey-10-50',
-      },
-   ]}
-/>
+<TokenTable tokens={tokensDocs.surface.button} />
 
-### Surface Button Secondary
+## Border
 
-<TokenTable
-   tokens={[
-      {
-         name: '$surface-button-secondary-default',
-         value: '#d52b1e',
-         semantic: 'red-500',
-      },
-      {
-         name: '$surface-button-secondary-hover',
-         value: '#d35445',
-         semantic: 'red-400',
-      },
-      {
-         name: '$surface-button-secondary-active',
-         value: '#b62115',
-         semantic: 'red-700',
-      },
-      {
-         name: '$surface-button-secondary-disabled',
-         value: '#1a1a1a',
-         semantic: 'cool-grey-4-800',
-      },
-   ]}
-/>
+<TokenTable tokens={tokensDocs.border.button} />
 
-### Outlined Button Borders
+#### Border Form
 
-<TokenTable
-   tokens={[
-      {
-         name: '$border-button-outlined-default',
-         value: '#d52b1e',
-         semantic: 'red-500',
-      },
-      {
-         name: '$border-button-outlined-hover',
-         value: '#d35445',
-         semantic: 'red-400',
-      },
-      {
-         name: '$border-button-outlined-active',
-         value: '#b62115',
-         semantic: 'red-700',
-      },
-      {
-         name: '$border-button-outlined-disabled',
-         value: '#e0e0e0',
-         semantic: 'cool-grey-10-300',
-      },
-   ]}
-/>
+<TokenTable tokens={tokensDocs.border.form} />
 
-### Form Elements
+#### Border Status
 
-<TokenTable
-   tokens={[
-      {
-         name: '$border-form-input',
-         value: '#e0e0e0',
-         semantic: 'cool-grey-10-300',
-      },
-      {
-         name: '$border-form-error',
-         value: '#d32f2f',
-         semantic: 'status-red',
-      },
-   ]}
-/>
+<TokenTable tokens={tokensDocs.border.status} />
 
-### Status Indicators
+#### Border Stroke
 
-<TokenTable
-   tokens={[
-      {
-         name: '$border-status-success',
-         value: '#2e7d32',
-         semantic: 'status-green',
-      },
-      {
-         name: '$border-status-warning',
-         value: '#ed6c02',
-         semantic: 'status-orange',
-      },
-      {
-         name: '$border-status-info',
-         value: '#0288d1',
-         semantic: 'status-blue',
-      },
-      {
-         name: '$border-status-error',
-         value: '#d32f2f',
-         semantic: 'status-red',
-      },
-      {
-         name: '$border-status-offer',
-         value: '#d52b1e',
-         semantic: 'red-500',
-      },
-   ]}
-/>
+<TokenTable tokens={tokensDocs.border.stroke} />
 
-## Typography
+#### Border Radius
 
-### Heading Text
+<TokenTable tokens={tokensDocs.border.radius} />
 
-<TokenTable
-   tokens={[
-      {
-         name: '$text-heading-primary',
-         value: '#000000',
-         semantic: 'neutral-black',
-      },
-      {
-         name: '$text-heading-secondary',
-         value: '#000000',
-         semantic: 'neutral-black',
-      },
-   ]}
-/>
+### Content
 
-### Body Text
+<TokenTable tokens={tokensDocs.content.button} />
 
-<TokenTable
-   tokens={[
-      {
-         name: '$text-body-primary',
-         value: '#000000',
-         semantic: 'neutral-black',
-      },
-      {
-         name: '$text-body-secondary',
-         value: '#000000',
-         semantic: 'neutral-black',
-      },
-   ]}
-/>
+### Font Size
 
-### Button Text
+#### Heading
 
-<TokenTable
-   tokens={[
-      {
-         name: '$text-button-primary-default',
-         value: '#ffffff',
-         semantic: 'neutral-white',
-      },
-      {
-         name: '$text-button-primary-hover-active',
-         value: '#ffffff',
-         semantic: 'neutral-white',
-      },
-      {
-         name: '$text-button-primary-disabled',
-         value: '#e0e0e0',
-         semantic: 'cool-grey-10-300',
-      },
-   ]}
-/>
+<TokenTable tokens={tokensDocs.fontsize.heading} />
 
-### Link Button Text
+#### Body
 
-<TokenTable
-   tokens={[
-      {
-         name: '$text-button-link-default',
-         value: '#d52b1e',
-         semantic: 'red-500',
-      },
-      {
-         name: '$text-button-link-hover',
-         value: '#d35445',
-         semantic: 'red-400',
-      },
-      {
-         name: '$text-button-link-clicked',
-         value: '#b62115',
-         semantic: 'red-700',
-      },
-      {
-         name: '$text-button-link-disabled',
-         value: '#e0e0e0',
-         semantic: 'cool-grey-10-300',
-      },
-   ]}
-/>
+<TokenTable tokens={tokensDocs.fontsize.body} />
+
+## Spacings
+
+### Padding Default
+
+<TokenTable tokens={tokensDocs.padding.default} />
+
+### Padding compact
+
+<TokenTable tokens={tokensDocs.padding.compact} />
+
+### Spacing Default
+
+<TokenTable tokens={tokensDocs.spacing.default} />
+
+### Spacing compact
+
+<TokenTable tokens={tokensDocs.spacing.compact} />
+
+## Text colors
+
+#### Legal
+
+<TokenTable tokens={tokensDocs.text.legal} />
+
+#### Heading
+
+<TokenTable tokens={tokensDocs.text.heading} />
+
+#### Body
+
+<TokenTable tokens={tokensDocs.text.body} />
+
+#### Status
+
+<TokenTable tokens={tokensDocs.text.status} />
+
+#### Button
+
+<TokenTable tokens={tokensDocs.text.button} />
 
 <style>
    {`
@@ -325,13 +210,16 @@ export const TokenTable = ({ tokens }) => (
     min-width: 300px;
   }
 
-
   th:nth-child(2) {
     width: 300px;
   }
 
   th:nth-child(3) {
     width: 300px;
+  }
+
+  table td:not(.not-clickable) {
+    cursor: pointer;
   }
 `}
 </style>

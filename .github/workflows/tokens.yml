@@ -1,0 +1,74 @@
+name: Token Generation and PR
+
+on:
+  pull_request:
+    branches: [development]
+
+  workflow_dispatch:
+
+env:
+  GIT_COMMIT_AUTHOR_NAME: "github-actions[bot]"
+  GIT_COMMIT_AUTHOR_EMAIL: "github-actions[bot]@users.noreply.github.com"
+
+jobs:
+  generate-tokens:
+    if: github.head_ref == 'supernova/style-dictionary'
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ui.frontend
+
+    permissions:
+      contents: write
+      pull-requests: write
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Take latest changes from development
+        run: |
+          git config --local user.email "${{ env.GIT_COMMIT_AUTHOR_EMAIL }}"
+          git config --local user.name "${{ env.GIT_COMMIT_AUTHOR_NAME }}"
+          git checkout development 
+          git pull
+          git checkout supernova/style-dictionary
+          git merge development
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: lts/*
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Generate tokens
+        run: npm run tokens
+
+      - name: Check Git commit author info
+        run: |
+          echo "GIT_COMMIT_AUTHOR_NAME: ${{ env.GIT_COMMIT_AUTHOR_NAME }}"
+          echo "GIT_COMMIT_AUTHOR_EMAIL: ${{ env.GIT_COMMIT_AUTHOR_EMAIL }}"
+
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "${{ env.GIT_COMMIT_AUTHOR_EMAIL }}"
+          git config --local user.name "${{ env.GIT_COMMIT_AUTHOR_NAME }}"
+          git add .
+          git commit -m "chore: update generated token files"
+          git push
+
+      - uses: neonidian/teams-notify-build-status@v3
+        if: ${{ success() }}
+        with:
+          webhookUrl: ${{ secrets.TEAMS_WEBHOOK }}
+          title: >-
+            [FE] Design Tokens Updated: [Repository link](${{ github.server_url }}/${{ github.repository }})
+          titleBackgroundColor: ${{ job.status }}
+          message: New version of tokens will be available shortly.
+        env:
+           SHOULD_DISPLAY_ACTOR_LABEL: true
+           SHOULD_DISPLAY_VIEW_RUN_BUTTON: true
+           SHOULD_DISPLAY_VIEW_COMMIT_BUTTON: true
+

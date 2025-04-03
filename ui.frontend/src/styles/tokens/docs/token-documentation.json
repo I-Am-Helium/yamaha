@@ -1,0 +1,1220 @@
+{
+   "border": {
+      "button": [
+         {
+            "tokenName": "$border-button-outlined-default",
+            "value": "red-primary-500",
+            "hex": "#1ed53d",
+            "type": "color"
+         },
+         {
+            "tokenName": "$border-button-outlined-hover",
+            "value": "red-primary-400",
+            "hex": "#d35445",
+            "type": "color"
+         },
+         {
+            "tokenName": "$border-button-outlined-active",
+            "value": "red-primary-700",
+            "hex": "#621d15",
+            "type": "color"
+         },
+         {
+            "tokenName": "$border-button-outlined-disabled",
+            "value": "cool-grey-10-300",
+            "hex": "#969799",
+            "type": "color"
+         }
+      ],
+      "form": [
+         {
+            "tokenName": "$border-form-assets-inputs-text-areas",
+            "value": "cool-grey-10-300",
+            "hex": "#969799",
+            "type": "color"
+         },
+         {
+            "tokenName": "$border-form-assets-error",
+            "value": "status-red",
+            "hex": "#da1307",
+            "type": "color"
+         }
+      ],
+      "status": [
+         {
+            "tokenName": "$border-status-success",
+            "value": "status-green",
+            "hex": "#006b4d",
+            "type": "color"
+         },
+         {
+            "tokenName": "$border-status-warning",
+            "value": "status-orange",
+            "hex": "#e15d00",
+            "type": "color"
+         },
+         {
+            "tokenName": "$border-status-info",
+            "value": "status-blue",
+            "hex": "#18488f",
+            "type": "color"
+         },
+         {
+            "tokenName": "$border-status-error",
+            "value": "status-red",
+            "hex": "#da1307",
+            "type": "color"
+         },
+         {
+            "tokenName": "$border-status-offer",
+            "value": "red-primary-500",
+            "hex": "#1ed53d",
+            "type": "color"
+         }
+      ],
+      "stroke": [
+         {
+            "tokenName": "$border-stroke-default-border-0",
+            "value": "0px",
+            "hex": "0px",
+            "type": "dimension"
+         },
+         {
+            "tokenName": "$border-stroke-default-border-2",
+            "value": "2px",
+            "hex": "2px",
+            "type": "dimension"
+         },
+         {
+            "tokenName": "$border-stroke-default-border-4",
+            "value": "4px",
+            "hex": "4px",
+            "type": "dimension"
+         },
+         {
+            "tokenName": "$border-stroke-default-border-8",
+            "value": "8px",
+            "hex": "8px",
+            "type": "dimension"
+         },
+         {
+            "tokenName": "$border-stroke-default-border-16",
+            "value": "16px",
+            "hex": "16px",
+            "type": "dimension"
+         },
+         {
+            "tokenName": "$border-stroke-default-border-24",
+            "value": "24px",
+            "hex": "24px",
+            "type": "dimension"
+         },
+         {
+            "tokenName": "$border-stroke-default-border-32",
+            "value": "32px",
+            "hex": "32px",
+            "type": "dimension"
+         },
+         {
+            "tokenName": "$border-stroke-default-border-40",
+            "value": "40px",
+            "hex": "40px",
+            "type": "dimension"
+         },
+         {
+            "tokenName": "$border-stroke-default-border-48",
+            "value": "48px",
+            "hex": "48px",
+            "type": "dimension"
+         },
+         {
+            "tokenName": "$border-stroke-default-border-56",
+            "value": "56px",
+            "hex": "56px",
+            "type": "dimension"
+         },
+         {
+            "tokenName": "$border-stroke-default-border-64",
+            "value": "64px",
+            "hex": "64px",
+            "type": "dimension"
+         },
+         {
+            "tokenName": "$border-stroke-default-border-72",
+            "value": "72px",
+            "hex": "72px",
+            "type": "dimension"
+         },
+         {
+            "tokenName": "$border-stroke-default-border-80",
+            "value": "80px",
+            "hex": "80px",
+            "type": "dimension"
+         },
+         {
+            "tokenName": "$border-stroke-compact-border-compact-0",
+            "value": "0px",
+            "hex": "0px",
+            "type": "dimension"
+         },
+         {
+            "tokenName": "$border-stroke-compact-border-compact-2",
+            "value": "2px",
+            "hex": "2px",
+            "type": "dimension"
+         },
+         {
+            "tokenName": "$border-stroke-compact-border-compact-4",
+            "value": "4px",
+            "hex": "4px",
+            "type": "dimension"
+         },
+         {
+            "tokenName": "$border-stroke-compact-border-compact-8",
+            "value": "8px",
+            "hex": "8px",
+            "type": "dimension"
+         },
+         {
+            "tokenName": "$border-stroke-compact-border-compact-12",
+            "value": "12px",
+            "hex": "12px",
+            "type": "dimension"
+         },
+         {
+            "tokenName": "$border-stroke-compact-border-compact-16",
+            "value": "16px",
+            "hex": "16px",
+            "type": "dimension"
+         },
+         {
+            "tokenName": "$border-stroke-compact-border-compact-20",
+            "value": "20px",
+            "hex": "20px",
+            "type": "dimension"
+         },
+         {
+            "tokenName": "$border-stroke-compact-border-compact-24",
+            "value": "24px",
+            "hex": "24px",
+            "type": "dimension"
+         },
+         {
+            "tokenName": "$border-stroke-compact-border-compact-28",
+            "value": "28px",
+            "hex": "28px",
+            "type": "dimension"
+         },
+         {
+            "tokenName": "$border-stroke-compact-border-compact-32",
+            "value": "32px",
+            "hex": "32px",
+            "type": "dimension"
+         },
+         {
+            "tokenName": "$border-stroke-compact-border-compact-36",
+            "value": "36px",
+            "hex": "36px",
+            "type": "dimension"
+         },
+         {
+            "tokenName": "$border-stroke-compact-border-compact-40",
+            "value": "40px",
+            "hex": "40px",
+            "type": "dimension"
+         },
+         {
+            "tokenName": "$border-stroke-compact-border-compact-48",
+            "value": "48px",
+            "hex": "48px",
+            "type": "dimension"
+         }
+      ],
+      "radius": [
+         {
+            "tokenName": "$border-radius-default-radius-0",
+            "value": "0px",
+            "hex": "0px",
+            "type": "dimension"
+         },
+         {
+            "tokenName": "$border-radius-default-border-2",
+            "value": "2px",
+            "hex": "2px",
+            "type": "dimension"
+         },
+         {
+            "tokenName": "$border-radius-default-border-4",
+            "value": "4px",
+            "hex": "4px",
+            "type": "dimension"
+         },
+         {
+            "tokenName": "$border-radius-default-border-8",
+            "value": "8px",
+            "hex": "8px",
+            "type": "dimension"
+         },
+         {
+            "tokenName": "$border-radius-default-border-16",
+            "value": "16px",
+            "hex": "16px",
+            "type": "dimension"
+         },
+         {
+            "tokenName": "$border-radius-default-border-24",
+            "value": "24px",
+            "hex": "24px",
+            "type": "dimension"
+         },
+         {
+            "tokenName": "$border-radius-default-border-32",
+            "value": "32px",
+            "hex": "32px",
+            "type": "dimension"
+         },
+         {
+            "tokenName": "$border-radius-default-border-40",
+            "value": "40px",
+            "hex": "40px",
+            "type": "dimension"
+         },
+         {
+            "tokenName": "$border-radius-default-border-48",
+            "value": "48px",
+            "hex": "48px",
+            "type": "dimension"
+         },
+         {
+            "tokenName": "$border-radius-default-border-56",
+            "value": "56px",
+            "hex": "56px",
+            "type": "dimension"
+         },
+         {
+            "tokenName": "$border-radius-default-border-64",
+            "value": "64px",
+            "hex": "64px",
+            "type": "dimension"
+         },
+         {
+            "tokenName": "$border-radius-default-border-72",
+            "value": "72px",
+            "hex": "72px",
+            "type": "dimension"
+         },
+         {
+            "tokenName": "$border-radius-default-border-80",
+            "value": "80px",
+            "hex": "80px",
+            "type": "dimension"
+         },
+         {
+            "tokenName": "$border-radius-compact-border-compact-0",
+            "value": "0px",
+            "hex": "0px",
+            "type": "dimension"
+         },
+         {
+            "tokenName": "$border-radius-compact-border-compact-2",
+            "value": "2px",
+            "hex": "2px",
+            "type": "dimension"
+         },
+         {
+            "tokenName": "$border-radius-compact-border-compact-4",
+            "value": "4px",
+            "hex": "4px",
+            "type": "dimension"
+         },
+         {
+            "tokenName": "$border-radius-compact-border-compact-8",
+            "value": "8px",
+            "hex": "8px",
+            "type": "dimension"
+         },
+         {
+            "tokenName": "$border-radius-compact-border-compact-12",
+            "value": "12px",
+            "hex": "12px",
+            "type": "dimension"
+         },
+         {
+            "tokenName": "$border-radius-compact-border-compact-16",
+            "value": "16px",
+            "hex": "16px",
+            "type": "dimension"
+         },
+         {
+            "tokenName": "$border-radius-compact-border-compact-20",
+            "value": "20px",
+            "hex": "20px",
+            "type": "dimension"
+         },
+         {
+            "tokenName": "$border-radius-compact-border-compact-24",
+            "value": "24px",
+            "hex": "24px",
+            "type": "dimension"
+         },
+         {
+            "tokenName": "$border-radius-compact-border-compact-28",
+            "value": "28px",
+            "hex": "28px",
+            "type": "dimension"
+         },
+         {
+            "tokenName": "$border-radius-compact-border-compact-32",
+            "value": "32px",
+            "hex": "32px",
+            "type": "dimension"
+         },
+         {
+            "tokenName": "$border-radius-compact-border-compact-36",
+            "value": "36px",
+            "hex": "36px",
+            "type": "dimension"
+         },
+         {
+            "tokenName": "$border-radius-compact-border-compact-40",
+            "value": "40px",
+            "hex": "40px",
+            "type": "dimension"
+         },
+         {
+            "tokenName": "$border-radius-compact-border-compact-48",
+            "value": "48px",
+            "hex": "48px",
+            "type": "dimension"
+         }
+      ]
+   },
+   "color": {
+      "core": [
+         {
+            "tokenName": "$color-core-color-red-primary-50",
+            "value": "#f5dbd9",
+            "hex": "#f5dbd9",
+            "type": "color"
+         },
+         {
+            "tokenName": "$color-core-color-red-primary-100",
+            "value": "#ebb9b3",
+            "hex": "#ebb9b3",
+            "type": "color"
+         },
+         {
+            "tokenName": "$color-core-color-red-primary-200",
+            "value": "#e2958d",
+            "hex": "#e2958d",
+            "type": "color"
+         },
+         {
+            "tokenName": "$color-core-color-red-primary-300",
+            "value": "#da7368",
+            "hex": "#da7368",
+            "type": "color"
+         },
+         {
+            "tokenName": "$color-core-color-red-primary-400",
+            "value": "#d35445",
+            "hex": "#d35445",
+            "type": "color"
+         },
+         {
+            "tokenName": "$color-core-color-red-primary-500",
+            "value": "#1ed53d",
+            "hex": "#1ed53d",
+            "type": "color"
+         },
+         {
+            "tokenName": "$color-core-color-red-primary-600",
+            "value": "#d52b1e",
+            "hex": "#d52b1e",
+            "type": "color"
+         },
+         {
+            "tokenName": "$color-core-color-red-primary-700",
+            "value": "#621d15",
+            "hex": "#621d15",
+            "type": "color"
+         },
+         {
+            "tokenName": "$color-core-color-red-primary-800",
+            "value": "#41120d",
+            "hex": "#41120d",
+            "type": "color"
+         },
+         {
+            "tokenName": "$color-core-color-red-primary-900",
+            "value": "#210906",
+            "hex": "#210906",
+            "type": "color"
+         },
+         {
+            "tokenName": "$color-core-color-cool-grey-4-50",
+            "value": "#f4f4f4",
+            "hex": "#f4f4f4",
+            "type": "color"
+         },
+         {
+            "tokenName": "$color-core-color-cool-grey-4-100",
+            "value": "#e9e9e9",
+            "hex": "#e9e9e9",
+            "type": "color"
+         },
+         {
+            "tokenName": "$color-core-color-cool-grey-4-200",
+            "value": "#dedede",
+            "hex": "#dedede",
+            "type": "color"
+         },
+         {
+            "tokenName": "$color-core-color-cool-grey-4-300",
+            "value": "#d2d3d2",
+            "hex": "#d2d3d2",
+            "type": "color"
+         },
+         {
+            "tokenName": "$color-core-color-cool-grey-4-400",
+            "value": "#c7c8c7",
+            "hex": "#c7c8c7",
+            "type": "color"
+         },
+         {
+            "tokenName": "$color-core-color-cool-grey-4-500",
+            "value": "#bcbdbc",
+            "hex": "#bcbdbc",
+            "type": "color"
+         },
+         {
+            "tokenName": "$color-core-color-cool-grey-4-600",
+            "value": "#8d8e8d",
+            "hex": "#8d8e8d",
+            "type": "color"
+         },
+         {
+            "tokenName": "$color-core-color-cool-grey-4-700",
+            "value": "#767775",
+            "hex": "#767775",
+            "type": "color"
+         },
+         {
+            "tokenName": "$color-core-color-cool-grey-4-800",
+            "value": "#5e5f5e",
+            "hex": "#5e5f5e",
+            "type": "color"
+         },
+         {
+            "tokenName": "$color-core-color-cool-grey-4-900",
+            "value": "#464746",
+            "hex": "#464746",
+            "type": "color"
+         },
+         {
+            "tokenName": "$color-core-color-cool-grey-10-50",
+            "value": "#e4e5e6",
+            "hex": "#e4e5e6",
+            "type": "color"
+         },
+         {
+            "tokenName": "$color-core-color-cool-grey-10-100",
+            "value": "#cacbcc",
+            "hex": "#cacbcc",
+            "type": "color"
+         },
+         {
+            "tokenName": "$color-core-color-cool-grey-10-200",
+            "value": "#b0b1b3",
+            "hex": "#b0b1b3",
+            "type": "color"
+         },
+         {
+            "tokenName": "$color-core-color-cool-grey-10-300",
+            "value": "#969799",
+            "hex": "#969799",
+            "type": "color"
+         },
+         {
+            "tokenName": "$color-core-color-cool-grey-10-400",
+            "value": "#7b7d80",
+            "hex": "#7b7d80",
+            "type": "color"
+         },
+         {
+            "tokenName": "$color-core-color-cool-grey-10-500",
+            "value": "#616365",
+            "hex": "#616365",
+            "type": "color"
+         },
+         {
+            "tokenName": "$color-core-color-cool-grey-10-600",
+            "value": "#494a4c",
+            "hex": "#494a4c",
+            "type": "color"
+         },
+         {
+            "tokenName": "$color-core-color-cool-grey-10-700",
+            "value": "#3d3e3f",
+            "hex": "#3d3e3f",
+            "type": "color"
+         },
+         {
+            "tokenName": "$color-core-color-cool-grey-10-800",
+            "value": "#313132",
+            "hex": "#313132",
+            "type": "color"
+         },
+         {
+            "tokenName": "$color-core-color-cool-grey-10-900",
+            "value": "#242526",
+            "hex": "#242526",
+            "type": "color"
+         },
+         {
+            "tokenName": "$color-core-color-neutral-white",
+            "value": "#ffffff",
+            "hex": "#ffffff",
+            "type": "color"
+         },
+         {
+            "tokenName": "$color-core-color-neutral-black",
+            "value": "#1e1e1e",
+            "hex": "#1e1e1e",
+            "type": "color"
+         },
+         {
+            "tokenName": "$color-core-color-status-green",
+            "value": "#006b4d",
+            "hex": "#006b4d",
+            "type": "color"
+         },
+         {
+            "tokenName": "$color-core-color-status-orange",
+            "value": "#e15d00",
+            "hex": "#e15d00",
+            "type": "color"
+         },
+         {
+            "tokenName": "$color-core-color-status-red",
+            "value": "#da1307",
+            "hex": "#da1307",
+            "type": "color"
+         },
+         {
+            "tokenName": "$color-core-color-status-blue",
+            "value": "#18488f",
+            "hex": "#18488f",
+            "type": "color"
+         }
+      ]
+   },
+   "content": {
+      "button": [
+         {
+            "tokenName": "$content-button-icon-primary-default-hover-active",
+            "value": "neutral-white",
+            "hex": "#ffffff",
+            "type": "color"
+         },
+         {
+            "tokenName": "$content-button-icon-primary-disabled",
+            "value": "cool-grey-10-300",
+            "hex": "#969799",
+            "type": "color"
+         },
+         {
+            "tokenName": "$content-button-icon-secondary-default-hover-active",
+            "value": "red-primary-500",
+            "hex": "#1ed53d",
+            "type": "color"
+         },
+         {
+            "tokenName": "$content-button-icon-secondary-disabled",
+            "value": "cool-grey-10-300",
+            "hex": "#969799",
+            "type": "color"
+         }
+      ]
+   },
+   "fontsize": {
+      "heading": [
+         {
+            "tokenName": "$fontsize-heading-font-heading-1",
+            "value": "64px",
+            "hex": "64px",
+            "type": "dimension"
+         },
+         {
+            "tokenName": "$fontsize-heading-font-heading-2",
+            "value": "56px",
+            "hex": "56px",
+            "type": "dimension"
+         },
+         {
+            "tokenName": "$fontsize-heading-font-heading-3",
+            "value": "48px",
+            "hex": "48px",
+            "type": "dimension"
+         },
+         {
+            "tokenName": "$fontsize-heading-font-heading-4",
+            "value": "40px",
+            "hex": "40px",
+            "type": "dimension"
+         },
+         {
+            "tokenName": "$fontsize-heading-font-heading-5",
+            "value": "32px",
+            "hex": "32px",
+            "type": "dimension"
+         },
+         {
+            "tokenName": "$fontsize-heading-font-heading-6",
+            "value": "24px",
+            "hex": "24px",
+            "type": "dimension"
+         }
+      ],
+      "body": [
+         {
+            "tokenName": "$fontsize-body-font-body-lg",
+            "value": "18px",
+            "hex": "18px",
+            "type": "dimension"
+         },
+         {
+            "tokenName": "$fontsize-body-font-body-md",
+            "value": "16px",
+            "hex": "16px",
+            "type": "dimension"
+         },
+         {
+            "tokenName": "$fontsize-body-font-body-sm",
+            "value": "14px",
+            "hex": "14px",
+            "type": "dimension"
+         },
+         {
+            "tokenName": "$fontsize-body-font-body-xs",
+            "value": "12px",
+            "hex": "12px",
+            "type": "dimension"
+         },
+         {
+            "tokenName": "$fontsize-body-font-body-xxs",
+            "value": "10px",
+            "hex": "10px",
+            "type": "dimension"
+         }
+      ]
+   },
+   "padding": {
+      "default": [
+         {
+            "tokenName": "$padding-default-p-default-0",
+            "value": "0px",
+            "hex": "0px",
+            "type": "dimension"
+         },
+         {
+            "tokenName": "$padding-default-p-default-1",
+            "value": "2px",
+            "hex": "2px",
+            "type": "dimension"
+         },
+         {
+            "tokenName": "$padding-default-p-default-2",
+            "value": "4px",
+            "hex": "4px",
+            "type": "dimension"
+         },
+         {
+            "tokenName": "$padding-default-p-default-3",
+            "value": "8px",
+            "hex": "8px",
+            "type": "dimension"
+         },
+         {
+            "tokenName": "$padding-default-p-default-4",
+            "value": "16px",
+            "hex": "16px",
+            "type": "dimension"
+         },
+         {
+            "tokenName": "$padding-default-p-default-5",
+            "value": "24px",
+            "hex": "24px",
+            "type": "dimension"
+         },
+         {
+            "tokenName": "$padding-default-p-default-6",
+            "value": "32px",
+            "hex": "32px",
+            "type": "dimension"
+         },
+         {
+            "tokenName": "$padding-default-p-default-7",
+            "value": "40px",
+            "hex": "40px",
+            "type": "dimension"
+         },
+         {
+            "tokenName": "$padding-default-p-default-8",
+            "value": "48px",
+            "hex": "48px",
+            "type": "dimension"
+         },
+         {
+            "tokenName": "$padding-default-p-default-9",
+            "value": "56px",
+            "hex": "56px",
+            "type": "dimension"
+         },
+         {
+            "tokenName": "$padding-default-p-default-10",
+            "value": "64px",
+            "hex": "64px",
+            "type": "dimension"
+         },
+         {
+            "tokenName": "$padding-default-p-default-11",
+            "value": "72px",
+            "hex": "72px",
+            "type": "dimension"
+         },
+         {
+            "tokenName": "$padding-default-p-default-12",
+            "value": "80px",
+            "hex": "80px",
+            "type": "dimension"
+         }
+      ],
+      "compact": [
+         {
+            "tokenName": "$padding-compact-p-compact-0",
+            "value": "0px",
+            "hex": "0px",
+            "type": "dimension"
+         },
+         {
+            "tokenName": "$padding-compact-p-compact-1",
+            "value": "2px",
+            "hex": "2px",
+            "type": "dimension"
+         },
+         {
+            "tokenName": "$padding-compact-p-compact-2",
+            "value": "4px",
+            "hex": "4px",
+            "type": "dimension"
+         },
+         {
+            "tokenName": "$padding-compact-p-compact-3",
+            "value": "8px",
+            "hex": "8px",
+            "type": "dimension"
+         },
+         {
+            "tokenName": "$padding-compact-p-compact-4",
+            "value": "12px",
+            "hex": "12px",
+            "type": "dimension"
+         },
+         {
+            "tokenName": "$padding-compact-p-compact-5",
+            "value": "16px",
+            "hex": "16px",
+            "type": "dimension"
+         },
+         {
+            "tokenName": "$padding-compact-p-compact-6",
+            "value": "20px",
+            "hex": "20px",
+            "type": "dimension"
+         },
+         {
+            "tokenName": "$padding-compact-p-compact-7",
+            "value": "24px",
+            "hex": "24px",
+            "type": "dimension"
+         },
+         {
+            "tokenName": "$padding-compact-p-compact-8",
+            "value": "28px",
+            "hex": "28px",
+            "type": "dimension"
+         },
+         {
+            "tokenName": "$padding-compact-p-compact-9",
+            "value": "32px",
+            "hex": "32px",
+            "type": "dimension"
+         },
+         {
+            "tokenName": "$padding-compact-p-compact-10",
+            "value": "36px",
+            "hex": "36px",
+            "type": "dimension"
+         },
+         {
+            "tokenName": "$padding-compact-p-compact-11",
+            "value": "40px",
+            "hex": "40px",
+            "type": "dimension"
+         },
+         {
+            "tokenName": "$padding-compact-p-compact-12",
+            "value": "48px",
+            "hex": "48px",
+            "type": "dimension"
+         }
+      ]
+   },
+   "spacing": {
+      "default": [
+         {
+            "tokenName": "$spacing-default-space-default-0",
+            "value": "0px",
+            "hex": "0px",
+            "type": "dimension"
+         },
+         {
+            "tokenName": "$spacing-default-space-default-1",
+            "value": "2px",
+            "hex": "2px",
+            "type": "dimension"
+         },
+         {
+            "tokenName": "$spacing-default-space-default-2",
+            "value": "4px",
+            "hex": "4px",
+            "type": "dimension"
+         },
+         {
+            "tokenName": "$spacing-default-space-default-3",
+            "value": "8px",
+            "hex": "8px",
+            "type": "dimension"
+         },
+         {
+            "tokenName": "$spacing-default-space-default-4",
+            "value": "16px",
+            "hex": "16px",
+            "type": "dimension"
+         },
+         {
+            "tokenName": "$spacing-default-space-default-5",
+            "value": "24px",
+            "hex": "24px",
+            "type": "dimension"
+         },
+         {
+            "tokenName": "$spacing-default-space-default-6",
+            "value": "32px",
+            "hex": "32px",
+            "type": "dimension"
+         },
+         {
+            "tokenName": "$spacing-default-space-default-7",
+            "value": "40px",
+            "hex": "40px",
+            "type": "dimension"
+         },
+         {
+            "tokenName": "$spacing-default-space-default-8",
+            "value": "48px",
+            "hex": "48px",
+            "type": "dimension"
+         },
+         {
+            "tokenName": "$spacing-default-space-default-9",
+            "value": "56px",
+            "hex": "56px",
+            "type": "dimension"
+         },
+         {
+            "tokenName": "$spacing-default-space-default-10",
+            "value": "64px",
+            "hex": "64px",
+            "type": "dimension"
+         },
+         {
+            "tokenName": "$spacing-default-space-default-11",
+            "value": "72px",
+            "hex": "72px",
+            "type": "dimension"
+         },
+         {
+            "tokenName": "$spacing-default-space-default-12",
+            "value": "80px",
+            "hex": "80px",
+            "type": "dimension"
+         }
+      ],
+      "compact": [
+         {
+            "tokenName": "$spacing-compact-space-compact-0",
+            "value": "0px",
+            "hex": "0px",
+            "type": "dimension"
+         },
+         {
+            "tokenName": "$spacing-compact-space-compact-1",
+            "value": "2px",
+            "hex": "2px",
+            "type": "dimension"
+         },
+         {
+            "tokenName": "$spacing-compact-space-compact-2",
+            "value": "4px",
+            "hex": "4px",
+            "type": "dimension"
+         },
+         {
+            "tokenName": "$spacing-compact-space-compact-3",
+            "value": "8px",
+            "hex": "8px",
+            "type": "dimension"
+         },
+         {
+            "tokenName": "$spacing-compact-space-compact-4",
+            "value": "12px",
+            "hex": "12px",
+            "type": "dimension"
+         },
+         {
+            "tokenName": "$spacing-compact-space-compact-5",
+            "value": "16px",
+            "hex": "16px",
+            "type": "dimension"
+         },
+         {
+            "tokenName": "$spacing-compact-space-compact-6",
+            "value": "20px",
+            "hex": "20px",
+            "type": "dimension"
+         },
+         {
+            "tokenName": "$spacing-compact-space-compact-7",
+            "value": "24px",
+            "hex": "24px",
+            "type": "dimension"
+         },
+         {
+            "tokenName": "$spacing-compact-space-compact-8",
+            "value": "28px",
+            "hex": "28px",
+            "type": "dimension"
+         },
+         {
+            "tokenName": "$spacing-compact-space-compact-9",
+            "value": "32px",
+            "hex": "32px",
+            "type": "dimension"
+         },
+         {
+            "tokenName": "$spacing-compact-space-compact-10",
+            "value": "36px",
+            "hex": "36px",
+            "type": "dimension"
+         },
+         {
+            "tokenName": "$spacing-compact-space-compact-11",
+            "value": "40px",
+            "hex": "40px",
+            "type": "dimension"
+         },
+         {
+            "tokenName": "$spacing-compact-space-compact-12",
+            "value": "48px",
+            "hex": "48px",
+            "type": "dimension"
+         }
+      ]
+   },
+   "surface": {
+      "button": [
+         {
+            "tokenName": "$surface-button-primary-default",
+            "value": "red-primary-500",
+            "hex": "#1ed53d",
+            "type": "color"
+         },
+         {
+            "tokenName": "$surface-button-primary-hover",
+            "value": "red-primary-400",
+            "hex": "#d35445",
+            "type": "color"
+         },
+         {
+            "tokenName": "$surface-button-primary-active",
+            "value": "red-primary-700",
+            "hex": "#621d15",
+            "type": "color"
+         },
+         {
+            "tokenName": "$surface-button-primary-disabled",
+            "value": "cool-grey-10-50",
+            "hex": "#e4e5e6",
+            "type": "color"
+         },
+         {
+            "tokenName": "$surface-button-secondary-default",
+            "value": "red-primary-500",
+            "hex": "#1ed53d",
+            "type": "color"
+         },
+         {
+            "tokenName": "$surface-button-secondary-hover",
+            "value": "red-primary-400",
+            "hex": "#d35445",
+            "type": "color"
+         },
+         {
+            "tokenName": "$surface-button-secondary-active",
+            "value": "red-primary-700",
+            "hex": "#621d15",
+            "type": "color"
+         },
+         {
+            "tokenName": "$surface-button-secondary-disabled",
+            "value": "cool-grey-4-800",
+            "hex": "#5e5f5e",
+            "type": "color"
+         }
+      ]
+   },
+   "text": {
+      "legal": [
+         {
+            "tokenName": "$text-legal-primary",
+            "value": "neutral-black",
+            "hex": "#1e1e1e",
+            "type": "color"
+         }
+      ],
+      "heading": [
+         {
+            "tokenName": "$text-heading-primary",
+            "value": "neutral-black",
+            "hex": "#1e1e1e",
+            "type": "color"
+         },
+         {
+            "tokenName": "$text-heading-secondary",
+            "value": "neutral-black",
+            "hex": "#1e1e1e",
+            "type": "color"
+         }
+      ],
+      "body": [
+         {
+            "tokenName": "$text-body-primary",
+            "value": "neutral-black",
+            "hex": "#1e1e1e",
+            "type": "color"
+         },
+         {
+            "tokenName": "$text-body-secondary",
+            "value": "neutral-black",
+            "hex": "#1e1e1e",
+            "type": "color"
+         }
+      ],
+      "status": [
+         {
+            "tokenName": "$text-status-success",
+            "value": "status-green",
+            "hex": "#006b4d",
+            "type": "color"
+         },
+         {
+            "tokenName": "$text-status-warning",
+            "value": "status-orange",
+            "hex": "#e15d00",
+            "type": "color"
+         },
+         {
+            "tokenName": "$text-status-error",
+            "value": "status-red",
+            "hex": "#da1307",
+            "type": "color"
+         },
+         {
+            "tokenName": "$text-status-info",
+            "value": "status-blue",
+            "hex": "#18488f",
+            "type": "color"
+         }
+      ],
+      "button": [
+         {
+            "tokenName": "$text-button-primary-default",
+            "value": "neutral-white",
+            "hex": "#ffffff",
+            "type": "color"
+         },
+         {
+            "tokenName": "$text-button-primary-hover-active",
+            "value": "neutral-white",
+            "hex": "#ffffff",
+            "type": "color"
+         },
+         {
+            "tokenName": "$text-button-primary-disabled",
+            "value": "cool-grey-10-300",
+            "hex": "#969799",
+            "type": "color"
+         },
+         {
+            "tokenName": "$text-button-secondary-default",
+            "value": "neutral-black",
+            "hex": "#1e1e1e",
+            "type": "color"
+         },
+         {
+            "tokenName": "$text-button-secondary-hover",
+            "value": "red-primary-500",
+            "hex": "#1ed53d",
+            "type": "color"
+         },
+         {
+            "tokenName": "$text-button-secondary-clicked",
+            "value": "red-primary-600",
+            "hex": "#d52b1e",
+            "type": "color"
+         },
+         {
+            "tokenName": "$text-button-secondary-disabled",
+            "value": "cool-grey-10-300",
+            "hex": "#969799",
+            "type": "color"
+         },
+         {
+            "tokenName": "$text-button-link-default",
+            "value": "red-primary-500",
+            "hex": "#1ed53d",
+            "type": "color"
+         },
+         {
+            "tokenName": "$text-button-link-hover",
+            "value": "red-primary-400",
+            "hex": "#d35445",
+            "type": "color"
+         },
+         {
+            "tokenName": "$text-button-link-clicked",
+            "value": "red-primary-700",
+            "hex": "#621d15",
+            "type": "color"
+         },
+         {
+            "tokenName": "$text-button-link-disabled",
+            "value": "cool-grey-10-300",
+            "hex": "#969799",
+            "type": "color"
+         }
+      ]
+   }
+}
