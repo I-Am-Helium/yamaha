@@ -5,6 +5,7 @@ export default {
       'no-empty-source': null,
       'selector-class-pattern': null,
       'no-descending-specificity': null,
+      'number-max-precision': null,
       'color-no-invalid-hex': true,
       'at-rule-disallowed-list': ['import'],
    },
