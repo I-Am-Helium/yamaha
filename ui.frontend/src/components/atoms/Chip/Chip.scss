@@ -6,28 +6,32 @@
    border-radius: spacing.get-spacing('default', 'p-24');
    cursor: default;
    display: flex;
-   
+
    &--sm {
       padding: spacing.get-spacing('compact', 'p-compact-2')
          spacing.get-spacing('compact', 'p-compact-8');
+
       @include typography.font('text-xxs', 'font-bold');
    }
 
    &--md {
       padding: spacing.get-spacing('compact', 'p-compact-2')
          spacing.get-spacing('compact', 'p-compact-8');
+
       @include typography.font('text-xs', 'font-bold');
    }
 
    &--lg {
       padding: spacing.get-spacing('compact', 'p-compact-2')
          spacing.get-spacing('compact', 'p-compact-12');
+
       @include typography.font('text-base', 'font-bold');
    }
 
    &--xl {
       padding: spacing.get-spacing('compact', 'p-compact-4')
          spacing.get-spacing('compact', 'p-compact-16');
+
       @include typography.font('text-lg', 'font-bold');
    }
 
@@ -42,11 +46,11 @@
       background-color: colors.get-color('neutral', 'white');
    }
 
-   &--left{
+   &--left {
       flex-direction: row;
    }
 
-   &--right{
+   &--right {
       flex-direction: row-reverse;
    }
 }

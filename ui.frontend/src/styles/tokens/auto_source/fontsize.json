@@ -1,52 +1,52 @@
 {
-  "fontsize": {
-    "heading": {
-      "font-heading-1": {
-        "value": "64px",
-        "type": "dimension"
+   "fontsize": {
+      "heading": {
+         "font-heading-1": {
+            "value": "64px",
+            "type": "dimension"
+         },
+         "font-heading-2": {
+            "value": "56px",
+            "type": "dimension"
+         },
+         "font-heading-3": {
+            "value": "48px",
+            "type": "dimension"
+         },
+         "font-heading-4": {
+            "value": "40px",
+            "type": "dimension"
+         },
+         "font-heading-5": {
+            "value": "32px",
+            "type": "dimension"
+         },
+         "font-heading-6": {
+            "value": "24px",
+            "type": "dimension"
+         }
       },
-      "font-heading-2": {
-        "value": "56px",
-        "type": "dimension"
-      },
-      "font-heading-3": {
-        "value": "48px",
-        "type": "dimension"
-      },
-      "font-heading-4": {
-        "value": "40px",
-        "type": "dimension"
-      },
-      "font-heading-5": {
-        "value": "32px",
-        "type": "dimension"
-      },
-      "font-heading-6": {
-        "value": "24px",
-        "type": "dimension"
+      "body": {
+         "font-body-lg": {
+            "value": "18px",
+            "type": "dimension"
+         },
+         "font-body-md": {
+            "value": "16px",
+            "type": "dimension"
+         },
+         "font-body-sm": {
+            "value": "14px",
+            "type": "dimension"
+         },
+         "font-body-xs": {
+            "value": "12px",
+            "type": "dimension"
+         },
+         "font-body-xxs": {
+            "value": "10px",
+            "type": "dimension"
+         }
       }
-    },
-    "body": {
-      "font-body-lg": {
-        "value": "18px",
-        "type": "dimension"
-      },
-      "font-body-md": {
-        "value": "16px",
-        "type": "dimension"
-      },
-      "font-body-sm": {
-        "value": "14px",
-        "type": "dimension"
-      },
-      "font-body-xs": {
-        "value": "12px",
-        "type": "dimension"
-      },
-      "font-body-xxs": {
-        "value": "10px",
-        "type": "dimension"
-      }
-    }
-  }
+   }
 }

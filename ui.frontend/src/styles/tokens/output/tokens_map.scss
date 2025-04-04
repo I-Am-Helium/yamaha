@@ -13,7 +13,7 @@ $yh-core-color-red-600: #d52b1e !default;
 $yh-core-color-red-700: #621d15 !default;
 $yh-core-color-red-800: #41120d !default;
 $yh-core-color-red-900: #210906 !default;
-$yh-core-color-neutral-white: #ffffff !default;
+$yh-core-color-neutral-white: #fff !default;
 $yh-core-color-neutral-black: #1e1e1e !default;
 $yh-core-color-cool-grey-4-50: #f4f4f4 !default;
 $yh-core-color-cool-grey-4-100: #e9e9e9 !default;
@@ -171,7 +171,6 @@ $yh-content-button-icon-primary-default-hover-active: $yh-core-color-neutral-whi
 $yh-content-button-icon-primary-disabled: $yh-core-color-cool-grey-10-300 !default;
 $yh-content-button-icon-secondary-default-hover-active: $yh-core-color-red-500 !default;
 $yh-content-button-icon-secondary-disabled: $yh-core-color-cool-grey-10-300 !default;
-
 $tokens: (
   'core': (
     'color': (

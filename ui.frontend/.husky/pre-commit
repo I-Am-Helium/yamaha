@@ -1,2 +1,2 @@
 cd ui.frontend
-npm run lint
+npm run lint-staged

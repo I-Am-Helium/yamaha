@@ -1,42 +1,42 @@
 {
-  "surface": {
-    "button": {
-      "primary": {
-        "default": {
-          "value": "{color.core.color.red-primary.500}",
-          "type": "color"
-        },
-        "hover": {
-          "value": "{color.core.color.red-primary.400}",
-          "type": "color"
-        },
-        "active": {
-          "value": "{color.core.color.red-primary.700}",
-          "type": "color"
-        },
-        "disabled": {
-          "value": "{color.core.color.cool-grey-10.50}",
-          "type": "color"
-        }
-      },
-      "secondary": {
-        "default": {
-          "value": "{color.core.color.red-primary.500}",
-          "type": "color"
-        },
-        "hover": {
-          "value": "{color.core.color.red-primary.400}",
-          "type": "color"
-        },
-        "active": {
-          "value": "{color.core.color.red-primary.700}",
-          "type": "color"
-        },
-        "disabled": {
-          "value": "{color.core.color.cool-grey-4.800}",
-          "type": "color"
-        }
+   "surface": {
+      "button": {
+         "primary": {
+            "default": {
+               "value": "{color.core.color.red-primary.500}",
+               "type": "color"
+            },
+            "hover": {
+               "value": "{color.core.color.red-primary.400}",
+               "type": "color"
+            },
+            "active": {
+               "value": "{color.core.color.red-primary.700}",
+               "type": "color"
+            },
+            "disabled": {
+               "value": "{color.core.color.cool-grey-10.50}",
+               "type": "color"
+            }
+         },
+         "secondary": {
+            "default": {
+               "value": "{color.core.color.red-primary.500}",
+               "type": "color"
+            },
+            "hover": {
+               "value": "{color.core.color.red-primary.400}",
+               "type": "color"
+            },
+            "active": {
+               "value": "{color.core.color.red-primary.700}",
+               "type": "color"
+            },
+            "disabled": {
+               "value": "{color.core.color.cool-grey-4.800}",
+               "type": "color"
+            }
+         }
       }
-    }
-  }
+   }
 }

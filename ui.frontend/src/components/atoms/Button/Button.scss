@@ -1,8 +1,8 @@
 // @use '../../../styles/tokens/colors' as colorTokens;
 @use '../../../styles/foundations/typography';
 @use '../../../styles/foundations/spacing';
-@use '../../../styles/helpers.scss';
-
+@use '../../../styles/foundations/colors';
+@use '../../../styles/helpers';
 @use '../../../styles/tokens/auto_output/color';
 @use '../../../styles/tokens/auto_output/surface';
 @use '../../../styles/tokens/auto_output/border';
@@ -20,7 +20,7 @@
       border: none;
       outline: none;
 
-      //Should replace with flex function
+      // Should replace with flex function
       display: flex;
       align-items: center;
       gap: helpers.rem(10px);
@@ -61,6 +61,7 @@
       .cmp-button {
          color: surface.$surface-button-secondary-default;
          background-color: transparent;
+
          @include helpers.border(
             2px,
             surface.$surface-button-secondary-default,
@@ -119,6 +120,7 @@
             .cmp-button__text {
                color: text.$text-button-link-disabled;
             }
+
             cursor: not-allowed;
          }
       }

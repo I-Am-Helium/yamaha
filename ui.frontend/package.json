@@ -8,6 +8,8 @@
       "build": "tsc -b && npm run lint && vite build && clientlib --verbose && node copy-assets.js && fantasticon",
       "lint": "eslint .",
       "lint:fix": "eslint . --fix",
+      "stylelint": "stylelint '**/*.{css,scss}' --fix",
+      "fantasticon": "fantasticon",
       "fantasticon:build": "mkdir -p src/assets/generated-icons && fantasticon",
       "preview": "vite preview",
       "storybook": "npm run fantasticon:build && storybook dev -p 6006",
@@ -20,6 +22,7 @@
       "build-tokens": "node src/utils/parsers/figma_to_styled_parser.mjs &&  style-dictionary build --config src/config/style-dictionary.json",
       "prepare": "cd .. && husky ui.frontend/.husky",
       "format": "prettier --write .",
+      "lint-staged": "lint-staged",
       "create-token-files": "node src/utils/parsers/create_single_files.mjs",
       "generate-tokens": "node src/config/generate_tokens.mjs && node src/utils/parsers/generate-token-docs.mjs",
       "tokens": "npm run create-token-files && npm run generate-tokens"
@@ -77,11 +80,14 @@
       "glob": "^11.0.1",
       "globals": "^15.14.0",
       "husky": "^9.1.7",
+      "lint-staged": "^15.5.0",
       "nodemon": "^3.1.9",
       "playwright": "^1.51.1",
       "prettier": "^3.5.3",
       "sass": "^1.45.0",
       "storybook": "^8.6.7",
+      "stylelint": "^16.17.0",
+      "stylelint-config-standard-scss": "^14.0.0",
       "style-dictionary": "^4.3.3",
       "typescript": "~5.7.2",
       "typescript-eslint": "^8.22.0",
@@ -102,5 +108,10 @@
       "ignore": [
          "src/assets/**/*"
       ]
+   },
+   "lint-staged": {
+      "**/*.{js,ts,tsx}": "eslint .",
+      "**/*.{ts,tsx,js,json,md,css,scss}": "prettier --write .",
+      "**/**.{css,scss}": "stylelint '**/*.{css,scss}' --fix"
    }
 }

@@ -1,112 +1,112 @@
 {
-  "padding": {
-    "default": {
-      "p-default-0": {
-        "value": "0px",
-        "type": "dimension"
+   "padding": {
+      "default": {
+         "p-default-0": {
+            "value": "0px",
+            "type": "dimension"
+         },
+         "p-default-1": {
+            "value": "2px",
+            "type": "dimension"
+         },
+         "p-default-2": {
+            "value": "4px",
+            "type": "dimension"
+         },
+         "p-default-3": {
+            "value": "8px",
+            "type": "dimension"
+         },
+         "p-default-4": {
+            "value": "16px",
+            "type": "dimension"
+         },
+         "p-default-5": {
+            "value": "24px",
+            "type": "dimension"
+         },
+         "p-default-6": {
+            "value": "32px",
+            "type": "dimension"
+         },
+         "p-default-7": {
+            "value": "40px",
+            "type": "dimension"
+         },
+         "p-default-8": {
+            "value": "48px",
+            "type": "dimension"
+         },
+         "p-default-9": {
+            "value": "56px",
+            "type": "dimension"
+         },
+         "p-default-10": {
+            "value": "64px",
+            "type": "dimension"
+         },
+         "p-default-11": {
+            "value": "72px",
+            "type": "dimension"
+         },
+         "p-default-12": {
+            "value": "80px",
+            "type": "dimension"
+         }
       },
-      "p-default-1": {
-        "value": "2px",
-        "type": "dimension"
-      },
-      "p-default-2": {
-        "value": "4px",
-        "type": "dimension"
-      },
-      "p-default-3": {
-        "value": "8px",
-        "type": "dimension"
-      },
-      "p-default-4": {
-        "value": "16px",
-        "type": "dimension"
-      },
-      "p-default-5": {
-        "value": "24px",
-        "type": "dimension"
-      },
-      "p-default-6": {
-        "value": "32px",
-        "type": "dimension"
-      },
-      "p-default-7": {
-        "value": "40px",
-        "type": "dimension"
-      },
-      "p-default-8": {
-        "value": "48px",
-        "type": "dimension"
-      },
-      "p-default-9": {
-        "value": "56px",
-        "type": "dimension"
-      },
-      "p-default-10": {
-        "value": "64px",
-        "type": "dimension"
-      },
-      "p-default-11": {
-        "value": "72px",
-        "type": "dimension"
-      },
-      "p-default-12": {
-        "value": "80px",
-        "type": "dimension"
+      "compact": {
+         "p-compact-0": {
+            "value": "0px",
+            "type": "dimension"
+         },
+         "p-compact-1": {
+            "value": "2px",
+            "type": "dimension"
+         },
+         "p-compact-2": {
+            "value": "4px",
+            "type": "dimension"
+         },
+         "p-compact-3": {
+            "value": "8px",
+            "type": "dimension"
+         },
+         "p-compact-4": {
+            "value": "12px",
+            "type": "dimension"
+         },
+         "p-compact-5": {
+            "value": "16px",
+            "type": "dimension"
+         },
+         "p-compact-6": {
+            "value": "20px",
+            "type": "dimension"
+         },
+         "p-compact-7": {
+            "value": "24px",
+            "type": "dimension"
+         },
+         "p-compact-8": {
+            "value": "28px",
+            "type": "dimension"
+         },
+         "p-compact-9": {
+            "value": "32px",
+            "type": "dimension"
+         },
+         "p-compact-10": {
+            "value": "36px",
+            "type": "dimension"
+         },
+         "p-compact-11": {
+            "value": "40px",
+            "type": "dimension"
+         },
+         "p-compact-12": {
+            "value": "48px",
+            "type": "dimension"
+         }
       }
-    },
-    "compact": {
-      "p-compact-0": {
-        "value": "0px",
-        "type": "dimension"
-      },
-      "p-compact-1": {
-        "value": "2px",
-        "type": "dimension"
-      },
-      "p-compact-2": {
-        "value": "4px",
-        "type": "dimension"
-      },
-      "p-compact-3": {
-        "value": "8px",
-        "type": "dimension"
-      },
-      "p-compact-4": {
-        "value": "12px",
-        "type": "dimension"
-      },
-      "p-compact-5": {
-        "value": "16px",
-        "type": "dimension"
-      },
-      "p-compact-6": {
-        "value": "20px",
-        "type": "dimension"
-      },
-      "p-compact-7": {
-        "value": "24px",
-        "type": "dimension"
-      },
-      "p-compact-8": {
-        "value": "28px",
-        "type": "dimension"
-      },
-      "p-compact-9": {
-        "value": "32px",
-        "type": "dimension"
-      },
-      "p-compact-10": {
-        "value": "36px",
-        "type": "dimension"
-      },
-      "p-compact-11": {
-        "value": "40px",
-        "type": "dimension"
-      },
-      "p-compact-12": {
-        "value": "48px",
-        "type": "dimension"
-      }
-    }
-  }
+   }
 }

@@ -7,8 +7,9 @@
 }
 
 @function rem($size) {
-   $remSize: calc($size / 16px);
-   @return $remSize * 1rem;
+   $rem-size: calc($size / 16px);
+
+   @return $rem-size * 1rem;
 }
 
 @mixin border($size, $color, $radius: 0, $position: 'all') {
