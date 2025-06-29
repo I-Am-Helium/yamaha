@@ -18,39 +18,47 @@
         "type": "dimension"
       },
       "space-default-4": {
-        "value": "16px",
+        "value": "12px",
         "type": "dimension"
       },
       "space-default-5": {
-        "value": "24px",
+        "value": "16px",
         "type": "dimension"
       },
       "space-default-6": {
-        "value": "32px",
+        "value": "24px",
         "type": "dimension"
       },
       "space-default-7": {
-        "value": "40px",
+        "value": "32px",
         "type": "dimension"
       },
       "space-default-8": {
-        "value": "48px",
+        "value": "40px",
         "type": "dimension"
       },
       "space-default-9": {
-        "value": "56px",
+        "value": "48px",
         "type": "dimension"
       },
       "space-default-10": {
-        "value": "64px",
+        "value": "56px",
         "type": "dimension"
       },
       "space-default-11": {
-        "value": "72px",
+        "value": "64px",
         "type": "dimension"
       },
       "space-default-12": {
+        "value": "72px",
+        "type": "dimension"
+      },
+      "space-default-13": {
         "value": "80px",
+        "type": "dimension"
+      },
+      "space-default-14": {
+        "value": "100px",
         "type": "dimension"
       }
     },

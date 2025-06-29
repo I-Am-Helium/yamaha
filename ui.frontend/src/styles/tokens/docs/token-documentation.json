@@ -4,7 +4,7 @@
       {
         "tokenName": "$border-button-outlined-default",
         "value": "red-primary-500",
-        "hex": "#361ed5",
+        "hex": "#d52b1e",
         "type": "color"
       },
       {
@@ -24,18 +24,90 @@
         "value": "cool-grey-10-300",
         "hex": "#969799",
         "type": "color"
+      },
+      {
+        "tokenName": "$border-button-brand-default",
+        "value": "red-primary-500",
+        "hex": "#d52b1e",
+        "type": "color"
+      },
+      {
+        "tokenName": "$border-button-brand-hover",
+        "value": "red-primary-400",
+        "hex": "#d35445",
+        "type": "color"
+      },
+      {
+        "tokenName": "$border-button-brand-active",
+        "value": "red-primary-600",
+        "hex": "#932c21",
+        "type": "color"
+      },
+      {
+        "tokenName": "$border-button-brand-disabled",
+        "value": "cool-grey-300",
+        "hex": "#a3a3a3",
+        "type": "color"
+      },
+      {
+        "tokenName": "$border-button-dark-default",
+        "value": "neutral-black",
+        "hex": "#000000",
+        "type": "color"
+      },
+      {
+        "tokenName": "$border-button-dark-hover",
+        "value": "cool-grey-700",
+        "hex": "#464646",
+        "type": "color"
+      },
+      {
+        "tokenName": "$border-button-dark-active",
+        "value": "cool-grey-800",
+        "hex": "#2f2f2f",
+        "type": "color"
+      },
+      {
+        "tokenName": "$border-button-dark-disabled",
+        "value": "cool-grey-300",
+        "hex": "#a3a3a3",
+        "type": "color"
+      },
+      {
+        "tokenName": "$border-button-light-default",
+        "value": "neutral-white",
+        "hex": "#ffffff",
+        "type": "color"
+      },
+      {
+        "tokenName": "$border-button-light-hover",
+        "value": "cool-grey-400",
+        "hex": "#8c8c8c",
+        "type": "color"
+      },
+      {
+        "tokenName": "$border-button-light-active",
+        "value": "cool-grey-300",
+        "hex": "#a3a3a3",
+        "type": "color"
+      },
+      {
+        "tokenName": "$border-button-light-disabled",
+        "value": "cool-grey-700",
+        "hex": "#464646",
+        "type": "color"
       }
     ],
     "form": [
       {
         "tokenName": "$border-form-assets-inputs-text-areas",
-        "value": "cool-grey-10-300",
-        "hex": "#969799",
+        "value": "cool-grey-300",
+        "hex": "#a3a3a3",
         "type": "color"
       },
       {
         "tokenName": "$border-form-assets-error",
-        "value": "status-red",
+        "value": "error-solid",
         "hex": "#da1307",
         "type": "color"
       }
@@ -43,32 +115,32 @@
     "status": [
       {
         "tokenName": "$border-status-success",
-        "value": "status-green",
+        "value": "success-solid",
         "hex": "#006b4d",
         "type": "color"
       },
       {
         "tokenName": "$border-status-warning",
-        "value": "status-orange",
+        "value": "warning-solid",
         "hex": "#e15d00",
         "type": "color"
       },
       {
         "tokenName": "$border-status-info",
-        "value": "status-blue",
-        "hex": "#18488f",
+        "value": "information-solid",
+        "hex": "#1973e1",
         "type": "color"
       },
       {
         "tokenName": "$border-status-error",
-        "value": "status-red",
+        "value": "error-solid",
         "hex": "#da1307",
         "type": "color"
       },
       {
         "tokenName": "$border-status-offer",
         "value": "red-primary-500",
-        "hex": "#361ed5",
+        "hex": "#d52b1e",
         "type": "color"
       }
     ],
@@ -423,14 +495,14 @@
       },
       {
         "tokenName": "$color-core-color-red-primary-500",
-        "value": "#361ed5",
-        "hex": "#361ed5",
+        "value": "#d52b1e",
+        "hex": "#d52b1e",
         "type": "color"
       },
       {
         "tokenName": "$color-core-color-red-primary-600",
-        "value": "#d52b1e",
-        "hex": "#d52b1e",
+        "value": "#932c21",
+        "hex": "#932c21",
         "type": "color"
       },
       {
@@ -579,8 +651,8 @@
       },
       {
         "tokenName": "$color-core-color-neutral-black",
-        "value": "#1e1e1e",
-        "hex": "#1e1e1e",
+        "value": "#000000",
+        "hex": "#000000",
         "type": "color"
       },
       {
@@ -606,6 +678,126 @@
         "value": "#18488f",
         "hex": "#18488f",
         "type": "color"
+      },
+      {
+        "tokenName": "$color-core-color-status-neutral-solid",
+        "value": "#a3a3a3",
+        "hex": "#a3a3a3",
+        "type": "color"
+      },
+      {
+        "tokenName": "$color-core-color-status-neutral-opacity-10",
+        "value": "#f4f5f5",
+        "hex": "#f4f5f5",
+        "type": "color"
+      },
+      {
+        "tokenName": "$color-core-color-status-success-solid",
+        "value": "#006b4d",
+        "hex": "#006b4d",
+        "type": "color"
+      },
+      {
+        "tokenName": "$color-core-color-status-success-opacity-10",
+        "value": "#e9f7ef",
+        "hex": "#e9f7ef",
+        "type": "color"
+      },
+      {
+        "tokenName": "$color-core-color-status-error-solid",
+        "value": "#da1307",
+        "hex": "#da1307",
+        "type": "color"
+      },
+      {
+        "tokenName": "$color-core-color-status-error-opacity-10",
+        "value": "#feeded",
+        "hex": "#feeded",
+        "type": "color"
+      },
+      {
+        "tokenName": "$color-core-color-status-information-solid",
+        "value": "#1973e1",
+        "hex": "#1973e1",
+        "type": "color"
+      },
+      {
+        "tokenName": "$color-core-color-status-information-opacity-10",
+        "value": "#e8f1fc",
+        "hex": "#e8f1fc",
+        "type": "color"
+      },
+      {
+        "tokenName": "$color-core-color-status-warning-solid",
+        "value": "#e15d00",
+        "hex": "#e15d00",
+        "type": "color"
+      },
+      {
+        "tokenName": "$color-core-color-status-warning-opacity-10",
+        "value": "#fcefe5",
+        "hex": "#fcefe5",
+        "type": "color"
+      },
+      {
+        "tokenName": "$color-core-color-cool-grey-50",
+        "value": "#f4f4f4",
+        "hex": "#f4f4f4",
+        "type": "color"
+      },
+      {
+        "tokenName": "$color-core-color-cool-grey-100",
+        "value": "#d2d2d2",
+        "hex": "#d2d2d2",
+        "type": "color"
+      },
+      {
+        "tokenName": "$color-core-color-cool-grey-200",
+        "value": "#bababa",
+        "hex": "#bababa",
+        "type": "color"
+      },
+      {
+        "tokenName": "$color-core-color-cool-grey-300",
+        "value": "#a3a3a3",
+        "hex": "#a3a3a3",
+        "type": "color"
+      },
+      {
+        "tokenName": "$color-core-color-cool-grey-400",
+        "value": "#8c8c8c",
+        "hex": "#8c8c8c",
+        "type": "color"
+      },
+      {
+        "tokenName": "$color-core-color-cool-grey-500",
+        "value": "#757575",
+        "hex": "#757575",
+        "type": "color"
+      },
+      {
+        "tokenName": "$color-core-color-cool-grey-600",
+        "value": "#5d5d5d",
+        "hex": "#5d5d5d",
+        "type": "color"
+      },
+      {
+        "tokenName": "$color-core-color-cool-grey-700",
+        "value": "#464646",
+        "hex": "#464646",
+        "type": "color"
+      },
+      {
+        "tokenName": "$color-core-color-cool-grey-800",
+        "value": "#2f2f2f",
+        "hex": "#2f2f2f",
+        "type": "color"
+      },
+      {
+        "tokenName": "$color-core-color-cool-grey-900",
+        "value": "#171717",
+        "hex": "#171717",
+        "type": "color"
       }
     ]
   },
@@ -619,20 +811,32 @@
       },
       {
         "tokenName": "$content-button-icon-primary-disabled",
-        "value": "cool-grey-10-300",
-        "hex": "#969799",
+        "value": "cool-grey-300",
+        "hex": "#a3a3a3",
         "type": "color"
       },
       {
         "tokenName": "$content-button-icon-secondary-default-hover-active",
         "value": "red-primary-500",
-        "hex": "#361ed5",
+        "hex": "#d52b1e",
         "type": "color"
       },
       {
         "tokenName": "$content-button-icon-secondary-disabled",
-        "value": "cool-grey-10-300",
-        "hex": "#969799",
+        "value": "cool-grey-300",
+        "hex": "#a3a3a3",
+        "type": "color"
+      },
+      {
+        "tokenName": "$content-button-icon-secondary-default-hover",
+        "value": "red-primary-500",
+        "hex": "#d52b1e",
+        "type": "color"
+      },
+      {
+        "tokenName": "$content-button-icon-secondary-active",
+        "value": "red-primary-600",
+        "hex": "#932c21",
         "type": "color"
       }
     ]
@@ -899,56 +1103,68 @@
       },
       {
         "tokenName": "$spacing-default-space-default-4",
+        "value": "12px",
+        "hex": "12px",
+        "type": "dimension"
+      },
+      {
+        "tokenName": "$spacing-default-space-default-5",
         "value": "16px",
         "hex": "16px",
         "type": "dimension"
       },
       {
-        "tokenName": "$spacing-default-space-default-5",
+        "tokenName": "$spacing-default-space-default-6",
         "value": "24px",
         "hex": "24px",
         "type": "dimension"
       },
       {
-        "tokenName": "$spacing-default-space-default-6",
+        "tokenName": "$spacing-default-space-default-7",
         "value": "32px",
         "hex": "32px",
         "type": "dimension"
       },
       {
-        "tokenName": "$spacing-default-space-default-7",
+        "tokenName": "$spacing-default-space-default-8",
         "value": "40px",
         "hex": "40px",
         "type": "dimension"
       },
       {
-        "tokenName": "$spacing-default-space-default-8",
+        "tokenName": "$spacing-default-space-default-9",
         "value": "48px",
         "hex": "48px",
         "type": "dimension"
       },
       {
-        "tokenName": "$spacing-default-space-default-9",
+        "tokenName": "$spacing-default-space-default-10",
         "value": "56px",
         "hex": "56px",
         "type": "dimension"
       },
       {
-        "tokenName": "$spacing-default-space-default-10",
+        "tokenName": "$spacing-default-space-default-11",
         "value": "64px",
         "hex": "64px",
         "type": "dimension"
       },
       {
-        "tokenName": "$spacing-default-space-default-11",
+        "tokenName": "$spacing-default-space-default-12",
         "value": "72px",
         "hex": "72px",
         "type": "dimension"
       },
       {
-        "tokenName": "$spacing-default-space-default-12",
+        "tokenName": "$spacing-default-space-default-13",
         "value": "80px",
         "hex": "80px",
+        "type": "dimension"
+      },
+      {
+        "tokenName": "$spacing-default-space-default-14",
+        "value": "100px",
+        "hex": "100px",
         "type": "dimension"
       }
     ],
@@ -1038,7 +1254,7 @@
       {
         "tokenName": "$surface-button-primary-default",
         "value": "red-primary-500",
-        "hex": "#361ed5",
+        "hex": "#d52b1e",
         "type": "color"
       },
       {
@@ -1062,7 +1278,7 @@
       {
         "tokenName": "$surface-button-secondary-default",
         "value": "red-primary-500",
-        "hex": "#361ed5",
+        "hex": "#d52b1e",
         "type": "color"
       },
       {
@@ -1082,6 +1298,78 @@
         "value": "cool-grey-4-800",
         "hex": "#5e5f5e",
         "type": "color"
+      },
+      {
+        "tokenName": "$surface-button-brand-default",
+        "value": "red-primary-500",
+        "hex": "#d52b1e",
+        "type": "color"
+      },
+      {
+        "tokenName": "$surface-button-brand-hover",
+        "value": "red-primary-400",
+        "hex": "#d35445",
+        "type": "color"
+      },
+      {
+        "tokenName": "$surface-button-brand-active",
+        "value": "red-primary-700",
+        "hex": "#621d15",
+        "type": "color"
+      },
+      {
+        "tokenName": "$surface-button-brand-disabled",
+        "value": "cool-grey-50",
+        "hex": "#f4f4f4",
+        "type": "color"
+      },
+      {
+        "tokenName": "$surface-button-dark-default",
+        "value": "neutral-black",
+        "hex": "#000000",
+        "type": "color"
+      },
+      {
+        "tokenName": "$surface-button-dark-hover",
+        "value": "cool-grey-700",
+        "hex": "#464646",
+        "type": "color"
+      },
+      {
+        "tokenName": "$surface-button-dark-active",
+        "value": "cool-grey-800",
+        "hex": "#2f2f2f",
+        "type": "color"
+      },
+      {
+        "tokenName": "$surface-button-dark-disabled",
+        "value": "cool-grey-50",
+        "hex": "#f4f4f4",
+        "type": "color"
+      },
+      {
+        "tokenName": "$surface-button-light-default",
+        "value": "neutral-white",
+        "hex": "#ffffff",
+        "type": "color"
+      },
+      {
+        "tokenName": "$surface-button-light-hover",
+        "value": "cool-grey-400",
+        "hex": "#8c8c8c",
+        "type": "color"
+      },
+      {
+        "tokenName": "$surface-button-light-active",
+        "value": "cool-grey-800",
+        "hex": "#2f2f2f",
+        "type": "color"
+      },
+      {
+        "tokenName": "$surface-button-light-disabled",
+        "value": "cool-grey-800",
+        "hex": "#2f2f2f",
+        "type": "color"
       }
     ]
   },
@@ -1090,7 +1378,7 @@
       {
         "tokenName": "$text-legal-primary",
         "value": "neutral-black",
-        "hex": "#1e1e1e",
+        "hex": "#000000",
         "type": "color"
       }
     ],
@@ -1098,13 +1386,25 @@
       {
         "tokenName": "$text-heading-primary",
         "value": "neutral-black",
-        "hex": "#1e1e1e",
+        "hex": "#000000",
         "type": "color"
       },
       {
         "tokenName": "$text-heading-secondary",
         "value": "neutral-black",
-        "hex": "#1e1e1e",
+        "hex": "#000000",
+        "type": "color"
+      },
+      {
+        "tokenName": "$text-heading-light",
+        "value": "neutral-white",
+        "hex": "#ffffff",
+        "type": "color"
+      },
+      {
+        "tokenName": "$text-heading-dark",
+        "value": "neutral-black",
+        "hex": "#000000",
         "type": "color"
       }
     ],
@@ -1112,39 +1412,51 @@
       {
         "tokenName": "$text-body-primary",
         "value": "neutral-black",
-        "hex": "#1e1e1e",
+        "hex": "#000000",
         "type": "color"
       },
       {
         "tokenName": "$text-body-secondary",
         "value": "neutral-black",
-        "hex": "#1e1e1e",
+        "hex": "#000000",
+        "type": "color"
+      },
+      {
+        "tokenName": "$text-body-light",
+        "value": "neutral-white",
+        "hex": "#ffffff",
+        "type": "color"
+      },
+      {
+        "tokenName": "$text-body-dark",
+        "value": "neutral-black",
+        "hex": "#000000",
         "type": "color"
       }
     ],
     "status": [
       {
         "tokenName": "$text-status-success",
-        "value": "status-green",
+        "value": "success-solid",
         "hex": "#006b4d",
         "type": "color"
       },
       {
         "tokenName": "$text-status-warning",
-        "value": "status-orange",
+        "value": "warning-solid",
         "hex": "#e15d00",
         "type": "color"
       },
       {
         "tokenName": "$text-status-error",
-        "value": "status-red",
+        "value": "error-solid",
         "hex": "#da1307",
         "type": "color"
       },
       {
         "tokenName": "$text-status-info",
-        "value": "status-blue",
-        "hex": "#18488f",
+        "value": "information-solid",
+        "hex": "#1973e1",
         "type": "color"
       }
     ],
@@ -1168,21 +1480,81 @@
         "type": "color"
       },
       {
+        "tokenName": "$text-button-primary-brand-default-hover-active",
+        "value": "neutral-white",
+        "hex": "#ffffff",
+        "type": "color"
+      },
+      {
+        "tokenName": "$text-button-primary-brand-disabled",
+        "value": "cool-grey-400",
+        "hex": "#8c8c8c",
+        "type": "color"
+      },
+      {
+        "tokenName": "$text-button-primary-dark-default-hover-active",
+        "value": "neutral-white",
+        "hex": "#ffffff",
+        "type": "color"
+      },
+      {
+        "tokenName": "$text-button-primary-dark-hover",
+        "value": "cool-grey-700",
+        "hex": "#464646",
+        "type": "color"
+      },
+      {
+        "tokenName": "$text-button-primary-dark-active",
+        "value": "cool-grey-800",
+        "hex": "#2f2f2f",
+        "type": "color"
+      },
+      {
+        "tokenName": "$text-button-primary-dark-disabled",
+        "value": "cool-grey-400",
+        "hex": "#8c8c8c",
+        "type": "color"
+      },
+      {
+        "tokenName": "$text-button-primary-light-default",
+        "value": "neutral-black",
+        "hex": "#000000",
+        "type": "color"
+      },
+      {
+        "tokenName": "$text-button-primary-light-hover",
+        "value": "cool-grey-300",
+        "hex": "#a3a3a3",
+        "type": "color"
+      },
+      {
+        "tokenName": "$text-button-primary-light-active",
+        "value": "neutral-black",
+        "hex": "#000000",
+        "type": "color"
+      },
+      {
+        "tokenName": "$text-button-primary-light-disabled",
+        "value": "cool-grey-400",
+        "hex": "#8c8c8c",
+        "type": "color"
+      },
+      {
         "tokenName": "$text-button-secondary-default",
         "value": "neutral-black",
-        "hex": "#1e1e1e",
+        "hex": "#000000",
         "type": "color"
       },
       {
         "tokenName": "$text-button-secondary-hover",
         "value": "red-primary-500",
-        "hex": "#361ed5",
+        "hex": "#d52b1e",
         "type": "color"
       },
       {
         "tokenName": "$text-button-secondary-clicked",
         "value": "red-primary-600",
-        "hex": "#d52b1e",
+        "hex": "#932c21",
         "type": "color"
       },
       {
@@ -1192,9 +1564,81 @@
         "type": "color"
       },
       {
+        "tokenName": "$text-button-secondary-brand-default",
+        "value": "red-primary-500",
+        "hex": "#d52b1e",
+        "type": "color"
+      },
+      {
+        "tokenName": "$text-button-secondary-brand-hover",
+        "value": "red-primary-400",
+        "hex": "#d35445",
+        "type": "color"
+      },
+      {
+        "tokenName": "$text-button-secondary-brand-active",
+        "value": "neutral-white",
+        "hex": "#ffffff",
+        "type": "color"
+      },
+      {
+        "tokenName": "$text-button-secondary-brand-disabled",
+        "value": "cool-grey-400",
+        "hex": "#8c8c8c",
+        "type": "color"
+      },
+      {
+        "tokenName": "$text-button-secondary-dark-default",
+        "value": "red-primary-500",
+        "hex": "#d52b1e",
+        "type": "color"
+      },
+      {
+        "tokenName": "$text-button-secondary-dark-hover",
+        "value": "red-primary-400",
+        "hex": "#d35445",
+        "type": "color"
+      },
+      {
+        "tokenName": "$text-button-secondary-dark-active",
+        "value": "neutral-white",
+        "hex": "#ffffff",
+        "type": "color"
+      },
+      {
+        "tokenName": "$text-button-secondary-dark-disabled",
+        "value": "cool-grey-400",
+        "hex": "#8c8c8c",
+        "type": "color"
+      },
+      {
+        "tokenName": "$text-button-secondary-light-default",
+        "value": "neutral-white",
+        "hex": "#ffffff",
+        "type": "color"
+      },
+      {
+        "tokenName": "$text-button-secondary-light-hover",
+        "value": "neutral-white",
+        "hex": "#ffffff",
+        "type": "color"
+      },
+      {
+        "tokenName": "$text-button-secondary-light-active",
+        "value": "cool-grey-300",
+        "hex": "#a3a3a3",
+        "type": "color"
+      },
+      {
+        "tokenName": "$text-button-secondary-light-disabled",
+        "value": "cool-grey-700",
+        "hex": "#464646",
+        "type": "color"
+      },
+      {
         "tokenName": "$text-button-link-default",
         "value": "red-primary-500",
-        "hex": "#361ed5",
+        "hex": "#d52b1e",
         "type": "color"
       },
       {
@@ -1213,6 +1657,78 @@
         "tokenName": "$text-button-link-disabled",
         "value": "cool-grey-10-300",
         "hex": "#969799",
+        "type": "color"
+      },
+      {
+        "tokenName": "$text-button-tertiary-brand-default",
+        "value": "red-primary-500",
+        "hex": "#d52b1e",
+        "type": "color"
+      },
+      {
+        "tokenName": "$text-button-tertiary-brand-hover",
+        "value": "red-primary-400",
+        "hex": "#d35445",
+        "type": "color"
+      },
+      {
+        "tokenName": "$text-button-tertiary-brand-active",
+        "value": "red-primary-700",
+        "hex": "#621d15",
+        "type": "color"
+      },
+      {
+        "tokenName": "$text-button-tertiary-brand-disabled",
+        "value": "cool-grey-300",
+        "hex": "#a3a3a3",
+        "type": "color"
+      },
+      {
+        "tokenName": "$text-button-tertiary-dark-default",
+        "value": "neutral-black",
+        "hex": "#000000",
+        "type": "color"
+      },
+      {
+        "tokenName": "$text-button-tertiary-dark-hover",
+        "value": "cool-grey-700",
+        "hex": "#464646",
+        "type": "color"
+      },
+      {
+        "tokenName": "$text-button-tertiary-dark-active",
+        "value": "cool-grey-800",
+        "hex": "#2f2f2f",
+        "type": "color"
+      },
+      {
+        "tokenName": "$text-button-tertiary-dark-disabled",
+        "value": "cool-grey-300",
+        "hex": "#a3a3a3",
+        "type": "color"
+      },
+      {
+        "tokenName": "$text-button-tertiary-light-default",
+        "value": "neutral-white",
+        "hex": "#ffffff",
+        "type": "color"
+      },
+      {
+        "tokenName": "$text-button-tertiary-light-hover",
+        "value": "neutral-white",
+        "hex": "#ffffff",
+        "type": "color"
+      },
+      {
+        "tokenName": "$text-button-tertiary-light-active",
+        "value": "cool-grey-300",
+        "hex": "#a3a3a3",
+        "type": "color"
+      },
+      {
+        "tokenName": "$text-button-tertiary-light-disabled",
+        "value": "cool-grey-700",
+        "hex": "#464646",
         "type": "color"
       }
     ]
