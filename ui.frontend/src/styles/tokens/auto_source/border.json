@@ -18,33 +18,87 @@
           "value": "{color.core.color.cool-grey-10.300}",
           "type": "color"
         }
+      },
+      "brand": {
+        "default": {
+          "value": "{color.core.color.red-primary.500}",
+          "type": "color"
+        },
+        "hover": {
+          "value": "{color.core.color.red-primary.400}",
+          "type": "color"
+        },
+        "active": {
+          "value": "{color.core.color.red-primary.600}",
+          "type": "color"
+        },
+        "disabled": {
+          "value": "{color.core.color.cool-grey.300}",
+          "type": "color"
+        }
+      },
+      "dark": {
+        "default": {
+          "value": "{color.core.color.neutral.black}",
+          "type": "color"
+        },
+        "hover": {
+          "value": "{color.core.color.cool-grey.700}",
+          "type": "color"
+        },
+        "active": {
+          "value": "{color.core.color.cool-grey.800}",
+          "type": "color"
+        },
+        "disabled": {
+          "value": "{color.core.color.cool-grey.300}",
+          "type": "color"
+        }
+      },
+      "light": {
+        "default": {
+          "value": "{color.core.color.neutral.white}",
+          "type": "color"
+        },
+        "hover": {
+          "value": "{color.core.color.cool-grey.400}",
+          "type": "color"
+        },
+        "active": {
+          "value": "{color.core.color.cool-grey.300}",
+          "type": "color"
+        },
+        "disabled": {
+          "value": "{color.core.color.cool-grey.700}",
+          "type": "color"
+        }
       }
     },
     "form-assets": {
       "inputs-text-areas": {
-        "value": "{color.core.color.cool-grey-10.300}",
+        "value": "{color.core.color.cool-grey.300}",
         "type": "color"
       },
       "error": {
-        "value": "{color.core.color.status.red}",
+        "value": "{color.core.color.status.error.solid}",
         "type": "color"
       }
     },
     "status": {
       "success": {
-        "value": "{color.core.color.status.green}",
+        "value": "{color.core.color.status.success.solid}",
         "type": "color"
       },
       "warning": {
-        "value": "{color.core.color.status.orange}",
+        "value": "{color.core.color.status.warning.solid}",
         "type": "color"
       },
       "info": {
-        "value": "{color.core.color.status.blue}",
+        "value": "{color.core.color.status.information.solid}",
         "type": "color"
       },
       "error": {
-        "value": "{color.core.color.status.red}",
+        "value": "{color.core.color.status.error.solid}",
         "type": "color"
       },
       "offer": {
